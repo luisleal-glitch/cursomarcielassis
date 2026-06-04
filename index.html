@@ -174,6 +174,8 @@ figcaption.ex-label{position:absolute;top:-13px;left:18px;color:var(--txt-inv);f
 figcaption.ex-label--bad{background:var(--clr-danger);}figcaption.ex-label--good{background:var(--clr-secondary);}
 .ex-text{font-style:italic;font-size:var(--fz-body);line-height:1.8;color:var(--txt);margin:0;}
 /* ═══ VIDEO PLACEHOLDER ═══ */
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius-md);margin:20px 0;background:#000;box-shadow:var(--shadow-lg);}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:var(--radius-md);}
 figure.video-placeholder{background:var(--grad-blue);border-radius:var(--radius-md);padding:34px 32px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;margin:20px 0;min-height:190px;text-align:center;position:relative;overflow:hidden;}
 figure.video-placeholder::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,255,255,.025) 10px,rgba(255,255,255,.025) 20px);pointer-events:none;}
 .vid-badge{position:absolute;top:13px;right:13px;background:rgba(255,255,255,.2);color:var(--txt-inv);font-size:var(--fz-cap);font-weight:700;padding:3px 11px;border-radius:100px;font-family:'Outfit',sans-serif;z-index:1;}
@@ -303,7 +305,40 @@ figure.video-placeholder figcaption{z-index:1;}
 /* ═══ OVERLAY MOBILE ═══ */
 #sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:800;}
 #sidebar-overlay.active{display:block;}
-/* ═══ VLIBRAS ═══ */
+/* ═══ AVALIAÇÃO POR ELEMENTOS (capítulos individuais) ═══ */
+.elem-list{display:flex;flex-direction:column;gap:9px;margin-bottom:14px;}
+.elem-item{border-radius:9px;padding:12px 15px;border-left:5px solid;transition:background .2s;}
+.elem-item.n-excelente{border-color:#0E9E6E;background:var(--bg-hl-ok);}
+.elem-item.n-bom{border-color:#2B5DA8;background:var(--bg-hl-info);}
+.elem-item.n-regular{border-color:#E6A817;background:var(--bg-hl-warn);}
+.elem-item.n-insuficiente,.elem-item.n-ausente,.elem-item.n-copiada{border-color:#E53E3E;background:var(--bg-fb-err);}
+.elem-item.n-produtivo{border-color:#0E9E6E;background:var(--bg-hl-ok);}
+.elem-item.n-decorativo{border-color:#E6A817;background:var(--bg-hl-warn);}
+.elem-item.n-vago,.elem-item.n-vaga{border-color:#E6A817;background:var(--bg-hl-warn);}
+.elem-item.n-especifico,.elem-item.n-especifica,.elem-item.n-detalhado{border-color:#0E9E6E;background:var(--bg-hl-ok);}
+.elem-item.n-generico{border-color:#E6A817;background:var(--bg-hl-warn);}
+.elem-badge.n-especifico,.elem-badge.n-especifica,.elem-badge.n-detalhado{background:#0E9E6E;}
+.elem-badge.n-generico{background:#E6A817;}
+.elem-header{display:flex;align-items:center;gap:8px;margin-bottom:5px;flex-wrap:wrap;}
+.elem-icon{font-size:17px;flex-shrink:0;}
+.elem-name{font-weight:700;font-size:var(--fz-sm);color:var(--txt);flex:1;}
+.elem-badge{font-size:var(--fz-cap);font-weight:700;padding:2px 9px;border-radius:100px;color:#fff;white-space:nowrap;}
+.elem-badge.n-excelente,.elem-badge.n-produtivo,.elem-badge.n-presente,.elem-badge.n-especifico,.elem-badge.n-específico{background:#0E9E6E;}
+.elem-badge.n-bom{background:#2B5DA8;}
+.elem-badge.n-regular,.elem-badge.n-decorativo,.elem-badge.n-vago,.elem-badge.n-vaga{background:#E6A817;}
+.elem-badge.n-insuficiente,.elem-badge.n-ausente,.elem-badge.n-copiada{background:#E53E3E;}
+.elem-feedback{font-size:var(--fz-cap);color:var(--txt-sec);line-height:1.6;margin:0;}
+.ch-nivel-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;font-family:'Outfit',sans-serif;font-weight:700;font-size:var(--fz-sm);margin-bottom:14px;}
+.ch-nivel-badge.n-excelente{background:var(--bg-hl-ok);color:#0E9E6E;border:2px solid #0E9E6E;}
+.ch-nivel-badge.n-bom{background:var(--bg-hl-info);color:#2B5DA8;border:2px solid #2B5DA8;}
+.ch-nivel-badge.n-regular{background:var(--bg-hl-warn);color:#E6A817;border:2px solid #E6A817;}
+.ch-nivel-badge.n-insuficiente{background:var(--bg-fb-err);color:#E53E3E;border:2px solid #E53E3E;}
+/* ═══ TEMA POR CAPÍTULO ═══ */
+.chapter-theme-wrap{margin-bottom:14px;}
+.chapter-theme-wrap label{display:block;font-size:var(--fz-sm);font-weight:600;color:var(--txt);margin-bottom:6px;font-family:'Outfit',sans-serif;}
+.chapter-theme-input{width:100%;padding:11px 15px;border:2px solid var(--bdr-card);border-radius:var(--radius-sm);background:var(--bg-card);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:var(--fz-body);transition:border-color .2s,background .3s,color .3s;}
+.chapter-theme-input:focus{border-color:var(--clr-primary);outline:none;}
+.chapter-theme-input::placeholder{color:var(--txt-muted);font-style:italic;}
 [vw].enabled{position:fixed!important;bottom:80px!important;right:0!important;z-index:8999!important;}
 [vw-access-button].active{z-index:8999!important;}
 /* ═══ RESPONSIVO ═══ */
@@ -503,15 +538,16 @@ figure.video-placeholder figcaption{z-index:1;}
     <p class="ch-intro">Como contextualizar o tema, formular uma tese sólida e abrir a redação com a autoridade que convence o corretor desde a primeira linha.</p>
   </header>
 
-  <figure class="video-placeholder" role="img" aria-label="Vídeo do professor: Como escrever a introdução perfeita para o ENEM. Duração estimada: 6 min.">
-    <div class="vid-badge" aria-hidden="true">▶ Vídeo · 6 min</div>
-    <div class="vid-play" aria-hidden="true">▶</div>
-    <figcaption>
-      <p class="vid-title">Como Escrever a Introdução Perfeita para o ENEM</p>
-      <p class="vid-desc">O professor analisa exemplos reais de introduções nota 200 e nota 0 — veja a diferença lado a lado.</p>
-      <p class="vid-note"><em>Disponível na plataforma do curso</em></p>
-    </figcaption>
-  </figure>
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/E69p8ihVKiM?rel=0&modestbranding=1&cc_load_policy=1"
+      title="Capítulo 1 – Como Escrever a Introdução Perfeita para o ENEM"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+      aria-label="Vídeo: Capítulo 1 – Como Escrever a Introdução Perfeita para o ENEM">
+    </iframe>
+  </div>
 
   <!-- TEORIA -->
   <div class="card">
@@ -576,19 +612,20 @@ figure.video-placeholder figcaption{z-index:1;}
          <strong>Tese forte:</strong> aponta duas causas específicas (falha na fiscalização + reprodução cultural), três agentes de solução (Estado, escolas, mídia) e já orienta os dois parágrafos de desenvolvimento. Isso vale pontos em C2 e C3.</p>
     </aside>
 
-    <h2>Introdução Modelo – Nota 200</h2>
-    <figure class="example-box example-box--good" aria-label="Exemplo completo de introdução modelo nota 200 sobre saúde mental no trabalho">
-      <figcaption class="ex-label ex-label--good">📝 Introdução Modelo – Tema: Saúde Mental no Trabalho</figcaption>
-      <p class="ex-text">"Em 2022, a Organização Mundial da Saúde classificou o burnout como doença ocupacional, reconhecendo o esgotamento profissional como um problema de saúde pública de dimensões globais. No Brasil, esse cenário é agravado por relações de trabalho cada vez mais precarizadas: a Reforma Trabalhista de 2017 flexibilizou jornadas e fragilizou vínculos empregatícios, expondo trabalhadores a condições que potencializam o adoecimento psíquico. Nesse contexto, garantir a saúde mental dos trabalhadores exige não apenas iniciativas individuais, mas políticas públicas estruturadas e uma revisão profunda das práticas corporativas brasileiras."</p>
+    <h2>Introdução Modelo – Nível Excelente</h2>
+    <p>Teste você mesmo: copie este texto no campo de prática abaixo e clique em "Analisar com IA" para ver a avaliação.</p>
+    <figure class="example-box example-box--good" aria-label="Exemplo de introdução nível excelente sobre saúde mental dos trabalhadores">
+      <figcaption class="ex-label ex-label--good">📝 Introdução Modelo – Tema: Saúde Mental dos Trabalhadores</figcaption>
+      <p class="ex-text">"Em 1948, a Organização Mundial da Saúde (OMS) definiu saúde como um estado completo de bem-estar físico, mental e social — e não apenas a ausência de doenças. Paradoxalmente, mais de sete décadas depois, a mesma organização reconheceu, em 2022, o burnout como doença ocupacional, evidenciando que as condições de trabalho contemporâneas contradizem os próprios fundamentos do conceito de saúde que ela ajudou a construir. No Brasil, esse paradoxo é agravado pela Reforma Trabalhista de 2017, que flexibilizou jornadas, ampliou contratos intermitentes e fragilizou vínculos empregatícios — transformações que, segundo relatório da Fundação Oswaldo Cruz (Fiocruz), impulsionaram o crescimento de 38% nos afastamentos por transtornos mentais entre 2019 e 2023. Diante desse cenário, garantir a saúde mental dos trabalhadores brasileiros exige que o Estado estruture políticas públicas integradas que intervenham nas causas sistêmicas do adoecimento ocupacional, e não apenas em seus efeitos individuais."</p>
     </figure>
 
     <div class="tbl-wrap">
       <table aria-label="Análise anatômica da introdução modelo, trecho por trecho">
-        <thead><tr><th scope="col">Trecho da introdução</th><th scope="col">Função</th><th scope="col">Competência</th></tr></thead>
+        <thead><tr><th scope="col">Trecho</th><th scope="col">Elemento</th><th scope="col">Por que funciona</th></tr></thead>
         <tbody>
-          <tr><td>"Em 2022, a OMS classificou o burnout como doença ocupacional..."</td><td>Contextualização com dado recente e fonte verificável (repertório produtivo)</td><td>C2</td></tr>
-          <tr><td>"No Brasil, esse cenário é agravado pela Reforma Trabalhista..."</td><td>Contextualização nacional — aprofunda e conecta ao problema central</td><td>C3</td></tr>
-          <tr><td>"Nesse contexto, garantir a saúde mental exige políticas públicas..."</td><td>Tese — ponto de vista específico, afirmativo e defensável; orienta os desenvolvimentos</td><td>C3</td></tr>
+          <tr><td>"Em 2022, a OMS reconheceu o burnout como doença ocupacional..."</td><td>Contextualização principal</td><td>Dado recente + fonte verificável + relevância global → repertório produtivo</td></tr>
+          <tr><td>"No Brasil, esse cenário é intensificado... 38% entre 2019 e 2023..."</td><td>Contextualização nacional + repertório</td><td>Dado da Previdência Social conectado diretamente ao argumento da tese</td></tr>
+          <tr><td>"Nesse contexto, reverter o avanço... exige que o Estado..."</td><td>Tese</td><td>Específica (cita o Estado), afirmativa, defensável e orienta os desenvolvimentos</td></tr>
         </tbody>
       </table>
     </div>
@@ -635,22 +672,22 @@ figure.video-placeholder figcaption{z-index:1;}
     </aside>
 
     <div class="write-area">
+      <div class="chapter-theme-wrap">
+        <label for="w1-theme">Tema da sua introdução:</label>
+        <input type="text" id="w1-theme" class="chapter-theme-input"
+               placeholder="Ex: Desafios para a garantia da saúde mental dos trabalhadores no Brasil"
+               aria-label="Informe o tema antes de escrever — a IA usará para contextualizar a análise">
+      </div>
       <label for="w1">Sua Introdução:</label>
 
       <!-- CONTROLES DE VOZ DUA -->
-      <div class="voice-controls" role="group" aria-label="Ferramentas de voz para o campo de texto da introdução">
-        <p class="voice-controls-label" aria-hidden="true">🎙️ Ferramentas de Voz (DUA)</p>
+      <div class="voice-controls" role="group" aria-label="Entrada por voz para introdução">
+        <p class="voice-controls-label" aria-hidden="true">🎙️ Entrada por Voz</p>
         <button class="q-btn q-btn--mic" id="mic-w1"
                 onclick="toggleMic('w1','mic-w1')"
                 aria-label="Ativar microfone — o texto falado será adicionado ao final do campo"
                 aria-pressed="false">
           🎤 Iniciar Microfone
-        </button>
-        <button class="q-btn q-btn--speak" id="speak-w1"
-                onclick="speakText('w1','speak-w1')"
-                aria-label="Ouvir o texto do campo em voz alta para revisão"
-                aria-pressed="false">
-          🔊 Ouvir Texto
         </button>
       </div>
 
@@ -661,7 +698,14 @@ figure.video-placeholder figcaption{z-index:1;}
         aria-describedby="wc1"></textarea>
       <div class="write-bar">
         <span class="wc" id="wc1" aria-live="polite" aria-label="Contagem de palavras">0 palavras</span>
-        <button class="q-btn q-btn--primary" onclick="checkW('w1','wf1','intro')" aria-label="Enviar introdução para análise pela IA com critérios INEP">🤖 Analisar Introdução com IA</button>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+          <button class="q-btn q-btn--speak" id="speak-w1"
+                  onclick="speakText('w1','speak-w1')"
+                  aria-label="Ouvir texto em voz alta antes de enviar à IA"
+                  aria-pressed="false">🔊 Ouvir Texto</button>
+          <button class="q-btn q-btn--primary" onclick="checkW('w1','wf1','intro')" aria-label="Enviar introdução para análise pela IA com critérios INEP">🤖 Analisar Introdução com IA</button>
+      
+        </div>
       </div>
       <div class="write-feedback" id="wf1" role="alert" aria-live="assertive" aria-atomic="true"></div>
     </div>
@@ -681,15 +725,16 @@ figure.video-placeholder figcaption{z-index:1;}
     <p class="ch-intro">Como construir argumentos sólidos com repertório produtivo, encadear causa e consequência, e usar os conectivos certos para pontuar em C2, C3 e C4.</p>
   </header>
 
-  <figure class="video-placeholder" role="img" aria-label="Vídeo do professor: Como usar repertório no desenvolvimento do ENEM. Duração estimada: 8 min.">
-    <div class="vid-badge" aria-hidden="true">▶ Vídeo · 8 min</div>
-    <div class="vid-play" aria-hidden="true">▶</div>
-    <figcaption>
-      <p class="vid-title">Repertório Produtivo e Desenvolvimento no ENEM</p>
-      <p class="vid-desc">O professor analisa parágrafos reais de redações nota 200 e identifica por que o repertório funcionou em cada caso — e quando ele prejudica.</p>
-      <p class="vid-note"><em>Disponível na plataforma do curso</em></p>
-    </figcaption>
-  </figure>
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/yPYarL2mdAE?rel=0&modestbranding=1&cc_load_policy=1"
+      title="Capítulo 2 – Repertório Produtivo e Desenvolvimento no ENEM"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+      aria-label="Vídeo: Capítulo 2 – Repertório Produtivo e Desenvolvimento no ENEM">
+    </iframe>
+  </div>
 
   <div class="card">
     <h2>O que é Repertório Sociocultural?</h2>
@@ -747,12 +792,13 @@ figure.video-placeholder figcaption{z-index:1;}
     </aside>
 
     <figure class="example-box example-box--bad" aria-label="Exemplo de desenvolvimento fraco sem análise causa-efeito">
-      <figcaption class="ex-label ex-label--bad">❌ Desenvolvimento Fraco – repertório sem análise</figcaption>
-      <p class="ex-text">"A saúde mental é um problema sério no Brasil. Segundo a OMS, o burnout foi classificado como doença. A Reforma Trabalhista também mudou muita coisa no trabalho. Por isso, o governo precisa agir."</p>
+      <figcaption class="ex-label ex-label--bad">❌ Desenvolvimento Fraco – repertório decorativo, sem análise</figcaption>
+      <p class="ex-text">"A saúde mental é um problema sério no Brasil. Segundo a OMS, o burnout foi classificado como doença. A Reforma Trabalhista também mudou muita coisa no trabalho. Por isso, o governo precisa agir para resolver essa situação que afeta muitas pessoas."</p>
     </figure>
-    <figure class="example-box example-box--good" aria-label="Exemplo de desenvolvimento forte com repertório produtivo e análise">
-      <figcaption class="ex-label ex-label--good">✅ Desenvolvimento Forte – repertório produtivo + causa-efeito</figcaption>
-      <p class="ex-text">"A precarização das relações de trabalho é a principal causa do adoecimento mental dos trabalhadores brasileiros. Segundo a Organização Mundial da Saúde, a depressão e a ansiedade custam à economia global cerca de 1 trilhão de dólares ao ano em perda de produtividade. No contexto nacional, a Reforma Trabalhista de 2017 ampliou as formas de contratação precária e flexibilizou jornadas — mudanças que, conforme pesquisas da Fiocruz, intensificaram o sofrimento psíquico em grupos de trabalhadores mais vulneráveis. Assim, fica evidente que a saúde mental não pode ser tratada como responsabilidade exclusivamente individual: trata-se de um problema estrutural que exige ação coletiva do Estado e das empresas."</p>
+    <p>Teste você mesmo: copie o exemplo abaixo no campo de prática e clique em "Analisar com IA".</p>
+    <figure class="example-box example-box--good" aria-label="Exemplo de desenvolvimento nível excelente com repertório produtivo e análise">
+      <figcaption class="ex-label ex-label--good">✅ Desenvolvimento Modelo – Nível Excelente</figcaption>
+      <p class="ex-text">"A precarização das relações de trabalho, intensificada pelas mudanças na legislação trabalhista brasileira, constitui o principal vetor estrutural do adoecimento mental dos trabalhadores. Segundo pesquisa da Fundação Oswaldo Cruz (Fiocruz), publicada em 2023, cerca de 33% dos trabalhadores em regime de contratação flexível apresentam sintomas clínicos de ansiedade — índice que supera em 60% o registrado entre empregados com contratos estáveis. Esse dado evidencia que a insegurança profissional, ao corroer a capacidade do trabalhador de planejar o futuro — como analisa Richard Sennett em A Corrosão do Caráter (1998) —, produz um sofrimento psíquico difuso e crônico que nenhuma iniciativa individual é capaz de resolver. Portanto, ao tratar a flexibilização trabalhista como política de desenvolvimento econômico, o Estado brasileiro negligencia suas consequências diretas sobre a saúde mental da população produtiva."</p>
     </figure>
 
     <h2>Desenvolvimento 2: Consequência e Aprofundamento</h2>
@@ -821,6 +867,12 @@ figure.video-placeholder figcaption{z-index:1;}
     <p>Escreva um ou dois parágrafos de desenvolvimento (100–160 palavras no total). Inclua tópico frasal, repertório produtivo, análise causa-efeito e fechamento com conectivo. Use o microfone para ditar se preferir, e ouça o texto antes de enviar à IA. A análise focará em: <strong>qualidade do argumento</strong>, <strong>produtividade do repertório</strong> e <strong>coesão</strong>.</p>
 
     <div class="write-area">
+      <div class="chapter-theme-wrap">
+        <label for="w2-theme">Tema do seu desenvolvimento:</label>
+        <input type="text" id="w2-theme" class="chapter-theme-input"
+               placeholder="Ex: Desafios para a garantia da saúde mental dos trabalhadores no Brasil"
+               aria-label="Informe o tema — a IA usa para contextualizar a análise do desenvolvimento">
+      </div>
       <label for="w2">Seu Desenvolvimento (um ou dois parágrafos):</label>
 
       <div class="voice-controls" role="group" aria-label="Ferramentas de voz para o campo de texto do desenvolvimento">
@@ -831,12 +883,6 @@ figure.video-placeholder figcaption{z-index:1;}
                 aria-pressed="false">
           🎤 Iniciar Microfone
         </button>
-        <button class="q-btn q-btn--speak" id="speak-w2"
-                onclick="speakText('w2','speak-w2')"
-                aria-label="Ouvir o texto do campo em voz alta para revisão"
-                aria-pressed="false">
-          🔊 Ouvir Texto
-        </button>
       </div>
 
       <textarea id="w2" class="write-ta" rows="10"
@@ -846,7 +892,14 @@ figure.video-placeholder figcaption{z-index:1;}
         aria-describedby="wc2"></textarea>
       <div class="write-bar">
         <span class="wc" id="wc2" aria-live="polite" aria-label="Contagem de palavras">0 palavras</span>
-        <button class="q-btn q-btn--primary" onclick="checkW('w2','wf2','dev')" aria-label="Enviar desenvolvimento para análise pela IA com critérios INEP">🤖 Analisar Desenvolvimento com IA</button>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+          <button class="q-btn q-btn--speak" id="speak-w2"
+                  onclick="speakText('w2','speak-w2')"
+                  aria-label="Ouvir texto em voz alta antes de enviar à IA"
+                  aria-pressed="false">🔊 Ouvir Texto</button>
+          <button class="q-btn q-btn--primary" onclick="checkW('w2','wf2','dev')" aria-label="Enviar desenvolvimento para análise pela IA com critérios INEP">🤖 Analisar Desenvolvimento com IA</button>
+      
+        </div>
       </div>
       <div class="write-feedback" id="wf2" role="alert" aria-live="assertive" aria-atomic="true"></div>
     </div>
@@ -866,15 +919,16 @@ figure.video-placeholder figcaption{z-index:1;}
     <p class="ch-intro">Como fechar a redação de forma coesa, retomar a tese sem repetição e elaborar uma proposta de intervenção completa com os quatro elementos exigidos pelo INEP para a nota 200 na C5.</p>
   </header>
 
-  <figure class="video-placeholder" role="img" aria-label="Vídeo do professor: Como escrever a conclusão e a proposta de intervenção. Duração estimada: 7 min.">
-    <div class="vid-badge" aria-hidden="true">▶ Vídeo · 7 min</div>
-    <div class="vid-play" aria-hidden="true">▶</div>
-    <figcaption>
-      <p class="vid-title">Conclusão e Proposta de Intervenção — Nota 200 na C5</p>
-      <p class="vid-desc">O professor analisa propostas que tiraram nota 0 e nota 200 e mostra exatamente o que o INEP exige para cada pontuação.</p>
-      <p class="vid-note"><em>Disponível na plataforma do curso</em></p>
-    </figcaption>
-  </figure>
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/GDYKz_O9wmg?rel=0&modestbranding=1&cc_load_policy=1"
+      title="Capítulo 3 – Conclusão e Proposta de Intervenção Nota 200"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+      aria-label="Vídeo: Capítulo 3 – Conclusão e Proposta de Intervenção Nota 200">
+    </iframe>
+  </div>
 
   <div class="card">
     <h2>O que é a Conclusão?</h2>
@@ -927,13 +981,14 @@ figure.video-placeholder figcaption{z-index:1;}
     </div>
 
     <h2>Proposta Vaga vs. Proposta Completa</h2>
-    <figure class="example-box example-box--bad" aria-label="Exemplo de proposta de intervenção vaga, que recebe nota zero na C5">
-      <figcaption class="ex-label ex-label--bad">❌ Proposta Vaga – nota 0 na C5</figcaption>
-      <p class="ex-text">"Portanto, é necessário que o governo tome providências urgentes para cuidar da saúde mental dos trabalhadores brasileiros, pois esse é um problema que afeta toda a sociedade e merece atenção das autoridades."</p>
+    <figure class="example-box example-box--bad" aria-label="Exemplo de proposta de intervenção vaga">
+      <figcaption class="ex-label ex-label--bad">❌ Proposta Vaga – 0 pontos na C5</figcaption>
+      <p class="ex-text">"Portanto, é necessário que o governo tome providências urgentes para cuidar da saúde mental dos trabalhadores brasileiros, pois esse é um problema que afeta toda a sociedade e merece atenção das autoridades competentes."</p>
     </figure>
-    <figure class="example-box example-box--good" aria-label="Exemplo de proposta de intervenção completa com os quatro elementos, que recebe nota máxima na C5">
-      <figcaption class="ex-label ex-label--good">✅ Proposta Completa – nota 200 na C5</figcaption>
-      <p class="ex-text">"Diante do exposto, faz-se urgente que o Ministério do Trabalho e Emprego, em parceria com o Conselho Federal de Psicologia, implemente um programa nacional de saúde mental corporativa, por meio da obrigatoriedade legal de suporte psicológico em empresas com mais de 50 funcionários e da criação de espaços de escuta ativa nos ambientes de trabalho, a fim de reduzir os índices de afastamento por transtornos mentais e assegurar condições dignas de trabalho para todos os brasileiros."</p>
+    <p>Teste você mesmo: copie a conclusão modelo abaixo no campo de prática e clique em "Analisar com IA".</p>
+    <figure class="example-box example-box--good" aria-label="Exemplo de conclusão nível excelente com proposta completa">
+      <figcaption class="ex-label ex-label--good">✅ Conclusão Modelo – Nível Excelente (4 elementos presentes)</figcaption>
+      <p class="ex-text">"Diante do exposto, o adoecimento mental dos trabalhadores brasileiros não resulta de fragilidades individuais, mas de um modelo produtivo que sistematicamente subordina a dignidade humana à lógica da produtividade. Para reverter esse quadro, cabe ao Ministério do Trabalho e Emprego, em articulação com o Ministério da Saúde e com o Conselho Federal de Psicologia [AGENTE], implementar o Programa Nacional de Saúde Mental no Trabalho [AÇÃO], por meio da aprovação de legislação específica [MEIO] que regulamente a obrigatoriedade de, ao menos, um psicólogo licenciado para cada cem trabalhadores e de oito horas mensais de acompanhamento psicológico individual e gratuito em empresas com mais de cinquenta empregados — além da criação de comissões bipartites de saúde mental, compostas por representantes dos trabalhadores e da empresa, com atribuição de elaborar planos anuais de prevenção ao adoecimento ocupacional [DETALHAMENTO DO MEIO] —, a fim de reduzir os índices de afastamento por transtornos psíquicos, assegurar condições laborais compatíveis com a dignidade humana prevista na Constituição Federal de 1988 e construir um ambiente de trabalho que gere desenvolvimento sem adoecer os sujeitos que o sustentam [FINALIDADE]."</p>
     </figure>
 
     <aside class="hl-box hl-box--ok" aria-label="Análise dos quatro elementos na proposta completa">
@@ -987,21 +1042,21 @@ figure.video-placeholder figcaption{z-index:1;}
     <p>Escreva a conclusão de uma redação (5–7 linhas). Retome a tese e apresente a proposta com agente, ação, modo e finalidade. Use o microfone para ditar se preferir, e ouça o texto antes de enviar à IA. A análise focará especificamente nos <strong>4 elementos da C5</strong> e na articulação com o problema central.</p>
 
     <div class="write-area">
+      <div class="chapter-theme-wrap">
+        <label for="w3-theme">Tema da sua conclusão:</label>
+        <input type="text" id="w3-theme" class="chapter-theme-input"
+               placeholder="Ex: Desafios para a garantia da saúde mental dos trabalhadores no Brasil"
+               aria-label="Informe o tema — a IA usa para contextualizar a análise da conclusão">
+      </div>
       <label for="w3">Sua Conclusão com Proposta de Intervenção:</label>
 
-      <div class="voice-controls" role="group" aria-label="Ferramentas de voz para o campo de texto da conclusão">
-        <p class="voice-controls-label" aria-hidden="true">🎙️ Ferramentas de Voz (DUA)</p>
+      <div class="voice-controls" role="group" aria-label="Entrada por voz para conclusão">
+        <p class="voice-controls-label" aria-hidden="true">🎙️ Entrada por Voz</p>
         <button class="q-btn q-btn--mic" id="mic-w3"
                 onclick="toggleMic('w3','mic-w3')"
                 aria-label="Ativar microfone — o texto falado será adicionado ao final do campo"
                 aria-pressed="false">
           🎤 Iniciar Microfone
-        </button>
-        <button class="q-btn q-btn--speak" id="speak-w3"
-                onclick="speakText('w3','speak-w3')"
-                aria-label="Ouvir o texto do campo em voz alta para revisão"
-                aria-pressed="false">
-          🔊 Ouvir Texto
         </button>
       </div>
 
@@ -1012,7 +1067,14 @@ figure.video-placeholder figcaption{z-index:1;}
         aria-describedby="wc3"></textarea>
       <div class="write-bar">
         <span class="wc" id="wc3" aria-live="polite" aria-label="Contagem de palavras">0 palavras</span>
-        <button class="q-btn q-btn--primary" onclick="checkW('w3','wf3','conc')" aria-label="Enviar conclusão para análise pela IA com critérios INEP">🤖 Analisar Conclusão com IA</button>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+          <button class="q-btn q-btn--speak" id="speak-w3"
+                  onclick="speakText('w3','speak-w3')"
+                  aria-label="Ouvir texto em voz alta antes de enviar à IA"
+                  aria-pressed="false">🔊 Ouvir Texto</button>
+          <button class="q-btn q-btn--primary" onclick="checkW('w3','wf3','conc')" aria-label="Enviar conclusão para análise pela IA com critérios INEP">🤖 Analisar Conclusão com IA</button>
+      
+        </div>
       </div>
       <div class="write-feedback" id="wf3" role="alert" aria-live="assertive" aria-atomic="true"></div>
     </div>
@@ -1080,12 +1142,6 @@ figure.video-placeholder figcaption{z-index:1;}
                 aria-pressed="false">
           🎤 Iniciar Microfone
         </button>
-        <button class="q-btn q-btn--speak" id="speak-wfull"
-                onclick="speakText('wfull','speak-wfull')"
-                aria-label="Ouvir toda a redação em voz alta para revisão final"
-                aria-pressed="false">
-          🔊 Ouvir Redação Completa
-        </button>
       </div>
 
       <textarea id="wfull" class="write-ta large" rows="18"
@@ -1094,8 +1150,15 @@ figure.video-placeholder figcaption{z-index:1;}
         oninput="updWcFull('wfull','wc-full')"
         aria-describedby="wc-full"></textarea>
       <div class="write-bar">
-        <span class="wc" id="wc-full" aria-live="polite" aria-label="Contagem de palavras e linhas estimadas">0 palavras</span>
-        <button class="q-btn q-btn--primary" onclick="checkW('wfull','wffull','full')" aria-label="Enviar redação completa para análise integral pela IA com escala oficial ENEM">🤖 Analisar Redação Completa com IA</button>
+        <span class="wc" id="wc-full" aria-live="polite" aria-label="Contagem de palavras">0 palavras</span>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+          <button class="q-btn q-btn--speak" id="speak-wfull"
+                  onclick="speakText('wfull','speak-wfull')"
+                  aria-label="Ouvir texto em voz alta antes de enviar à IA"
+                  aria-pressed="false">🔊 Ouvir Texto</button>
+          <button class="q-btn q-btn--primary" onclick="checkW('wfull','wffull','full')" aria-label="Enviar redação completa para análise integral pela IA com escala oficial ENEM">🤖 Analisar Redação Completa com IA</button>
+      
+        </div>
       </div>
       <div class="write-feedback" id="wffull" role="alert" aria-live="assertive" aria-atomic="true"></div>
     </div>
@@ -1442,6 +1505,42 @@ function showMicMsg(btn,btnId,label,html,resetDelay){
 }
 
 /* ─────────────────────────────────────────────────────────────
+   addPunctuation — converte comandos de voz em pt-BR para símbolos
+   O usuário pode dizer: "vírgula", "ponto", "ponto e vírgula",
+   "dois pontos", "ponto de exclamação", "ponto de interrogação",
+   "nova linha" / "parágrafo", "abre parênteses", "fecha parênteses"
+   ───────────────────────────────────────────────────────────── */
+function addPunctuation(text){
+  var t=text
+    /* comandos compostos primeiro (antes dos simples para evitar conflito) */
+    .replace(/ponto e vírgula/gi,';')
+    .replace(/ponto e virgula/gi,';')
+    .replace(/ponto de exclamação/gi,'!')
+    .replace(/ponto de exclamacao/gi,'!')
+    .replace(/ponto de interrogação/gi,'?')
+    .replace(/ponto de interrogacao/gi,'?')
+    .replace(/abre parênteses/gi,'(')
+    .replace(/abre parenteses/gi,'(')
+    .replace(/fecha parênteses/gi,')')
+    .replace(/fecha parenteses/gi,')')
+    .replace(/abre aspas/gi,'“')
+    .replace(/fecha aspas/gi,'”')
+    .replace(/dois pontos/gi,':')
+    .replace(/nova linha/gi,'\n')
+    .replace(/parágrafo/gi,'\n')
+    .replace(/paragrafo/gi,'\n')
+    /* simples por último */
+    .replace(/vírgula/gi,',')
+    .replace(/virgula/gi,',')
+    .replace(/ponto/gi,'.');
+  /* Capitalizar após pontuação de final de frase */
+  t=t.replace(/([.!?]\s+)([a-záàãâéêíóôõúç])/gi,function(m,p1,p2){
+    return p1+p2.toUpperCase();
+  });
+  return t;
+}
+
+/* ─────────────────────────────────────────────────────────────
    DUA – MICROFONE (Web Speech API / window.SpeechRecognition)
    • Texto falado SEMPRE adicionado ao FINAL do textarea
    • Espaço automático antes da nova transcrição se já há conteúdo
@@ -1542,9 +1641,16 @@ function startRecognition(btn,btnId,ta,SR){
       if(event.results[i].isFinal){final+=event.results[i][0].transcript;}
     }
     if(final.trim()){
+      /* Processar pontuação falada em pt-BR */
+      var proc=addPunctuation(final.trim());
       var existing=ta.value;
       /* COMPORTAMENTO CRÍTICO: adicionar ao FINAL, com espaço se já há conteúdo */
-      ta.value=existing.trim()?(existing.trimEnd()+' '+final.trim()):final.trim();
+      var joined=existing.trim()?(existing.trimEnd()+' '+proc):proc;
+      /* Capitalizar primeiro caractere se campo estava vazio */
+      if(!existing.trim()&&joined.length>0){
+        joined=joined.charAt(0).toUpperCase()+joined.slice(1);
+      }
+      ta.value=joined;
       ta.dispatchEvent(new Event('input'));
       ta.scrollTop=ta.scrollHeight;
     }
@@ -1596,28 +1702,97 @@ function stopMicUI(btn){
 }
 
 /* ─────────────────────────────────────────────────────────────
-   DUA – LEITURA EM VOZ ALTA (window.speechSynthesis – pt-BR)
-   • Lê exatamente o que está escrito no textarea
-   • Permite que o aluno valide o conteúdo antes de enviar à IA
-   • Botão alterna: "🔊 Ouvir Texto" ↔ "⏹ Parar Leitura"
+   DUA – LEITURA EM VOZ ALTA — versão melhorada
+   • Quebra o texto em frases para evitar o bug de corte do Chrome
+   • Pausa de 180ms entre frases — mais natural e compreensível
+   • Seleciona automaticamente a melhor voz pt-BR disponível
+   • rate 0.83 + pitch 1.0 = dicção mais clara e menos robótica
    ───────────────────────────────────────────────────────────── */
+
+var _speakQueue=[];
+var _speakBtnEl=null;
+var _speakActive=false;
+
+function _pickVoice(){
+  var voices=window.speechSynthesis.getVoices();
+  if(!voices.length)return null;
+  var preferred=[
+    'Google português do Brasil','Google Portuguese (Brazil)',
+    'Microsoft Francisca','Microsoft Daniel','Luciana'
+  ];
+  for(var i=0;i<preferred.length;i++){
+    var found=voices.find(function(v){
+      return v.lang.startsWith('pt')&&v.name.indexOf(preferred[i])!==-1;
+    });
+    if(found)return found;
+  }
+  return voices.find(function(v){return v.lang==='pt-BR';})
+      || voices.find(function(v){return v.lang.startsWith('pt');})
+      || null;
+}
+
+function _splitSentences(text){
+  /* Divide em frases respeitando pontuação; máx. 180 chars por chunk */
+  var raw=text.replace(/([.!?;])\s+/g,'$1\n').split('\n');
+  var chunks=[];
+  raw.forEach(function(s){
+    s=s.trim();if(!s)return;
+    if(s.length<=180){chunks.push(s);return;}
+    /* Frase longa: divide nas vírgulas */
+    var parts=s.split(/,\s*/);
+    var buf='';
+    parts.forEach(function(p){
+      var sep=buf?', ':'';
+      if((buf+sep+p).length>180&&buf){chunks.push(buf);buf=p;}
+      else{buf+=sep+p;}
+    });
+    if(buf)chunks.push(buf);
+  });
+  return chunks.filter(function(c){return c.trim().length>0;});
+}
+
+function _speakNext(){
+  if(!_speakActive||!_speakQueue.length){
+    _stopSpeakBtn();return;
+  }
+  var chunk=_speakQueue.shift();
+  var utt=new SpeechSynthesisUtterance(chunk);
+  utt.lang='pt-BR';
+  utt.rate=0.83;
+  utt.pitch=1.0;
+  utt.volume=1;
+  var v=_pickVoice();
+  if(v)utt.voice=v;
+  utt.onend=function(){
+    if(_speakActive&&_speakQueue.length){
+      setTimeout(_speakNext,180);/* pausa natural entre frases */
+    }else{_stopSpeakBtn();}
+  };
+  utt.onerror=function(){_stopSpeakBtn();};
+  window.speechSynthesis.speak(utt);
+}
+
+function _stopSpeakBtn(){
+  _speakActive=false;_speakQueue=[];
+  if(_speakBtnEl){
+    _speakBtnEl.classList.remove('speaking');
+    _speakBtnEl.innerHTML='🔊 Ouvir Texto';
+    _speakBtnEl.setAttribute('aria-pressed','false');
+    _speakBtnEl.setAttribute('aria-label','Ouvir texto em voz alta antes de enviar à IA');
+  }
+}
+
 function speakText(taId,btnId){
   var ta=document.getElementById(taId),btn=document.getElementById(btnId);
   if(!ta)return;
-  var txt=ta.value.trim();
 
-  /* Se está falando → cancelar */
-  if(window.speechSynthesis&&window.speechSynthesis.speaking){
+  /* Se já está falando → parar */
+  if(_speakActive){
     window.speechSynthesis.cancel();
-    if(btn){
-      btn.classList.remove('speaking');
-      btn.innerHTML='🔊 Ouvir Texto';
-      btn.setAttribute('aria-pressed','false');
-      btn.setAttribute('aria-label','Ouvir o texto do campo em voz alta para revisão');
-    }
-    return;
+    _stopSpeakBtn();return;
   }
 
+  var txt=ta.value.trim();
   if(!txt){
     if(btn){
       var prev=btn.innerHTML;
@@ -1628,19 +1803,22 @@ function speakText(taId,btnId){
     return;
   }
   if(!('speechSynthesis' in window)){
-    if(btn){
-      btn.textContent='⚠️ Não suportado';
-      btn.disabled=true;
-      btn.setAttribute('aria-label','Síntese de voz não disponível. Use Google Chrome.');
-    }
+    if(btn){btn.textContent='⚠️ Não suportado';btn.disabled=true;}
     return;
   }
 
-  var utt=new SpeechSynthesisUtterance(txt);
-  utt.lang='pt-BR';
-  utt.rate=0.92;
-  utt.pitch=1;
-  utt.volume=1;
+  /* Carregar vozes se ainda não disponíveis */
+  if(window.speechSynthesis.getVoices().length===0){
+    window.speechSynthesis.onvoiceschanged=function(){
+      window.speechSynthesis.onvoiceschanged=null;
+      speakText(taId,btnId);
+    };
+    return;
+  }
+
+  _speakBtnEl=btn;
+  _speakActive=true;
+  _speakQueue=_splitSentences(txt);
 
   if(btn){
     btn.classList.add('speaking');
@@ -1649,19 +1827,8 @@ function speakText(taId,btnId){
     btn.setAttribute('aria-label','Clique para parar a leitura em voz alta');
   }
 
-  utt.onend=function(){
-    if(btn){
-      btn.classList.remove('speaking');
-      btn.innerHTML='🔊 Ouvir Texto';
-      btn.setAttribute('aria-pressed','false');
-      btn.setAttribute('aria-label','Ouvir o texto do campo em voz alta para revisão');
-    }
-  };
-  utt.onerror=function(){
-    if(btn){btn.classList.remove('speaking');btn.innerHTML='🔊 Ouvir Texto';btn.setAttribute('aria-pressed','false');}
-  };
-
-  window.speechSynthesis.speak(utt);
+  window.speechSynthesis.cancel();/* limpar fila anterior */
+  setTimeout(_speakNext,50);/* pequeno delay para garantir cancel() concluiu */
 }
 </script>
 
@@ -1671,374 +1838,391 @@ function speakText(taId,btnId){
    ctx: 'intro' | 'dev' | 'conc' | 'full'
    ───────────────────────────────────────────────────────────── */
 function buildPrompt(text,words,ctx){
-  /* Schema JSON de resposta esperada */
+
+  /* ── TEMA: cada capítulo tem seu próprio campo de tema ── */
+  var themeIds={intro:'w1-theme',dev:'w2-theme',conc:'w3-theme',full:'essay-theme'};
+  var themeEl=document.getElementById(themeIds[ctx]||'essay-theme');
+  var tema=(themeEl&&themeEl.value.trim())?themeEl.value.trim():'não informado';
+
+  /* ════════════════════════════════════════════════════════
+     CAPÍTULOS INDIVIDUAIS (intro / dev / conc)
+     Avaliação por ELEMENTOS ESTRUTURAIS — NÃO por competências
+     Schema diferente do da redação completa
+  ════════════════════════════════════════════════════════ */
+  if(ctx==='intro'||ctx==='dev'||ctx==='conc'){
+
+    var elemSchemas={
+      intro:[
+        '{"nome":"Contextualização","nivel":"Excelente|Bom|Regular|Insuficiente","feedback":"comente especificamente o gancho e a escolha do repertório"}',
+        '{"nome":"Tese","nivel":"Excelente|Bom|Regular|Ausente","feedback":"comente a especificidade, força e posicionamento da tese"}',
+        '{"nome":"Repertório Sociocultural","nivel":"Produtivo|Decorativo|Ausente","feedback":"comente se a referência sustenta o argumento ou apenas enfeita"}',
+        '{"nome":"Norma Culta","nivel":"Excelente|Bom|Regular|Insuficiente","feedback":"aponte desvios gramaticais, ortográficos ou de pontuação se houver"}',
+        '{"nome":"Coesão Interna","nivel":"Excelente|Bom|Regular|Insuficiente","feedback":"avalie a progressão lógica e articulação entre as frases"}'
+      ],
+      dev:[
+        '{"nome":"Tópico Frasal","nivel":"Excelente|Bom|Regular|Ausente","feedback":"avalie se o argumento principal está claro na abertura do parágrafo"}',
+        '{"nome":"Repertório Sociocultural","nivel":"Produtivo|Decorativo|Ausente","feedback":"avalie se a referência sustenta o argumento de forma produtiva"}',
+        '{"nome":"Argumentação Causa-Efeito","nivel":"Excelente|Bom|Regular|Insuficiente","feedback":"avalie a cadeia lógica causa-efeito e a profundidade do argumento"}',
+        '{"nome":"Coesão e Conectivos","nivel":"Excelente|Bom|Regular|Insuficiente","feedback":"cite os conectivos usados e avalie se são adequados e variados (causa, consequência, adição, oposição, referência)"}',
+        '{"nome":"Norma Culta","nivel":"Excelente|Bom|Regular|Insuficiente","feedback":"aponte desvios se houver"}'
+      ],
+      conc:[
+        '{"nome":"Retomada da Tese","nivel":"Excelente|Bom|Copiada|Ausente","feedback":"avalie se retoma sem copiar, com conectivo conclusivo (Em síntese, Diante do exposto, Portanto)"}',
+        '{"nome":"Agente da Proposta","nivel":"Específico|Vago|Ausente","feedback":"identifique o agente nomeado — deve ser órgão, ministério ou instituição específica"}',
+        '{"nome":"Ação da Proposta","nivel":"Específica|Vaga|Ausente","feedback":"avalie se há verbo de ação preciso com objeto claro (implementar programa X, criar lei Y)"}',
+        '{"nome":"Meio de Execução","nivel":"Específico|Vago|Ausente","feedback":"avalie se explica COMO a ação será executada (por meio de legislação, mediante campanha, via parceria)"}',
+        '{"nome":"Detalhamento do Meio","nivel":"Detalhado|Genérico|Ausente","feedback":"avalie se o meio é especificado com detalhes concretos (quem exatamente, quantos, como, quando) — este é o elemento que distingue uma proposta boa de uma excelente na cartilha ENEM 2025"}',
+        '{"nome":"Finalidade","nivel":"Presente|Vaga|Ausente","feedback":"verifique conectivo de finalidade (a fim de, com o objetivo de, de modo a) + objetivo específico da proposta"}',
+        '{"nome":"Norma Culta","nivel":"Excelente|Bom|Regular|Insuficiente","feedback":"aponte desvios se houver"}'
+      ]
+    };
+
+    var instrucoes={
+      intro:[
+        'Voce e um professor especialista em redacao do ENEM. O estudante escreveu a INTRODUCAO de uma',
+        ' redacao dissertativa-argumentativa.\\n\\n',
+        'TEMA INFORMADO: '+tema+'\\n\\n',
+        'Avalie EXCLUSIVAMENTE os elementos estruturais de uma introducao do ENEM listados abaixo.\\n',
+        'NAO avalie as 5 competencias do ENEM. NAO atribua pontuacao de 0 a 200.\\n',
+        'Avalie APENAS os 5 elementos e se cada um esta bem ou mal construido:\\n\\n',
+        '1. CONTEXTUALIZACAO: a abertura situa o leitor no tema com repertorio, dado ou perspectiva relevante?\\n',
+        '   Excelente = original, especifica, conectada ao tema, com repertorio verificavel\\n',
+        '   Bom = relevante mas poderia ser mais especifica ou aprofundada\\n',
+        '   Regular = muito generica (ex: "desde os primordios da humanidade") ou pouco conectada\\n',
+        '   Insuficiente = ausente ou completamente fora do tema\\n\\n',
+        '2. TESE: ha um ponto de vista claro, especifico e defensavel ao final do paragrafo?\\n',
+        '   Excelente = especifica, afirmativa, defensavel, orienta os desenvolvimentos\\n',
+        '   Bom = presente mas generica ou pouco especifica\\n',
+        '   Regular = muito vaga ou confusa\\n',
+        '   Ausente = nao ha tese identificavel\\n\\n',
+        '3. REPERTORIO SOCIOCULTURAL: se presente, e produtivo (conectado ao argumento) ou decorativo?\\n',
+        '   Produtivo = referencia verificavel diretamente conectada ao argumento\\n',
+        '   Decorativo = citado sem conexao clara com o ponto de vista\\n',
+        '   Ausente = nenhuma referencia sociocultural\\n\\n',
+        '4. NORMA CULTA: ha erros de gramatica, ortografia, pontuacao, regencia ou concordancia?\\n',
+        '   Excelente = sem desvios detectaveis\\n',
+        '   Bom = desvios minimos que nao prejudicam a leitura\\n',
+        '   Regular = desvios frequentes\\n',
+        '   Insuficiente = desvios graves e sistematicos\\n\\n',
+        '5. COESAO INTERNA: as frases do paragrafo tem progressao logica e se articulam bem entre si?\\n',
+        '   Excelente = progressao clara, conectivos adequados, sem repeticoes\\n',
+        '   Bom = boa coesao com pequenas falhas\\n',
+        '   Regular = rupturas logicas ou repeticoes\\n',
+        '   Insuficiente = paragrafo descosido ou contraditorio\\n\\n'
+      ].join(''),
+      dev:[
+        'Voce e um professor especialista em redacao do ENEM. O estudante escreveu o(s) paragrafo(s) de',
+        ' DESENVOLVIMENTO de uma redacao dissertativa-argumentativa.\\n\\n',
+        'TEMA INFORMADO: '+tema+'\\n\\n',
+        'Avalie EXCLUSIVAMENTE os elementos estruturais de um desenvolvimento do ENEM listados abaixo.\\n',
+        'NAO avalie as 5 competencias do ENEM. NAO atribua pontuacao de 0 a 200.\\n\\n',
+        '1. TOPICO FRASAL: a primeira frase apresenta o argumento principal de forma clara e especifica?\\n',
+        '   Excelente = argumento claro, especifico e diretamente ligado ao tema\\n',
+        '   Bom = presente mas poderia ser mais especifico\\n',
+        '   Regular = vago ou confundido com a contextualizacao\\n',
+        '   Ausente = nao ha topico frasal identificavel\\n\\n',
+        '2. REPERTORIO SOCIOCULTURAL: ha referencias verificaveis? Sao produtivas (sustentam o argumento)?\\n',
+        '   Produtivo = referencia diretamente conectada ao argumento, serve ao raciocinio\\n',
+        '   Decorativo = referencia citada sem conexao clara com o argumento\\n',
+        '   Ausente = nenhum repertorio sociocultural\\n\\n',
+        '3. ARGUMENTACAO CAUSA-EFEITO: o paragrafo explica o "por que" do argumento com profundidade?\\n',
+        '   Excelente = cadeia logica clara, causa e efeito bem articulados\\n',
+        '   Bom = logica presente mas com lacunas\\n',
+        '   Regular = argumentacao superficial ou circular\\n',
+        '   Insuficiente = sem argumentacao real\\n\\n',
+        '4. COESAO E CONECTIVOS: os conectivos usados sao adequados a funcao de cada trecho?\\n',
+        '   Excelente = conectivos variados e precisos (causa, consequencia, adicao, oposicao)\\n',
+        '   Bom = conectivos adequados mas pouco variados\\n',
+        '   Regular = conectivos inadequados ou ausentes em pontos criticos\\n',
+        '   Insuficiente = texto sem articulacao entre as ideias\\n\\n',
+        '5. NORMA CULTA: ha erros de gramatica, ortografia, pontuacao, regencia ou concordancia?\\n\\n'
+      ].join(''),
+      conc:[
+        'Voce e um professor especialista em redacao do ENEM. O estudante escreveu a CONCLUSAO de uma',
+        ' redacao dissertativa-argumentativa.\\n\\n',
+        'TEMA INFORMADO: '+tema+'\\n\\n',
+        'Avalie EXCLUSIVAMENTE os 7 elementos da conclusao segundo a Cartilha do Participante ENEM 2025.\\n',
+        'NAO avalie as 5 competencias do ENEM. NAO atribua pontuacao de 0 a 200.\\n\\n',
+        '1. RETOMADA DA TESE: a conclusao recupera o ponto de vista sem copiar literalmente a introducao?\\n',
+        '   Excelente = retomada com palavras diferentes + conectivo conclusivo (Em sintese, Diante do exposto, Portanto)\\n',
+        '   Bom = retomada presente mas muito proxima da introducao\\n',
+        '   Copiada = reproducao literal da tese da introducao\\n',
+        '   Ausente = nao ha retomada identificavel\\n\\n',
+        '2. AGENTE DA PROPOSTA: ha um agente especifico responsavel por executar a solucao?\\n',
+        '   Especifico = orgao, ministerio, instituicao ou ator claramente nomeado (ex: Ministerio da Educacao)\\n',
+        '   Vago = "o governo", "a sociedade", "as autoridades" — sem identificar quem exatamente\\n',
+        '   Ausente = nenhum agente mencionado\\n\\n',
+        '3. ACAO DA PROPOSTA: ha uma acao concreta e clara a ser executada?\\n',
+        '   Especifica = verbo de acao preciso + objeto claro (implementar programa X, criar lei Y, regulamentar Z)\\n',
+        '   Vaga = "combater o problema", "tomar providencias", "resolver a situacao"\\n',
+        '   Ausente = nao ha acao explicita\\n\\n',
+        '4. MEIO DE EXECUCAO: ha explicacao de COMO a acao sera executada?\\n',
+        '   Especifico = mecanismo concreto nomeado (por meio de legislacao especifica, mediante campanha nacional, via parceria com X)\\n',
+        '   Vago = "por meio de politicas publicas", "de diversas formas", "tomando medidas"\\n',
+        '   Ausente = nao ha meio\\n\\n',
+        '5. DETALHAMENTO DO MEIO (elemento exigido pela Cartilha ENEM 2025): o meio e especificado com dados concretos?\\n',
+        '   Este e o elemento que diferencia uma proposta boa de uma excelente.\\n',
+        '   Detalhado = o meio contem especificacoes concretas: o que exatamente, para quem, quantos, quando, como — ex: "obrigue empresas com mais de 50 funcionarios a contratar 1 psicologo por 100 trabalhadores"\\n',
+        '   Generico = o meio e mencionado mas sem detalhes concretos suficientes\\n',
+        '   Ausente = sem detalhamento do meio\\n\\n',
+        '6. FINALIDADE: ha conector de finalidade + objetivo claro da proposta?\\n',
+        '   Presente = "a fim de", "com o objetivo de", "de modo a", "para que" + objetivo especifico\\n',
+        '   Vaga = finalidade generica ou apenas subentendida\\n',
+        '   Ausente = nao ha finalidade explicita\\n\\n',
+        '7. NORMA CULTA: ha erros de gramatica, ortografia, pontuacao, regencia ou concordancia?\\n\\n'
+      ].join('')
+    };
+
+    var schemaChap=[
+      '{',
+      '"tema_identificado":"tema identificado no texto ou confirmacao do tema informado",',
+      '"resumo":"avaliacao geral honesta e motivadora em 1-2 frases",',
+      '"nivel":"Excelente|Bom|Regular|Insuficiente",',
+      '"elementos":['+elemSchemas[ctx].join(',')+'],',
+      '"pontos_fortes":["ponto positivo especifico 1 com exemplo do texto","ponto positivo 2"],',
+      '"melhorias":["melhoria prioritaria com exemplo concreto 1","melhoria 2","melhoria 3"]',
+      '}'
+    ].join('');
+
+    return instrucoes[ctx]+
+      'TEXTO DO ESTUDANTE ('+words+' palavras):\\n'+text+
+      '\\n\\nResponda SOMENTE com JSON valido e puro, sem markdown:\\n'+schemaChap;
+  }
+
+  /* ════════════════════════════════════════════════════════
+     REDACAO COMPLETA (full)
+     Avaliacao pelas 5 competencias oficiais ENEM — escala 0-200
+  ════════════════════════════════════════════════════════ */
   var schema=[
     '{',
-    '"resumo":"avaliacao honesta e motivadora em 1-2 frases",',
-    '"nivel":"Excelente|Bom|Regular|Insuficiente",',
+    '"resumo":"avaliacao honesta e motivadora em 1-2 frases","nivel":"Excelente|Bom|Regular|Insuficiente",',
     '"competencias":[',
-      '{"codigo":"C1","nome":"Norma Culta","pontos":160,"max":200,"feedback":"comentario especifico"},',
-      '{"codigo":"C2","nome":"Repertorio e Tese","pontos":160,"max":200,"feedback":"comentario especifico"},',
-      '{"codigo":"C3","nome":"Argumentacao","pontos":160,"max":200,"feedback":"comentario especifico"},',
-      '{"codigo":"C4","nome":"Coesao","pontos":120,"max":200,"feedback":"comentario especifico"},',
-      '{"codigo":"C5","nome":"Proposta","pontos":0,"max":200,"feedback":"avalie se presente e complete ou oriente como construir"}',
+    '{"codigo":"C1","nome":"Norma Culta","pontos":160,"max":200,"feedback":"comentario especifico"},',
+    '{"codigo":"C2","nome":"Repertorio e Tese","pontos":160,"max":200,"feedback":"comentario especifico"},',
+    '{"codigo":"C3","nome":"Argumentacao","pontos":160,"max":200,"feedback":"comentario especifico"},',
+    '{"codigo":"C4","nome":"Coesao","pontos":120,"max":200,"feedback":"comentario especifico"},',
+    '{"codigo":"C5","nome":"Proposta","pontos":0,"max":200,"feedback":"avalie os 4 elementos"}',
     '],',
-    '"pontos_fortes":["ponto positivo especifico 1","ponto positivo 2"],',
-    '"melhorias":["melhoria urgente com exemplo do texto 1","melhoria 2","melhoria 3"],',
+    '"pontos_fortes":["ponto 1","ponto 2"],',
+    '"melhorias":["melhoria 1","melhoria 2","melhoria 3"],',
     '"total_estimado":800',
     '}'
   ].join('');
 
-  /* Instruções por contexto */
-  var ctxMap={
-    intro:[
-      'TRECHO ANALISADO: apenas a INTRODUCAO de uma redacao dissertativa-argumentativa.\n\n',
-      'Foque especificamente em:\n',
-      '- Qualidade e originalidade da contextualizacao (evitou generalizacoes? usou repertorio?) (C2, C3)\n',
-      '- Clareza, especificidade e forca da tese (ela e defensavel e orienta a redacao?) (C3)\n',
-      '- Uso de repertorio sociocultural: e produtivo (conectado ao argumento) ou decorativo? (C2)\n',
-      '- Norma culta: gramatica, ortografia, pontuacao, regencia, concordancia (C1)\n',
-      '- Coesao e articulacao interna da introducao (C4)\n',
-      '- Na C5: informe que a proposta deve vir na conclusao e nao pontue este trecho em C5\n\n'
-    ].join(''),
-    dev:[
-      'TRECHO ANALISADO: paragrafo(s) de DESENVOLVIMENTO de uma redacao dissertativa-argumentativa.\n\n',
-      'Foque especificamente em:\n',
-      '- Topico frasal: o argumento principal e claro e especifico? (C3)\n',
-      '- Repertorio sociocultural: e verificavel, relevante e diretamente conectado ao argumento?\n',
-      '  E produtivo (sustenta o raciocinio) ou decorativo (citado so para impressionar)? (C2)\n',
-      '- Relacao causa-efeito: o paragrafo explica o "por que" do argumento com profundidade? (C3)\n',
-      '- Coesao: conectivos adequados a funcao (causa, consequencia, adicao, oposicao)? (C4)\n',
-      '- Norma culta (C1)\n',
-      '- Na C5: mencione se ha elementos de proposta ou nao, mas nao pontue aqui\n\n'
-    ].join(''),
-    conc:[
-      'TRECHO ANALISADO: a CONCLUSAO de uma redacao dissertativa-argumentativa.\n\n',
-      'Foque especificamente em (C5 e o foco PRINCIPAL):\n',
-      '- Retomada da tese: sem copiar literalmente a introducao? com conectivo conclusivo? (C3, C4)\n',
-      '- PROPOSTA DE INTERVENCAO: ha os 4 elementos obrigatorios?\n',
-      '  1. AGENTE especifico (nao "a sociedade" — quem exatamente?)\n',
-      '  2. ACAO concreta (nao so "combater" — o que especificamente?)\n',
-      '  3. MODO de execucao (como sera feito? via legislacao? programa? campanha?)\n',
-      '  4. FINALIDADE com conectivo ("a fim de", "com o objetivo de", "de modo a") (C5)\n',
-      '- Especificidade e viabilidade da proposta (e concreta ou generica?) (C5)\n',
-      '- Respeito aos Direitos Humanos: a proposta discrimina ou viola algum grupo? (C5)\n',
-      '- Articulacao da conclusao com o tema central da redacao (C4)\n',
-      '- Norma culta (C1)\n\n'
-    ].join(''),
-    full:[
-      'REDACAO COMPLETA para analise integral conforme Cartilha ENEM 2025 e criterios oficiais INEP.\n\n',
-      'Use OBRIGATORIAMENTE a escala oficial (multiplos de 40): 0, 40, 80, 120, 160 ou 200 por competencia.\n\n',
-      'DESCRITORES OFICIAIS:\n',
-      'C1: Modalidade escrita formal — gramatica, ortografia, acentuacao, pontuacao, regencia, concordancia\n',
-      'C2: Compreensao da proposta + repertorio sociocultural produtivo em apoio ao ponto de vista\n',
-      'C3: Selecao, relacao, organizacao e interpretacao de informacoes em defesa do ponto de vista\n',
-      'C4: Mecanismos linguisticos de argumentacao: coesao sequencial, referencial e articulacao entre paragrafos\n',
-      'C5: Proposta de intervencao com agente, acao, modo e finalidade, respeitando Direitos Humanos\n\n',
-      'VERIFICACOES OBRIGATORIAS de zeragem:\n',
-      '- Fuga total ao tema → C2=0, C3=0\n',
-      '- Texto com 7 linhas ou menos → nota 0 em todas as competencias\n',
-      '- Nao atendimento ao tipo dissertativo-argumentativo → C2=0\n',
-      '- Proposta que viola Direitos Humanos → C5=0 (pode zerar toda a redacao)\n',
-      '- Ausencia de proposta de intervencao → C5=0\n\n'
-    ].join('')
-  };
-
-  /* Capturar tema se estiver preenchido (para secao de redacao completa) */
-  var themeEl=document.getElementById('essay-theme');
-  var themeStr=(themeEl&&themeEl.value.trim())
-    ?'TEMA DA REDACAO: '+JSON.stringify(themeEl.value.trim())+'\n\n'
-    :'';
-
-  var instruct=ctxMap[ctx]||ctxMap.full;
-
   return [
     'Voce e um corretor especialista em redacao do ENEM com total dominio da Cartilha do Participante 2025',
-    ' e dos criterios oficiais do INEP. Seja didatico e especifico: cite trechos reais do texto do estudante',
-    ' no feedback para tornar a avaliacao concreta e acionavel. Use sempre linguagem motivadora.\n\n',
-    instruct,
-    themeStr,
-    'TEXTO DO ESTUDANTE ('+words+' palavras):\n',
-    text,
-    '\n\nResponda SOMENTE com JSON valido e puro, sem markdown, sem texto antes ou depois:\n',
-    schema
+    ' e dos criterios oficiais do INEP.\\n\\n',
+    'REDACAO COMPLETA para analise integral.\\n',
+    'Use OBRIGATORIAMENTE a escala oficial: 0, 40, 80, 120, 160 ou 200 pontos por competencia.\\n\\n',
+    'TEMA: '+tema+'\\n\\n',
+    'C1: Norma culta formal (gramatica, ortografia, pontuacao, regencia, concordancia)\\n',
+    'C2: Compreensao da proposta + repertorio sociocultural produtivo\\n',
+    'C3: Selecao, organizacao e argumentacao em defesa de um ponto de vista\\n',
+    'C4: Mecanismos linguisticos de coesao e articulacao\\n',
+    'C5: Proposta com agente, acao, modo e finalidade respeitando direitos humanos\\n\\n',
+    'Criterios de zeragem: fuga ao tema, texto <= 7 linhas, sem proposta, violacao de DH.\\n\\n',
+    'TEXTO ('+words+' palavras):\\n',text,
+    '\\n\\nJSON puro, sem markdown:\\n',schema
   ].join('');
 }
-
-/* ─────────────────────────────────────────────────────────────
-   ANÁLISE POR IA — fetch para API Anthropic
-   Prompt específico por parte (intro / dev / conc / full)
-   ───────────────────────────────────────────────────────────── */
-async function checkW(taId,fbId,ctx){
-  var ta=document.getElementById(taId),fb=document.getElementById(fbId);if(!ta||!fb)return;
-  var text=ta.value.trim();
-  var words=(text==='')?0:text.split(/\s+/).filter(Boolean).length;
-
-  if(words<25){
-    fb.className='write-feedback fb-warn';
-    fb.innerHTML='⚠️ <strong>Texto muito curto!</strong> Você escreveu apenas '+words+' palavras. '+
-      'Escreva ao menos 50 palavras para uma análise significativa. Use o microfone se preferir ditar.';
-    return;
-  }
-  if(!apiKey){
-    fb.className='write-feedback fb-warn';
-    fb.innerHTML='🔑 <strong>IA não configurada.</strong> Acesse "<strong>Recado do Professor</strong>" '+
-      'e insira sua chave da API Anthropic para ativar a correção.<br><br>'+
-      '<button class="q-btn q-btn--secondary" onclick="go(\'apres\')" style="margin-top:6px;">'+
-      'Ir para Configuração →</button>';
-    return;
-  }
-
-  /* Estado: carregando */
-  fb.className='write-feedback fb-load';
-  fb.innerHTML='<div class="fb-loading-inner">'+
-    '<div class="fb-spinner"></div>'+
-    '<p>🤖 Analisando com base nos critérios oficiais do INEP/ENEM 2025...</p>'+
-    '</div>';
-
-  try{
-    var res=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json',
-        'x-api-key':apiKey,
-        'anthropic-version':'2023-06-01',
-        'anthropic-dangerous-direct-browser-access':'true'
-      },
-      body:JSON.stringify({
-        model:'claude-sonnet-4-6',
-        max_tokens:6000,
-        messages:[{role:'user',content:buildPrompt(text,words,ctx)}]
-      })
-    });
-
-    if(!res.ok){
-      var errData=await res.json().catch(function(){return{};});
-      throw new Error((errData.error&&errData.error.message)||'HTTP '+res.status);
-    }
-
-    var data=await res.json();
-    var raw=data.content.map(function(c){return c.text||'';}).join('');
-    var clean=raw.replace(/```json|```/g,'').trim();
-    renderAI(fb,JSON.parse(clean),ctx);
-
-  }catch(err){
-    var msg=(err&&err.message)||'Erro desconhecido';
-    fb.className='write-feedback fb-warn';
-
-    /* 1. Bloqueio de rede / CSP / sandbox (TypeError = Failed to fetch)
-          Ocorre no preview do Claude, em file://, ou iframe sem permissão de rede externa.
-          NÃO é erro de chave — é erro de ambiente. */
-    var isNetworkBlock=(err instanceof TypeError)||
-                       msg.includes('Failed to fetch')||
-                       msg.includes('Load failed')||
-                       msg.includes('NetworkError')||
-                       msg.includes('fetch')||
-                       msg.includes('CORS')||
-                       msg.includes('blocked');
-
-    /* 2. Erro real de autenticação — resposta 401 com mensagem da API */
-    var isAuth=!isNetworkBlock&&(
-      msg.includes('401')||
-      msg.includes('api_key')||
-      (msg.toLowerCase().includes('invalid')&&msg.toLowerCase().includes('key'))
-    );
-
-    var isInIframe=(window.self!==window.top);
-
-    if(isNetworkBlock){
-      fb.innerHTML=[
-        '🌐 <strong>Requisição bloqueada pelo ambiente de execução.</strong><br>',
-        isInIframe
-          ? 'Este e-book está sendo visualizado em um <strong>iframe de preview</strong> que restringe chamadas a APIs externas. '
-          : 'O ambiente atual (file:// ou HTTP) bloqueia chamadas à API da Anthropic. ',
-        '<br><br>',
-        '✅ <strong>A IA funciona normalmente quando hospedada.</strong> ',
-        'Faça o download do e-book e abra via:<br>',
-        '• <strong>Localhost:</strong> <code>python -m http.server 8000</code><br>',
-        '• <strong>Netlify Drop:</strong> arraste o arquivo em ',
-        '<a href="https://app.netlify.com/drop" target="_blank" ',
-        'style="color:var(--clr-primary);">app.netlify.com/drop</a> (link HTTPS instantâneo)<br>',
-        '• <strong>GitHub Pages:</strong> suba o arquivo no repositório e ative Pages.'
-      ].join('');
-    }else if(isAuth){
-      fb.innerHTML='🔑 <strong>Chave da API inválida ou expirada.</strong> '+
-        'Vá até "Recado do Professor", apague a chave atual e insira uma nova.<br><br>'+
-        '<button class="q-btn q-btn--secondary" onclick="go(\'apres\')" style="margin-top:6px;">'+
-        'Ir para Configuração →</button>';
-    }else{
-      fb.innerHTML='⚠️ <strong>Erro inesperado na análise.</strong> Verifique sua conexão e tente novamente.<br>'+
-        '<small style="color:var(--txt-muted)">Detalhe: '+msg+'</small>';
-    }
-  }
-}
-
-/* ─────────────────────────────────────────────────────────────
-   RENDERIZAR FEEDBACK DA IA
-   • 5 barras de competência animadas
-   • Score total (destaque para redação completa)
-   • 2 colunas: Pontos Fortes / Melhorias Prioritárias
-   ───────────────────────────────────────────────────────────── */
-function renderAI(fb,d,ctx){
-  var isFull=(ctx==='full');
+/* renderChapterAI — for intro / dev / conc (element-based, no score) */
+function renderChapterAI(fb,d){
   var cores={Excelente:'#0E9E6E',Bom:'#2B5DA8',Regular:'#E6A817',Insuficiente:'#E53E3E'};
-  var cor=cores[d.nivel]||'#2B5DA8';
-  var total=d.total_estimado||0;
+  var nivel=(d.nivel||'Bom');
+  var cor=cores[nivel]||'#2B5DA8';
 
-  var comps=(d.competencias||[]).map(function(c){
-    var pct=Math.round((c.pontos/c.max)*100);
-    var barColor=(c.pontos===0)?'#E53E3E':(c.pontos>=160)?'#0E9E6E':(c.pontos>=120)?'#2B5DA8':'#E6A817';
-    return '<div class="comp-item">'+
-      '<div class="comp-header">'+
-        '<span class="comp-code">'+c.codigo+'</span>'+
-        '<span class="comp-name">'+c.nome+'</span>'+
-        '<span class="comp-score">'+c.pontos+'/'+c.max+'</span>'+
+  /* Normaliza string para classe CSS (remove acentos, espaços, caracteres especiais) */
+  function toCls(s){
+    return (s||'').toLowerCase()
+      .replace(/[áàãâä]/g,'a').replace(/[éèêë]/g,'e').replace(/[íìîï]/g,'i')
+      .replace(/[óòõôö]/g,'o').replace(/[úùûü]/g,'u').replace(/[ç]/g,'c')
+      .replace(/[^a-z]/g,'');
+  }
+
+  var iconMap={
+    excelente:'✅',bom:'👍',regular:'⚠️',insuficiente:'❌',
+    produtivo:'✅',decorativo:'⚠️',ausente:'❌',
+    especifico:'✅',especifica:'✅',vago:'⚠️',vaga:'⚠️',
+    presente:'✅',copiada:'❌',
+    detalhado:'✅',generico:'⚠️'
+  };
+
+  var elems=(d.elementos||[]).map(function(e){
+    var nv=e.nivel||'';
+    var cls='n-'+toCls(nv);
+    var icon=iconMap[toCls(nv)]||'➡️';
+    return '<div class="elem-item '+cls+'">'+
+      '<div class="elem-header">'+
+        '<span class="elem-icon">'+icon+'</span>'+
+        '<span class="elem-name">'+e.nome+'</span>'+
+        '<span class="elem-badge '+cls+'">'+nv+'</span>'+
       '</div>'+
-      '<div class="comp-bar-bg">'+
-        '<div class="comp-bar-fill" style="width:'+pct+'%;background:'+barColor+';"></div>'+
-      '</div>'+
-      '<p class="comp-feedback">'+c.feedback+'</p>'+
+      '<p class="elem-feedback">'+e.feedback+'</p>'+
     '</div>';
   }).join('');
 
   var fortes=(d.pontos_fortes||[]).map(function(p){return '<li>'+p+'</li>';}).join('');
   var melh=(d.melhorias||[]).map(function(m){return '<li>'+m+'</li>';}).join('');
-
-  var scoreHtml='';
-  if(isFull){
-    var nivel_cor=(total>=800)?'#0E9E6E':(total>=600)?'#2B5DA8':(total>=400)?'#E6A817':'#E53E3E';
-    scoreHtml='<div class="score-total">'+
-      '<span class="score-badge" style="color:'+nivel_cor+';">'+total+'</span>'+
-      '<span class="score-label">pontos estimados<br><small>de 1000 possíveis — escala oficial ENEM</small></span>'+
-    '</div>';
-  }
+  var tema=d.tema_identificado?'<p style="font-size:var(--fz-cap);color:var(--txt-muted);margin-bottom:10px;">📌 Tema identificado: <em>'+d.tema_identificado+'</em></p>':'';
 
   fb.className='write-feedback fb-ok';
   fb.innerHTML=
     '<div class="ai-fb">'+
       '<div class="ai-fb-header">'+
         '<span class="ai-icon">🤖</span>'+
-        '<div>'+
-          '<strong>Análise IA — Critérios Oficiais INEP/ENEM 2025</strong>'+
-          '<span class="ai-nivel-badge" style="background:'+cor+';">'+d.nivel+'</span>'+
+        '<div><strong>Análise por Elementos Estruturais</strong>'+
+          '<span class="ai-nivel-badge" style="background:'+cor+';">'+nivel+'</span>'+
         '</div>'+
-        (isFull?'':'<span class="ai-total">'+total+' pts</span>')+
       '</div>'+
-      scoreHtml+
+      tema+
       '<p class="ai-resumo">'+d.resumo+'</p>'+
-      '<div class="comp-list">'+comps+'</div>'+
+      '<div class="elem-list">'+elems+'</div>'+
       '<div class="ai-cols">'+
         '<div class="ai-col ai-col--ok"><h4>✅ Pontos Fortes</h4><ul>'+fortes+'</ul></div>'+
         '<div class="ai-col ai-col--warn"><h4>💡 Melhorias Prioritárias</h4><ul>'+melh+'</ul></div>'+
       '</div>'+
     '</div>';
-
   setTimeout(function(){fb.scrollIntoView({behavior:'smooth',block:'nearest'});},120);
 }
 
+/* renderAI — full essay uses competency bars; chapters use element list */
+function renderAI(fb,d,ctx){
+  if(ctx!=='full'){renderChapterAI(fb,d);return;}
+
+  var cores={Excelente:'#0E9E6E',Bom:'#2B5DA8',Regular:'#E6A817',Insuficiente:'#E53E3E'};
+  var cor=cores[d.nivel]||'#2B5DA8';
+  var total=d.total_estimado||0;
+  var nivel_cor=(total>=800)?'#0E9E6E':(total>=600)?'#2B5DA8':(total>=400)?'#E6A817':'#E53E3E';
+
+  var comps=(d.competencias||[]).map(function(c){
+    var pct=Math.round((c.pontos/c.max)*100);
+    var bc=(c.pontos===0)?'#E53E3E':(c.pontos>=160)?'#0E9E6E':(c.pontos>=120)?'#2B5DA8':'#E6A817';
+    return '<div class="comp-item">'+
+      '<div class="comp-header"><span class="comp-code">'+c.codigo+'</span>'+
+        '<span class="comp-name">'+c.nome+'</span>'+
+        '<span class="comp-score">'+c.pontos+'/'+c.max+'</span></div>'+
+      '<div class="comp-bar-bg"><div class="comp-bar-fill" style="width:'+pct+'%;background:'+bc+';"></div></div>'+
+      '<p class="comp-feedback">'+c.feedback+'</p></div>';
+  }).join('');
+
+  var fortes=(d.pontos_fortes||[]).map(function(p){return '<li>'+p+'</li>';}).join('');
+  var melh=(d.melhorias||[]).map(function(m){return '<li>'+m+'</li>';}).join('');
+
+  fb.className='write-feedback fb-ok';
+  fb.innerHTML=
+    '<div class="ai-fb">'+
+      '<div class="ai-fb-header"><span class="ai-icon">🤖</span>'+
+        '<div><strong>Análise — Critérios Oficiais INEP/ENEM 2025</strong>'+
+          '<span class="ai-nivel-badge" style="background:'+cor+';">'+d.nivel+'</span></div>'+
+      '</div>'+
+      '<div class="score-total"><span class="score-badge" style="color:'+nivel_cor+';">'+total+'</span>'+
+        '<span class="score-label">pontos estimados<br><small>de 1000 — escala oficial ENEM</small></span></div>'+
+      '<p class="ai-resumo">'+d.resumo+'</p>'+
+      '<div class="comp-list">'+comps+'</div>'+
+      '<div class="ai-cols">'+
+        '<div class="ai-col ai-col--ok"><h4>✅ Pontos Fortes</h4><ul>'+fortes+'</ul></div>'+
+        '<div class="ai-col ai-col--warn"><h4>💡 Melhorias Prioritárias</h4><ul>'+melh+'</ul></div>'+
+      '</div></div>';
+  setTimeout(function(){fb.scrollIntoView({behavior:'smooth',block:'nearest'});},120);
+}
+
+
 /* ─────────────────────────────────────────────────────────────
-   TECLADO
-   ← / → / PageUp / PageDown → navegam entre seções
-   Esc → fecha sidebar mobile
-   Enter / Espaço em .quiz-opt → dispara click
+   ANÁLISE POR IA — fetch para API Anthropic
    ───────────────────────────────────────────────────────────── */
+async function checkW(taId,fbId,ctx){
+  var ta=document.getElementById(taId),fb=document.getElementById(fbId);if(!ta||!fb)return;
+  var text=ta.value.trim();
+  var words=(text==='')?0:text.split(/\s+/).filter(Boolean).length;
+  if(words<25){
+    fb.className='write-feedback fb-warn';
+    fb.innerHTML='\u26a0\ufe0f <strong>Texto muito curto!</strong> Voc\u00ea escreveu apenas '+words+' palavras. Escreva ao menos 50 palavras.';return;
+  }
+  if(!apiKey){
+    fb.className='write-feedback fb-warn';
+    fb.innerHTML='\ud83d\udd11 <strong>IA n\u00e3o configurada.</strong> Acesse "<strong>Recado do Professor</strong>" e insira sua chave da API Anthropic.<br><br><button class="q-btn q-btn--secondary" onclick="go(\'apres\')" style="margin-top:6px;">Ir para Configura\u00e7\u00e3o \u2192</button>';return;
+  }
+  fb.className='write-feedback fb-load';
+  fb.innerHTML='<div class="fb-loading-inner"><div class="fb-spinner"></div><p>\ud83e\udd16 Analisando com base nos crit\u00e9rios do INEP/ENEM 2025...</p></div>';
+  try{
+    var res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:6000,messages:[{role:'user',content:buildPrompt(text,words,ctx)}]})
+    });
+    if(!res.ok){var errData=await res.json().catch(function(){return{};});throw new Error((errData.error&&errData.error.message)||'HTTP '+res.status);}
+    var data=await res.json();
+    var raw=data.content.map(function(c){return c.text||'';}).join('');
+    var clean=raw.replace(/```json|```/g,'').trim();
+    renderAI(fb,JSON.parse(clean),ctx);
+  }catch(err){
+    var msg=(err&&err.message)||'Erro desconhecido';
+    fb.className='write-feedback fb-warn';
+    var isNetworkBlock=(err instanceof TypeError)||msg.includes('Failed to fetch')||msg.includes('Load failed')||msg.includes('NetworkError')||msg.includes('fetch')||msg.includes('CORS')||msg.includes('blocked');
+    var isAuth=!isNetworkBlock&&(msg.includes('401')||msg.includes('api_key')||(msg.toLowerCase().includes('invalid')&&msg.toLowerCase().includes('key')));
+    var isInIframe=(window.self!==window.top);
+    if(isNetworkBlock){
+      fb.innerHTML=[
+        '\ud83c\udf10 <strong>Requisi\u00e7\u00e3o bloqueada pelo ambiente de execu\u00e7\u00e3o.</strong><br>',
+        isInIframe?'Este e-book est\u00e1 sendo visualizado em um <strong>iframe de preview</strong> que restringe chamadas a APIs externas. ':'O ambiente atual bloqueia chamadas \u00e0 API da Anthropic. ',
+        '<br><br>\u2705 <strong>A IA funciona normalmente quando hospedada.</strong> ',
+        'Baixe o arquivo e abra via:<br>',
+        '\u2022 <strong>Localhost:</strong> <code>python -m http.server 8000</code><br>',
+        '\u2022 <strong>Netlify Drop:</strong> <a href="https://app.netlify.com/drop" target="_blank" style="color:var(--clr-primary);">app.netlify.com/drop</a><br>',
+        '\u2022 <strong>GitHub Pages</strong>'
+      ].join('');
+    }else if(isAuth){
+      fb.innerHTML='\ud83d\udd11 <strong>Chave da API inv\u00e1lida ou expirada.</strong> V\u00e1 at\u00e9 "Recado do Professor", apague a chave atual e insira uma nova.<br><small style="color:var(--txt-muted)">Detalhe: '+msg+'</small><br><br><button class="q-btn q-btn--secondary" onclick="go(\'apres\')" style="margin-top:6px;">Ir para Configura\u00e7\u00e3o \u2192</button>';
+    }else{
+      fb.innerHTML='\u26a0\ufe0f <strong>Erro inesperado.</strong> Verifique sua conex\u00e3o.<br><small style="color:var(--txt-muted)">Detalhe: '+msg+'</small>';
+    }
+  }
+}
+
+/* ─── TECLADO ─── */
 document.addEventListener('keydown',function(e){
   var tag=(document.activeElement||{}).tagName||'';
   if(tag.toLowerCase()==='textarea'||tag.toLowerCase()==='input')return;
   var a=document.querySelector('.ebook-section--active');if(!a)return;
   var idx=SECTIONS.indexOf(a.id);
-  if((e.key==='ArrowRight'||e.key==='PageDown')&&idx<SECTIONS.length-1){
-    e.preventDefault();go(SECTIONS[idx+1]);
-  }
-  if((e.key==='ArrowLeft'||e.key==='PageUp')&&idx>0){
-    e.preventDefault();go(SECTIONS[idx-1]);
-  }
-  if(e.key==='Escape'){
-    var s=document.getElementById('sidebar');
-    if(s&&s.classList.contains('sidebar--open')){
-      closeSidebar();
-      var tg=document.getElementById('sidebar-toggle');if(tg)tg.focus();
-    }
-  }
+  if((e.key==='ArrowRight'||e.key==='PageDown')&&idx<SECTIONS.length-1){e.preventDefault();go(SECTIONS[idx+1]);}
+  if((e.key==='ArrowLeft'||e.key==='PageUp')&&idx>0){e.preventDefault();go(SECTIONS[idx-1]);}
+  if(e.key==='Escape'){var s=document.getElementById('sidebar');if(s&&s.classList.contains('sidebar--open')){closeSidebar();var tg=document.getElementById('sidebar-toggle');if(tg)tg.focus();}}
 });
 document.addEventListener('keydown',function(e){
-  if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('quiz-opt')){
-    e.preventDefault();e.target.click();
-  }
+  if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('quiz-opt')){e.preventDefault();e.target.click();}
 });
 
-/* ─── BANNER DE CONTEXTO DO MICROFONE (aparece só quando necessário) ─── */
+/* ─── BANNER DE CONTEXTO DO MICROFONE ─── */
 (function(){
-  /* Só mostra se o contexto bloqueia o microfone */
   var needsBanner=(location.protocol==='file:'||!window.isSecureContext);
   if(!needsBanner)return;
-
   var isFile=(location.protocol==='file:');
   var banner=document.createElement('div');
   banner.id='mic-context-banner';
   banner.setAttribute('role','note');
-  banner.style.cssText=[
-    'position:fixed;bottom:0;left:0;right:0;z-index:7000;',
-    'background:#1A3A6B;color:#fff;',
-    'padding:12px 20px;font-size:18px;line-height:1.6;',
-    'display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;',
-    'box-shadow:0 -2px 12px rgba(0,0,0,.3);'
-  ].join('');
-
+  banner.style.cssText='position:fixed;bottom:0;left:0;right:0;z-index:7000;background:#1A3A6B;color:#fff;padding:12px 20px;font-size:18px;line-height:1.6;display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;box-shadow:0 -2px 12px rgba(0,0,0,.3);';
   banner.innerHTML=[
-    '<span style="font-size:22px;flex-shrink:0;margin-top:2px;">🎤</span>',
+    '<span style="font-size:22px;flex-shrink:0;margin-top:2px;">\ud83c\udf99\ufe0f</span>',
     '<span style="flex:1;">',
-      isFile
-        ? '<strong>Microfone desabilitado</strong> — arquivo aberto localmente (<code style="background:rgba(255,255,255,.15);padding:1px 6px;border-radius:4px;">file://</code>). '
-          +'Para usar o microfone, sirva via <strong>python -m http.server 8000</strong> e abra <strong>http://localhost:8000</strong> no Chrome. '
-          +'A IA, a leitura em voz alta e os quizzes funcionam normalmente aqui.'
-        : '<strong>Microfone indisponível</strong> — contexto sem HTTPS. Use <strong>localhost</strong> ou hospede o arquivo.',
+    isFile
+      ?'<strong>Microfone desabilitado</strong> \u2014 arquivo local (<code style="background:rgba(255,255,255,.15);padding:1px 6px;border-radius:4px;">file://</code>). Para usar, rode <strong>python -m http.server 8000</strong> e abra <strong>http://localhost:8000</strong>. IA, leitura em voz alta e quizzes funcionam normalmente.'
+      :'<strong>Microfone indispon\u00edvel</strong> \u2014 contexto sem HTTPS. Use localhost ou hospede o arquivo.',
     '</span>',
-    '<button onclick="document.getElementById(\'mic-context-banner\').remove()" ',
-      'style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);',
-      'color:#fff;border-radius:6px;padding:4px 12px;cursor:pointer;font-size:18px;',
-      'flex-shrink:0;font-family:inherit;" aria-label="Dispensar aviso">✕</button>'
+    '<button onclick="document.getElementById(\'mic-context-banner\').remove()" style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:6px;padding:4px 12px;cursor:pointer;font-size:18px;flex-shrink:0;font-family:inherit;" aria-label="Dispensar aviso">\u2715</button>'
   ].join('');
-
   document.body.appendChild(banner);
 })();
 
 /* ─── OVERLAY CLICK ─── */
-(function(){
-  var ov=document.getElementById('sidebar-overlay');
-  if(ov)ov.addEventListener('click',closeSidebar);
-})();
+(function(){var ov=document.getElementById('sidebar-overlay');if(ov)ov.addEventListener('click',closeSidebar);})();
 
-/* ─────────────────────────────────────────────────────────────
-   INIT — lê preferências salvas e inicia na capa
-   ───────────────────────────────────────────────────────────── */
+/* ─── INIT ─── */
 (function init(){
-  /* Contraste */
-  try{
-    var sc=localStorage.getItem('ebook-contrast');
-    if(sc&&sc!=='n')setContrast(sc);
-  }catch(e){}
-  /* Tamanho da fonte */
-  try{
-    var sf=localStorage.getItem('ebook-fz');
-    if(sf!==null){
-      sizeLevel=Math.min(2,Math.max(0,parseInt(sf,10)||0));
-      applyFz();
-      var ind=document.getElementById('fz-indicator');
-      if(ind){ind.textContent=sizeLevel+1;ind.setAttribute('aria-label','Nível '+(sizeLevel+1)+' de 3');}
-    }
-  }catch(e){}
-  /* Ir para capa */
+  try{var sc=localStorage.getItem('ebook-contrast');if(sc&&sc!=='n')setContrast(sc);}catch(e){}
+  try{var sf=localStorage.getItem('ebook-fz');if(sf!==null){sizeLevel=Math.min(2,Math.max(0,parseInt(sf,10)||0));applyFz();var ind=document.getElementById('fz-indicator');if(ind){ind.textContent=sizeLevel+1;ind.setAttribute('aria-label','N\u00edvel '+(sizeLevel+1)+' de 3');}}}catch(e){}
   go('capa');
-
-  /* Aviso de preview (iframe) na seção de configuração da IA */
-  if(window.self!==window.top){
-    var st=document.getElementById('api-status');
-    if(st){
-      st.textContent='⚠️ Preview do Claude detectado — a IA só funciona quando o e-book for hospedado.';
-      st.className='api-status err';
-    }
-  }
+  if(window.self!==window.top){var st=document.getElementById('api-status');if(st){st.textContent='\u26a0\ufe0f Preview do Claude detectado \u2014 a IA s\u00f3 funciona quando hospedado.';st.className='api-status err';}}
 })();
 </script>
 </body>
