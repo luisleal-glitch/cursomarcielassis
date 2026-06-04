@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-book de Redação ENEM – Curso Manoel Marciel Assis. DUA completo com correção por IA, microfone e leitura em voz alta.">
+<title>Redação Nota 1000 – Curso Manoel Marciel Assis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+/* ═══ VARIÁVEIS ═══ */
+:root{
+  --clr-primary:#1A3A6B;--clr-primary-lt:#2B5DA8;--clr-secondary:#0E9E6E;
+  --clr-accent:#E8591A;--clr-gold:#E6A817;--clr-danger:#E53E3E;
+  --clr-voice-mic:#7C3AED;--clr-voice-speak:#0369A1;
+  --grad-cover:linear-gradient(135deg,#0D2E6B,#1A5276 55%,#0E6E6E);
+  --grad-blue:linear-gradient(135deg,#1A3A6B,#2B5DA8);
+  --grad-green:linear-gradient(135deg,#0E6E4E,#0E9E6E);
+  --grad-orange:linear-gradient(135deg,#7B341E,#E8591A);
+  --grad-purple:linear-gradient(135deg,#3B1A6B,#5A2DA8);
+  --grad-teal:linear-gradient(135deg,#0D5E6B,#0E9E8E);
+  --grad-red:linear-gradient(135deg,#6B1A1A,#A0522D);
+  --grad-final:linear-gradient(135deg,#0E9E6E,#0D8B60);
+  --bg-page:#EEF2F7;--bg-card:#FFF;--bg-sidebar:#1A3A6B;
+  --bg-hl-info:#EBF5FF;--bg-hl-ok:#ECFDF5;--bg-hl-warn:#FFF8E7;
+  --bg-hl-accent:rgba(232,89,26,.08);--bg-quiz-opt:#F8FAFC;
+  --bg-fb-ok:#ECFDF5;--bg-fb-err:#FEF2F2;--bg-fb-warn:#FFF8E7;
+  --txt:#0F172A;--txt-sec:#475569;--txt-muted:#64748B;
+  --txt-inv:#FFF;--txt-sid:#CBD5E1;--txt-sid-on:#FFF;
+  --bdr:#CBD5E1;--bdr-card:#E2E8F0;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:0 2px 12px rgba(0,0,0,.08);
+  --shadow-lg:0 6px 24px rgba(0,0,0,.14);
+  --fz-h1:32px;--fz-h2:28px;--fz-h3:26px;--fz-h4:24px;
+  --fz-body:24px;--fz-sm:20px;--fz-cap:18px;
+  --sidebar-w:280px;--toolbar-h:60px;--px:40px;
+  --radius-lg:16px;--radius-md:12px;--radius-sm:8px;--gap:28px;
+}
+/* ═══ TEMA ESCURO ═══ */
+body.theme-dark{
+  --bg-page:#0F172A;--bg-card:#1E293B;--bg-sidebar:#080F1E;
+  --bg-hl-info:#1E2F4A;--bg-hl-ok:#0A2B1B;--bg-hl-warn:#2A1E06;
+  --bg-hl-accent:rgba(232,89,26,.15);--bg-quiz-opt:#1E293B;
+  --bg-fb-ok:#0A2B1B;--bg-fb-err:#2A0A0A;--bg-fb-warn:#2A1E06;
+  --txt:#F1F5F9;--txt-sec:#94A3B8;--txt-muted:#64748B;--txt-sid:#94A3B8;
+  --bdr:#334155;--bdr-card:#334155;
+  --shadow-md:0 2px 12px rgba(0,0,0,.5);--shadow-lg:0 6px 24px rgba(0,0,0,.7);
+  --clr-primary:#60A5FA;--clr-primary-lt:#93C5FD;
+  --clr-secondary:#34D399;--clr-accent:#FB923C;--clr-gold:#FBBF24;
+  --clr-voice-mic:#A78BFA;--clr-voice-speak:#38BDF8;
+}
+/* ═══ ALTO CONTRASTE ═══ */
+body.theme-hc{
+  --bg-page:#000;--bg-card:#0A0A0A;--bg-sidebar:#000;
+  --bg-hl-info:#001833;--bg-hl-ok:#001800;--bg-hl-warn:#181200;
+  --bg-hl-accent:#180000;--bg-quiz-opt:#0A0A0A;
+  --bg-fb-ok:#001800;--bg-fb-err:#180000;--bg-fb-warn:#181200;
+  --txt:#FFF;--txt-sec:#DDD;--txt-muted:#AAA;
+  --txt-inv:#FFF;--txt-sid:#DDD;--txt-sid-on:#FFF;
+  --bdr:#FFF;--bdr-card:#FFF;
+  --shadow-md:0 0 0 2px #FFF;--shadow-lg:0 0 0 4px #FFF;
+  --clr-primary:#00CCFF;--clr-primary-lt:#33DDFF;
+  --clr-secondary:#00FF88;--clr-accent:#FFFF00;--clr-gold:#FFFF00;--clr-danger:#FF4444;
+  --clr-voice-mic:#CC88FF;--clr-voice-speak:#88DDFF;
+  --grad-cover:linear-gradient(135deg,#000033,#000066);
+  --grad-blue:linear-gradient(135deg,#000033,#000066);
+  --grad-green:linear-gradient(135deg,#003300,#006600);
+  --grad-orange:linear-gradient(135deg,#331500,#663000);
+  --grad-purple:linear-gradient(135deg,#1A0033,#330066);
+  --grad-teal:linear-gradient(135deg,#003333,#006666);
+  --grad-red:linear-gradient(135deg,#330000,#660000);
+  --grad-final:linear-gradient(135deg,#003300,#006600);
+}
+body.theme-hc thead th{background:#000033!important;color:#FFF!important;border:1px solid #FFF!important;}
+body.theme-hc .opt-l{background:#000033;color:var(--clr-secondary);border:2px solid #FFF;}
+body.theme-hc .quiz-opt.ok .opt-l{background:#003300;color:#00FF88;}
+body.theme-hc .quiz-opt.err .opt-l{background:#330000;color:#FF4444;}
+body.theme-hc .q-btn--primary,.body.theme-hc .nb--primary{background:#000066;border-color:#FFF;color:#FFF;}
+body.theme-hc .ch-header h1{color:#FFF;}
+body.theme-hc .ch-badge{background:rgba(255,255,255,.3);color:#FFF;}
+body.theme-hc .card,.body.theme-hc .quiz-card{border-width:2px;}
+body.theme-hc .hl-box{border-width:4px;}
+body.theme-hc .comp-code{background:#000033;color:#FFF;border:1px solid #FFF;}
+body.theme-hc #toolbar{border-bottom:3px solid #FFF;}
+body.theme-hc #sidebar{border-right:2px solid #FFF;}
+body.theme-hc .tbl-wrap{border:2px solid var(--bdr);}
+/* ═══ RESET ═══ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans','Helvetica Neue',Arial,sans-serif;font-size:var(--fz-body);color:var(--txt);background:var(--bg-page);line-height:1.75;transition:background .3s,color .3s;}
+h1,h2,h3,h4{font-family:'Outfit','Helvetica Neue',Arial,sans-serif;font-weight:700;line-height:1.25;color:var(--txt);margin-bottom:13px;}
+h1{font-size:var(--fz-h1);}h2{font-size:var(--fz-h2);margin-top:32px;}h2:first-child{margin-top:0;}
+h3{font-size:var(--fz-h3);color:var(--clr-primary);margin-top:24px;}h4{font-size:var(--fz-h4);margin-top:18px;}
+p{font-size:var(--fz-body);margin-bottom:14px;line-height:1.75;}
+ul,ol{font-size:var(--fz-body);padding-left:26px;margin-bottom:14px;}li{margin-bottom:8px;line-height:1.65;}
+strong{font-weight:700;}em{font-style:italic;}
+code,kbd{background:var(--bg-hl-info);border:1px solid var(--bdr);border-radius:4px;padding:2px 7px;font-size:var(--fz-sm);font-family:monospace;color:var(--txt);}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--clr-accent);outline-offset:3px;border-radius:4px;}
+/* ═══ SKIP LINK ═══ */
+#skip-link{position:absolute;left:-9999px;top:8px;background:var(--clr-accent);color:#fff;padding:8px 18px;border-radius:var(--radius-sm);font-weight:700;font-size:var(--fz-sm);font-family:'Outfit',sans-serif;z-index:9999;text-decoration:none;}
+#skip-link:focus{left:8px;outline:3px solid #fff;}
+/* ═══ TOOLBAR ═══ */
+#toolbar{position:fixed;top:0;left:0;right:0;height:var(--toolbar-h);background:var(--clr-primary);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:1000;gap:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.25);transition:background .3s;}
+#toolbar-left{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+#sidebar-toggle{display:none;background:transparent;border:none;color:var(--txt-inv);font-size:24px;cursor:pointer;padding:6px;line-height:1;border-radius:var(--radius-sm);transition:background .2s;align-items:center;justify-content:center;}
+#sidebar-toggle:hover{background:rgba(255,255,255,.2);}
+#toolbar-brand{font-family:'Outfit',sans-serif;font-size:var(--fz-sm);font-weight:900;color:var(--txt-inv);white-space:nowrap;}
+#toolbar-controls{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+#contrast-group,#fontsize-group{display:flex;align-items:center;gap:5px;padding-left:12px;border-left:1px solid rgba(255,255,255,.3);}
+.tb-label{font-size:var(--fz-cap);color:rgba(255,255,255,.8);font-weight:600;white-space:nowrap;}
+.tb-btn{background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.35);color:var(--txt-inv);padding:4px 10px;border-radius:var(--radius-sm);cursor:pointer;font-size:var(--fz-cap);font-family:'Outfit',sans-serif;font-weight:700;line-height:1.4;white-space:nowrap;transition:background .2s;}
+.tb-btn:hover{background:rgba(255,255,255,.3);}.tb-btn--active{background:#FFF;color:var(--clr-primary);border-color:#FFF;}
+#fz-indicator{font-size:var(--fz-cap);color:rgba(255,255,255,.7);font-weight:700;min-width:20px;text-align:center;font-family:'Outfit',sans-serif;}
+/* ═══ LAYOUT ═══ */
+#layout{display:flex;margin-top:var(--toolbar-h);min-height:calc(100vh - var(--toolbar-h));}
+/* ═══ SIDEBAR ═══ */
+#sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--bg-sidebar);position:fixed;top:var(--toolbar-h);left:0;bottom:0;overflow-y:auto;overflow-x:hidden;z-index:900;display:flex;flex-direction:column;padding-bottom:8px;transition:transform .3s ease,background .3s ease;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.2) transparent;}
+#sidebar::-webkit-scrollbar{width:5px;}#sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.2);border-radius:3px;}
+#sidebar-brand{padding:16px 22px 12px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:6px;}
+#sid-title{font-family:'Outfit',sans-serif;font-weight:900;font-size:var(--fz-h4);color:var(--txt-inv);line-height:1.2;margin:0;}
+#sid-sub{font-size:var(--fz-cap);color:rgba(255,255,255,.5);margin:3px 0 0;}
+.sid-section-label{font-size:var(--fz-cap);font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.09em;padding:10px 22px 3px;margin:0;font-family:'Outfit',sans-serif;}
+.nav-btn{display:flex;align-items:flex-start;gap:10px;padding:10px 22px;color:var(--txt-sid);font-size:var(--fz-sm);font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;border:none;background:transparent;width:100%;text-align:left;border-left:4px solid transparent;line-height:1.4;transition:background .2s,color .2s,border-color .2s;}
+.nav-btn:hover{background:rgba(255,255,255,.09);color:var(--txt-sid-on);}
+.nav-btn--active{background:rgba(255,255,255,.13);color:var(--txt-sid-on);border-left-color:var(--clr-secondary);font-weight:700;}
+body.theme-hc .nav-btn--active{border-left-color:var(--clr-accent);}
+.nav-icon{font-style:normal;flex-shrink:0;font-size:17px;margin-top:2px;}.nav-label{flex:1;}
+#progress-wrap{margin-top:auto;padding:14px 22px;border-top:1px solid rgba(255,255,255,.1);}
+.progress-label{font-size:var(--fz-cap);color:rgba(255,255,255,.5);margin-bottom:6px;font-weight:600;font-family:'Outfit',sans-serif;}
+#progress-track{background:rgba(255,255,255,.15);border-radius:100px;height:9px;overflow:hidden;}
+#progress-fill{background:var(--clr-secondary);height:100%;border-radius:100px;width:12%;transition:width .5s ease;}
+#progress-text{font-size:var(--fz-cap);color:rgba(255,255,255,.45);text-align:right;margin:4px 0 0;}
+/* ═══ CONTEÚDO ═══ */
+#content{margin-left:var(--sidebar-w);flex:1;padding:var(--px);min-height:calc(100vh - var(--toolbar-h));}
+.ebook-section{display:none;max-width:820px;margin:0 auto;}
+.ebook-section--active{display:block;animation:fadeUp .4s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+/* ═══ CABEÇALHOS ═══ */
+.ch-header{border-radius:var(--radius-lg);padding:44px 40px;margin-bottom:30px;color:var(--txt-inv);position:relative;overflow:hidden;}
+.ch-header::after{content:'';position:absolute;top:-40%;right:-8%;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.06);pointer-events:none;}
+.ch-header--cover{background:var(--grad-cover);}.ch-header--blue{background:var(--grad-blue);}
+.ch-header--green{background:var(--grad-green);}.ch-header--orange{background:var(--grad-orange);}
+.ch-header--purple{background:var(--grad-purple);}.ch-header--teal{background:var(--grad-teal);}
+.ch-header--red{background:var(--grad-red);}
+.ch-badge{display:inline-block;background:rgba(255,255,255,.22);color:var(--txt-inv);font-size:var(--fz-cap);font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:5px 16px;border-radius:100px;margin-bottom:12px;font-family:'Outfit',sans-serif;}
+.ch-header h1{color:var(--txt-inv);margin-bottom:12px;position:relative;z-index:1;}
+.ch-intro{color:rgba(255,255,255,.88);font-size:var(--fz-body);max-width:600px;line-height:1.7;position:relative;z-index:1;margin:0;}
+/* ═══ CARDS ═══ */
+.card{background:var(--bg-card);border:1px solid var(--bdr-card);border-radius:var(--radius-md);padding:32px;margin-bottom:var(--gap);box-shadow:var(--shadow-md);transition:background .3s,border-color .3s;}
+/* ═══ HIGHLIGHT BOXES ═══ */
+.hl-box{border-radius:10px;padding:20px 24px;margin:20px 0;font-size:var(--fz-body);border-left:5px solid;line-height:1.7;transition:background .3s;}
+.hl-box h3{margin:0 0 8px;font-size:var(--fz-body);color:inherit;}.hl-box p,.hl-box ul{margin:0;font-size:var(--fz-body);}
+.hl-box--info{background:var(--bg-hl-info);border-color:var(--clr-primary);}
+.hl-box--ok{background:var(--bg-hl-ok);border-color:var(--clr-secondary);}
+.hl-box--warn{background:var(--bg-hl-warn);border-color:var(--clr-gold);}
+.hl-box--accent{background:var(--bg-hl-accent);border-color:var(--clr-accent);}
+/* ═══ BLOCKQUOTE ═══ */
+blockquote.mentor-quote{border-left:5px solid var(--clr-accent);padding:16px 24px;margin:20px 0;background:var(--bg-hl-info);border-radius:0 8px 8px 0;font-style:italic;font-size:var(--fz-body);color:var(--txt-sec);transition:background .3s;}
+blockquote.mentor-quote p{margin:0;}blockquote.mentor-quote footer{margin-top:10px;font-style:normal;}
+blockquote.mentor-quote cite{font-style:normal;font-weight:700;color:var(--txt);font-size:var(--fz-sm);font-family:'Outfit',sans-serif;}
+/* ═══ TABELAS ═══ */
+.tbl-wrap{overflow-x:auto;margin:20px 0;border-radius:10px;border:1px solid var(--bdr-card);box-shadow:var(--shadow-md);transition:border-color .3s;}
+table{width:100%;border-collapse:collapse;font-size:var(--fz-sm);background:var(--bg-card);border-radius:10px;overflow:hidden;transition:background .3s;}
+thead th{background:var(--clr-primary);color:var(--txt-inv);padding:13px 18px;text-align:left;font-family:'Outfit',sans-serif;font-weight:700;font-size:var(--fz-sm);}
+tbody td{padding:11px 18px;border-bottom:1px solid var(--bdr-card);vertical-align:top;line-height:1.6;font-size:var(--fz-sm);color:var(--txt);transition:background .2s,color .3s,border-color .3s;}
+tbody tr:last-child td{border-bottom:none;}tbody tr:nth-child(even){background:var(--bg-hl-info);}
+tbody tr:hover td{background:rgba(26,58,107,.06);}
+body.theme-dark tbody tr:hover td{background:rgba(255,255,255,.04);}
+body.theme-hc tbody td{border-bottom-color:rgba(255,255,255,.2);}body.theme-hc tbody tr:nth-child(even){background:rgba(255,255,255,.05);}
+/* ═══ EXEMPLOS ═══ */
+figure.example-box{background:var(--bg-card);border-radius:var(--radius-md);padding:28px 26px 22px;margin:20px 0;position:relative;border:2px solid;transition:background .3s;}
+figure.example-box--bad{border-color:var(--clr-danger);}figure.example-box--good{border-color:var(--clr-secondary);}
+figcaption.ex-label{position:absolute;top:-13px;left:18px;color:var(--txt-inv);font-size:var(--fz-cap);font-weight:700;padding:3px 14px;border-radius:100px;font-family:'Outfit',sans-serif;white-space:nowrap;}
+figcaption.ex-label--bad{background:var(--clr-danger);}figcaption.ex-label--good{background:var(--clr-secondary);}
+.ex-text{font-style:italic;font-size:var(--fz-body);line-height:1.8;color:var(--txt);margin:0;}
+/* ═══ VIDEO PLACEHOLDER ═══ */
+figure.video-placeholder{background:var(--grad-blue);border-radius:var(--radius-md);padding:34px 32px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;margin:20px 0;min-height:190px;text-align:center;position:relative;overflow:hidden;}
+figure.video-placeholder::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,255,255,.025) 10px,rgba(255,255,255,.025) 20px);pointer-events:none;}
+.vid-badge{position:absolute;top:13px;right:13px;background:rgba(255,255,255,.2);color:var(--txt-inv);font-size:var(--fz-cap);font-weight:700;padding:3px 11px;border-radius:100px;font-family:'Outfit',sans-serif;z-index:1;}
+.vid-play{width:64px;height:64px;background:rgba(255,255,255,.2);border:2px solid rgba(255,255,255,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--txt-inv);z-index:1;}
+figure.video-placeholder figcaption{z-index:1;}
+.vid-title{color:var(--txt-inv);font-family:'Outfit',sans-serif;font-size:var(--fz-body);font-weight:700;margin:0 0 4px;}.vid-desc{color:rgba(255,255,255,.75);font-size:var(--fz-sm);max-width:380px;margin:0 0 4px;}.vid-note{color:rgba(255,255,255,.5);font-size:var(--fz-cap);margin:0;}
+/* ═══ STATS ═══ */
+.stats-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:13px;margin:20px 0;list-style:none;padding:0;}
+.stat-item{background:var(--bg-card);border:1px solid var(--bdr-card);border-radius:10px;padding:18px 14px;text-align:center;transition:background .3s,border-color .3s;}
+.stat-val{display:block;font-family:'Outfit',sans-serif;font-size:var(--fz-h1);font-weight:900;color:var(--clr-primary);line-height:1;margin-bottom:5px;}
+.stat-label{display:block;font-size:var(--fz-sm);color:var(--txt-sec);line-height:1.4;}
+/* ═══ QUIZ ═══ */
+.quiz-card{background:var(--bg-card);border:1px solid var(--bdr-card);border-radius:var(--radius-md);padding:30px;margin:26px 0;box-shadow:var(--shadow-md);transition:background .3s,border-color .3s;}
+.quiz-badge{display:inline-block;background:var(--clr-accent);color:var(--txt-inv);font-size:var(--fz-cap);font-weight:700;padding:4px 13px;border-radius:100px;margin-bottom:9px;font-family:'Outfit',sans-serif;}
+.quiz-title{font-family:'Outfit',sans-serif;font-size:var(--fz-h3);font-weight:700;color:var(--clr-primary);margin:0 0 5px;}
+.quiz-q{font-size:var(--fz-body);font-weight:600;color:var(--txt);margin:12px 0 18px;line-height:1.6;}
+.quiz-opts{display:flex;flex-direction:column;gap:9px;margin-bottom:18px;}
+.quiz-opt{display:flex;align-items:flex-start;gap:13px;padding:13px 17px;border:2px solid var(--bdr-card);border-radius:10px;cursor:pointer;background:var(--bg-quiz-opt);color:var(--txt);font-size:var(--fz-body);font-family:'DM Sans',sans-serif;text-align:left;line-height:1.5;width:100%;transition:border-color .2s,background .2s;}
+.quiz-opt:hover{border-color:var(--clr-primary);background:var(--bg-hl-info);}
+.quiz-opt.sel{border-color:var(--clr-primary);background:var(--bg-hl-info);}
+.quiz-opt.ok{border-color:var(--clr-secondary);background:var(--bg-fb-ok);}
+.quiz-opt.err{border-color:var(--clr-danger);background:var(--bg-fb-err);}
+.opt-l{display:flex;align-items:center;justify-content:center;width:33px;height:33px;min-width:33px;border-radius:50%;background:var(--clr-primary);color:var(--txt-inv);font-weight:700;font-size:var(--fz-sm);font-family:'Outfit',sans-serif;flex-shrink:0;transition:background .2s;}
+.quiz-opt.ok .opt-l{background:var(--clr-secondary);}.quiz-opt.err .opt-l{background:var(--clr-danger);}
+.opt-text{flex:1;}
+.quiz-actions{display:flex;gap:11px;flex-wrap:wrap;margin-bottom:4px;}
+.q-btn{display:inline-flex;align-items:center;gap:7px;border-radius:var(--radius-sm);padding:11px 22px;font-size:var(--fz-body);font-family:'Outfit',sans-serif;font-weight:700;cursor:pointer;border:2px solid transparent;white-space:nowrap;transition:all .2s;}
+.q-btn--primary{background:var(--clr-primary);color:var(--txt-inv);border-color:var(--clr-primary);}
+.q-btn--primary:hover{background:var(--clr-primary-lt);border-color:var(--clr-primary-lt);transform:translateY(-1px);box-shadow:var(--shadow-lg);}
+.q-btn--secondary{background:transparent;color:var(--clr-primary);border-color:var(--clr-primary);}
+.q-btn--secondary:hover{background:var(--bg-hl-info);}
+.quiz-feedback{display:none;padding:15px 19px;border-radius:10px;margin-top:12px;font-size:var(--fz-body);line-height:1.65;border:2px solid;animation:fadeUp .3s ease;}
+.quiz-feedback.fb-ok{display:block;background:var(--bg-fb-ok);border-color:var(--clr-secondary);color:var(--txt);}
+.quiz-feedback.fb-err{display:block;background:var(--bg-fb-err);border-color:var(--clr-danger);color:var(--txt);}
+/* ═══ ESPAÇO DE ESCRITA ═══ */
+.write-area{margin:22px 0;}
+.write-area>label{display:block;font-size:var(--fz-body);font-weight:600;color:var(--txt);margin-bottom:9px;font-family:'Outfit',sans-serif;}
+.write-ta{width:100%;padding:17px 19px;border:2px solid var(--bdr-card);border-radius:10px;background:var(--bg-card);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:var(--fz-body);line-height:1.75;resize:vertical;min-height:200px;transition:border-color .2s,background .3s,color .3s;}
+.write-ta.large{min-height:440px;}.write-ta::placeholder{color:var(--txt-muted);font-size:var(--fz-sm);font-style:italic;}.write-ta:focus{border-color:var(--clr-primary);}
+.write-bar{display:flex;align-items:center;justify-content:space-between;margin-top:9px;flex-wrap:wrap;gap:9px;}
+.wc{font-size:var(--fz-sm);color:var(--txt-muted);font-weight:500;transition:color .2s;}
+.wc.wc--ok{color:var(--clr-secondary);}.wc.wc--over{color:var(--clr-accent);}
+.write-feedback{display:none;margin-top:13px;padding:15px 19px;border-radius:10px;font-size:var(--fz-body);line-height:1.65;border:2px solid;animation:fadeUp .3s ease;}
+.write-feedback.fb-ok{display:block;background:var(--bg-fb-ok);border-color:var(--clr-secondary);}
+.write-feedback.fb-warn{display:block;background:var(--bg-fb-warn);border-color:var(--clr-gold);}
+.write-feedback.fb-load{display:block;background:var(--bg-hl-info);border-color:var(--bdr-card);}
+.fb-loading-inner{display:flex;align-items:center;gap:13px;}
+.fb-spinner{width:27px;height:27px;min-width:27px;border:3px solid var(--bdr);border-top-color:var(--clr-primary);border-radius:50%;animation:spin .8s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+/* ═══ BOTÕES DE VOZ (DUA) ═══ */
+.voice-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+.voice-controls-label{font-size:var(--fz-cap);font-weight:700;color:var(--txt-muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px;font-family:'Outfit',sans-serif;}
+.q-btn--mic{background:transparent;color:var(--clr-voice-mic);border-color:var(--clr-voice-mic);}
+.q-btn--mic:hover{background:rgba(124,58,237,.08);}
+.q-btn--mic.listening{background:var(--clr-danger);color:#fff;border-color:var(--clr-danger);animation:pulse 1.4s infinite;}
+.q-btn--speak{background:transparent;color:var(--clr-voice-speak);border-color:var(--clr-voice-speak);}
+.q-btn--speak:hover{background:rgba(3,105,161,.08);}
+.q-btn--speak.speaking{background:var(--clr-voice-speak);color:#fff;border-color:var(--clr-voice-speak);animation:pulse 1.4s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.7;}}
+.voice-unsupported{font-size:var(--fz-cap);color:var(--txt-muted);font-style:italic;}
+/* ═══ FEEDBACK IA ═══ */
+.ai-fb{font-size:var(--fz-sm);}
+.ai-fb-header{display:flex;align-items:center;gap:10px;margin-bottom:13px;flex-wrap:wrap;}
+.ai-icon{font-size:27px;line-height:1;}
+.ai-nivel-badge{display:inline-block;color:#fff;font-size:var(--fz-cap);font-weight:700;padding:3px 10px;border-radius:100px;font-family:'Outfit',sans-serif;margin-left:6px;}
+.ai-total{margin-left:auto;font-family:'Outfit',sans-serif;font-size:var(--fz-h2);font-weight:900;color:var(--clr-primary);}
+.ai-resumo{margin-bottom:14px;line-height:1.65;font-size:var(--fz-sm);}
+.comp-list{margin-bottom:14px;display:flex;flex-direction:column;gap:11px;}
+.comp-header{display:flex;align-items:center;gap:8px;margin-bottom:5px;flex-wrap:wrap;}
+.comp-code{background:var(--clr-primary);color:var(--txt-inv);font-weight:700;font-size:var(--fz-cap);padding:2px 8px;border-radius:4px;font-family:'Outfit',sans-serif;flex-shrink:0;}
+.comp-name{font-weight:600;font-size:var(--fz-sm);flex:1;color:var(--txt);}
+.comp-score{font-weight:700;font-size:var(--fz-sm);color:var(--txt-sec);}
+.comp-bar-bg{background:var(--bdr-card);border-radius:100px;height:8px;overflow:hidden;margin-bottom:4px;}
+.comp-bar-fill{height:100%;border-radius:100px;transition:width .6s ease;}
+.comp-feedback{font-size:var(--fz-cap);color:var(--txt-sec);margin:0;line-height:1.55;}
+.ai-cols{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:8px;}
+.ai-col{border-radius:8px;padding:12px 14px;}.ai-col--ok{background:var(--bg-hl-ok);}.ai-col--warn{background:var(--bg-hl-warn);}
+.ai-col h4{font-size:var(--fz-sm);margin:0 0 7px;color:var(--txt);font-family:'Outfit',sans-serif;}
+.ai-col ul{padding-left:17px;margin:0;}.ai-col li{font-size:var(--fz-cap);margin-bottom:5px;line-height:1.5;color:var(--txt-sec);}
+.score-total{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 8px;flex-wrap:wrap;}
+.score-badge{font-family:'Outfit',sans-serif;font-size:52px;font-weight:900;line-height:1;}
+.score-label{font-size:var(--fz-sm);color:var(--txt-sec);line-height:1.4;max-width:180px;}
+/* ═══ CHAVE API ═══ */
+.api-setup-card{border-left:5px solid var(--clr-gold);}
+.api-input-wrap{display:flex;gap:10px;flex-wrap:wrap;margin:13px 0 9px;}
+.api-key-input{flex:1;min-width:240px;padding:11px 15px;border:2px solid var(--bdr-card);border-radius:var(--radius-sm);background:var(--bg-card);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:var(--fz-sm);transition:border-color .2s,background .3s,color .3s;}
+.api-key-input:focus{border-color:var(--clr-primary);outline:none;}.api-key-input::placeholder{color:var(--txt-muted);font-style:italic;}
+.api-status{font-size:var(--fz-sm);font-weight:600;color:var(--txt-muted);margin:0;transition:color .3s;}
+.api-status.ok{color:var(--clr-secondary);}.api-status.err{color:var(--clr-danger);}
+/* ═══ GRADE DICAS ═══ */
+.tip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:15px;margin:20px 0;list-style:none;padding:0;}
+.tip-card{background:var(--bg-card);border:1px solid var(--bdr-card);border-radius:var(--radius-md);padding:20px;border-top:4px solid;transition:box-shadow .2s,background .3s,border-color .3s;}
+.tip-card:hover{box-shadow:var(--shadow-lg);}
+.tip-card:nth-child(6n+1){border-top-color:var(--clr-primary);}.tip-card:nth-child(6n+2){border-top-color:var(--clr-secondary);}
+.tip-card:nth-child(6n+3){border-top-color:var(--clr-accent);}.tip-card:nth-child(6n+4){border-top-color:var(--clr-gold);}
+.tip-card:nth-child(6n+5){border-top-color:var(--clr-primary);}.tip-card:nth-child(6n+6){border-top-color:var(--clr-secondary);}
+.tip-emoji{font-size:28px;display:block;margin-bottom:9px;}
+.tip-title{font-family:'Outfit',sans-serif;font-size:var(--fz-h4);font-weight:700;margin:0 0 7px;color:var(--txt);}
+.tip-text{font-size:var(--fz-sm);color:var(--txt-sec);line-height:1.65;margin:0;}
+/* ═══ REDAÇÃO COMPLETA ═══ */
+.enem-rules-box{background:var(--bg-card);border:2px solid var(--clr-accent);border-radius:var(--radius-md);padding:24px;margin-bottom:22px;}
+.enem-rules-box h3{color:var(--clr-accent);margin:0 0 12px;}
+.enem-rules-box ul{margin:0 0 0 20px;padding:0;}.enem-rules-box li{font-size:var(--fz-sm);margin-bottom:7px;line-height:1.6;}
+.theme-input{width:100%;padding:13px 17px;border:2px solid var(--bdr-card);border-radius:var(--radius-sm);background:var(--bg-card);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:var(--fz-body);transition:border-color .2s,background .3s,color .3s;margin-bottom:16px;}
+.theme-input:focus{border-color:var(--clr-primary);outline:none;}.theme-input::placeholder{color:var(--txt-muted);font-style:italic;}
+/* ═══ CHECKLIST ═══ */
+.checklist-list{list-style:none;padding:0;margin:14px 0;}
+.checklist-item{display:flex;align-items:flex-start;gap:13px;padding:12px 0;border-bottom:1px solid var(--bdr-card);font-size:var(--fz-body);line-height:1.65;transition:border-color .3s;}
+.checklist-item:last-child{border-bottom:none;}
+.chk{width:24px;height:24px;min-width:24px;margin-top:3px;cursor:pointer;accent-color:var(--clr-secondary);flex-shrink:0;}
+.checklist-item label{cursor:pointer;flex:1;transition:color .2s;}
+.chk:checked+label{color:var(--txt-muted);text-decoration:line-through;text-decoration-color:var(--clr-secondary);}
+/* ═══ NAVEGAÇÃO SEÇÕES ═══ */
+.section-nav{display:flex;justify-content:space-between;align-items:center;margin-top:40px;padding-top:20px;border-top:1px solid var(--bdr-card);gap:13px;flex-wrap:wrap;transition:border-color .3s;}
+.section-nav-spacer{flex:1;}
+.nb{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-size:var(--fz-body);font-family:'Outfit',sans-serif;font-weight:700;cursor:pointer;border:2px solid var(--clr-primary);background:transparent;color:var(--clr-primary);white-space:nowrap;transition:all .2s;}
+.nb:hover{background:var(--bg-hl-info);}
+.nb--primary{background:var(--clr-primary);color:var(--txt-inv);}
+.nb--primary:hover{background:var(--clr-primary-lt);border-color:var(--clr-primary-lt);box-shadow:var(--shadow-lg);}
+/* ═══ CARTÃO FINAL ═══ */
+.final-card{background:var(--grad-final);border-radius:var(--radius-lg);padding:44px 38px;text-align:center;color:var(--txt-inv);margin:26px 0;}
+.final-card h2{color:var(--txt-inv);font-size:var(--fz-h1);margin:0 0 13px;}
+.final-card p{color:rgba(255,255,255,.92);max-width:500px;margin:0 auto 14px;}
+.final-highlight{font-family:'Outfit',sans-serif;font-weight:900;font-size:var(--fz-h4);color:var(--txt-inv);margin-bottom:18px!important;}
+.final-card .nb{border-color:rgba(255,255,255,.7);color:var(--txt-inv);margin-top:4px;}
+.final-card .nb:hover{background:rgba(255,255,255,.2);border-color:var(--txt-inv);}
+/* ═══ OVERLAY MOBILE ═══ */
+#sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:800;}
+#sidebar-overlay.active{display:block;}
+/* ═══ VLIBRAS ═══ */
+[vw].enabled{position:fixed!important;bottom:80px!important;right:0!important;z-index:8999!important;}
+[vw-access-button].active{z-index:8999!important;}
+/* ═══ RESPONSIVO ═══ */
+@media(max-width:768px){
+  :root{--px:18px;}
+  #sidebar-toggle{display:flex;}
+  #sidebar{transform:translateX(-100%);}
+  #sidebar.sidebar--open{transform:translateX(0);box-shadow:4px 0 24px rgba(0,0,0,.3);}
+  #content{margin-left:0;padding:var(--px);}
+  .ch-header{padding:28px 20px;}.card,.quiz-card{padding:20px 16px;}
+  .stats-list{grid-template-columns:repeat(2,1fr);}
+  .tip-grid{grid-template-columns:1fr;}
+  .section-nav{flex-direction:column;align-items:stretch;}
+  .section-nav .nb{justify-content:center;}
+  .section-nav-spacer{display:none;}
+  .quiz-actions{flex-direction:column;}
+  .ai-cols{grid-template-columns:1fr;}
+  .tb-label{display:none;}
+  #toolbar-brand{font-size:var(--fz-cap);}
+  .voice-controls{flex-direction:column;}
+}
+</style>
+</head>
+<body id="body-root">
+<a id="skip-link" href="#content">Pular para o conteúdo principal</a>
+
+<!-- TOOLBAR -->
+<div id="toolbar" role="toolbar" aria-label="Controles de acessibilidade">
+  <div id="toolbar-left">
+    <button id="sidebar-toggle" onclick="toggleSide()" aria-label="Abrir ou fechar menu de navegação" aria-expanded="false" aria-controls="sidebar"><span aria-hidden="true">☰</span></button>
+    <span id="toolbar-brand">📘 Curso Manoel Marciel Assis</span>
+  </div>
+  <div id="toolbar-controls" role="group" aria-label="Ajustes de visualização">
+    <div id="contrast-group" role="group" aria-labelledby="contrast-label">
+      <span id="contrast-label" class="tb-label">Contraste:</span>
+      <button id="btn-n" class="tb-btn tb-btn--active" onclick="setContrast('n')" aria-pressed="true">Normal</button>
+      <button id="btn-d" class="tb-btn" onclick="setContrast('d')" aria-pressed="false">Escuro</button>
+      <button id="btn-h" class="tb-btn" onclick="setContrast('h')" aria-pressed="false">Alto Contraste</button>
+    </div>
+    <div id="fontsize-group" role="group" aria-labelledby="fz-label">
+      <span id="fz-label" class="tb-label">Texto:</span>
+      <button class="tb-btn" onclick="changeFz('-')" aria-label="Diminuir tamanho do texto">A−</button>
+      <span id="fz-indicator" aria-live="polite" aria-label="Nível 1 de 3">1</span>
+      <button class="tb-btn" onclick="changeFz('+')" aria-label="Aumentar tamanho do texto">A+</button>
+    </div>
+  </div>
+</div>
+
+<!-- LAYOUT -->
+<div id="layout">
+
+<!-- SIDEBAR -->
+<nav id="sidebar" aria-label="Menu de navegação do e-book">
+  <div id="sidebar-brand" aria-hidden="true">
+    <p id="sid-title">Redação Nota 1000</p>
+    <p id="sid-sub">Curso Manoel Marciel Assis · ENEM 2025</p>
+  </div>
+  <p class="sid-section-label" aria-hidden="true">Início</p>
+  <button class="nav-btn nav-btn--active" id="nav-capa" data-sec="capa" onclick="go('capa')" aria-current="page" aria-label="Ir para: Capa">
+    <span class="nav-icon" aria-hidden="true">🏠</span><span class="nav-label">Capa</span>
+  </button>
+  <button class="nav-btn" id="nav-apres" data-sec="apres" onclick="go('apres')" aria-label="Ir para: Recado do Professor e configuração da IA">
+    <span class="nav-icon" aria-hidden="true">✉️</span><span class="nav-label">Recado do Professor</span>
+  </button>
+  <p class="sid-section-label" aria-hidden="true">Capítulos</p>
+  <button class="nav-btn" id="nav-cap1" data-sec="cap1" onclick="go('cap1')" aria-label="Ir para: Capítulo 1 – Introdução">
+    <span class="nav-icon" aria-hidden="true">📝</span><span class="nav-label">Cap. 1 – Introdução</span>
+  </button>
+  <button class="nav-btn" id="nav-cap2" data-sec="cap2" onclick="go('cap2')" aria-label="Ir para: Capítulo 2 – Repertório e Desenvolvimento">
+    <span class="nav-icon" aria-hidden="true">📖</span><span class="nav-label">Cap. 2 – Repertório e Desenvolvimento</span>
+  </button>
+  <button class="nav-btn" id="nav-cap3" data-sec="cap3" onclick="go('cap3')" aria-label="Ir para: Capítulo 3 – Conclusão e Proposta">
+    <span class="nav-icon" aria-hidden="true">🏁</span><span class="nav-label">Cap. 3 – Conclusão</span>
+  </button>
+  <p class="sid-section-label" aria-hidden="true">Prática</p>
+  <button class="nav-btn" id="nav-redacao" data-sec="redacao" onclick="go('redacao')" aria-label="Ir para: Redação Completa ENEM 2025">
+    <span class="nav-icon" aria-hidden="true">✍️</span><span class="nav-label">Redação Completa ENEM 2025</span>
+  </button>
+  <button class="nav-btn" id="nav-rep" data-sec="rep" onclick="go('rep')" aria-label="Ir para: Eixos de Repertório Sociocultural">
+    <span class="nav-icon" aria-hidden="true">📚</span><span class="nav-label">Eixos de Repertório</span>
+  </button>
+  <p class="sid-section-label" aria-hidden="true">Extra</p>
+  <button class="nav-btn" id="nav-bonus" data-sec="bonus" onclick="go('bonus')" aria-label="Ir para: Bônus – Guia de Estudos">
+    <span class="nav-icon" aria-hidden="true">⭐</span><span class="nav-label">Bônus: Guia de Estudos</span>
+  </button>
+  <div id="progress-wrap" aria-label="Progresso de leitura" aria-live="polite">
+    <p class="progress-label">Progresso</p>
+    <div id="progress-track" aria-hidden="true">
+      <div id="progress-fill" role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p id="progress-text">Seção 1 de 8</p>
+  </div>
+</nav>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<main id="content" tabindex="-1" aria-label="Conteúdo principal do e-book">
+
+<!-- ══════════════ CAPA ══════════════ -->
+<section id="capa" class="ebook-section ebook-section--active" aria-labelledby="h-capa">
+  <header class="ch-header ch-header--cover">
+    <p class="ch-badge">E-book Exclusivo · Ensino Médio · ENEM 2025</p>
+    <h1 id="h-capa">Redação Nota 1000</h1>
+    <p class="ch-intro">O guia completo do Curso Manoel Marciel Assis: Introdução, Desenvolvimento e Conclusão com correção por IA, entrada por voz e leitura em voz alta — acessível para todos.</p>
+  </header>
+  <div class="card">
+    <h2>O que Você Vai Aprender</h2>
+    <ul class="stats-list" aria-label="Quatro destaques do e-book">
+      <li class="stat-item"><span class="stat-val">3</span><span class="stat-label">Capítulos de estratégia ENEM</span></li>
+      <li class="stat-item"><span class="stat-val">5</span><span class="stat-label">Competências analisadas pela IA</span></li>
+      <li class="stat-item"><span class="stat-val">4</span><span class="stat-label">Eixos de repertório sociocultural</span></li>
+      <li class="stat-item"><span class="stat-val">1000</span><span class="stat-label">Pontos ao seu alcance</span></li>
+    </ul>
+    <aside class="hl-box hl-box--info" aria-label="Recursos de acessibilidade do e-book">
+      <h3>♿ Acessibilidade – Desenho Universal da Aprendizagem</h3>
+      <p>Este e-book foi desenvolvido seguindo os princípios do DUA — múltiplos meios de representação, ação e expressão. Você pode:</p>
+      <ul>
+        <li><strong>Ajustar contraste e tamanho do texto</strong> pela barra superior (3 contrastes · 3 tamanhos)</li>
+        <li><strong>Ditar seu texto com o microfone</strong> em vez de digitar — o áudio é adicionado ao final do que já escreveu</li>
+        <li><strong>Ouvir seu texto em voz alta</strong> antes de enviar para a IA — ideal para revisar e para usuários com dislexia</li>
+        <li><strong>Usar tradução para Libras</strong> pelo widget VLibras fixo na lateral da tela</li>
+        <li><strong>Navegar pelo teclado</strong> com ← → PageUp PageDown e Esc</li>
+      </ul>
+    </aside>
+    <aside class="hl-box hl-box--ok" aria-label="Como navegar pelo e-book">
+      <h3>🧭 Como Navegar</h3>
+      <p>Use o menu lateral para ir a qualquer seção. Os botões "Anterior" e "Próximo" ficam no fim de cada página. Teclado: <kbd>→</kbd> avança, <kbd>←</kbd> volta, <kbd>Esc</kbd> fecha o menu mobile.</p>
+    </aside>
+  </div>
+  <nav class="section-nav" aria-label="Navegação – Capa">
+    <span class="section-nav-spacer"></span>
+    <button class="nb nb--primary" onclick="go('apres')" aria-label="Próximo: Recado do Professor">Próximo: Recado do Professor →</button>
+  </nav>
+</section>
+
+<!-- ══════════════ APRESENTAÇÃO ══════════════ -->
+<section id="apres" class="ebook-section" aria-labelledby="h-apres">
+  <header class="ch-header ch-header--blue">
+    <p class="ch-badge">✉️ Recado do Professor · Configuração</p>
+    <h1 id="h-apres">Para a Minha Turma</h1>
+    <p class="ch-intro">Uma mensagem sobre método, confiança e o passo essencial para ativar a correção por Inteligência Artificial em todos os capítulos.</p>
+  </header>
+  <div class="card">
+    <p><strong>Minha turma,</strong></p>
+    <p>A redação do ENEM não é uma barreira — é uma competência. E competência se constrói com método, repetição e bom feedback. Este e-book vai te dar os três: a teoria de cada parte da redação, exemplos reais de textos nota 200 e um corretor de Inteligência Artificial baseado nos critérios oficiais do INEP, disponível a qualquer hora para analisar o que você escreve.</p>
+    <p>Cada capítulo foca em uma parte da redação: o Capítulo 1 ensina a Introdução, o 2 o Repertório e o Desenvolvimento, e o 3 a Conclusão com a proposta de intervenção. Ao final, você escreve a redação completa e recebe uma nota estimada de 0 a 1000.</p>
+    <blockquote class="mentor-quote">
+      <p>"Não existe redação boa ou ruim — existe redação que foi treinada e redação que não foi. A sua voz já existe. Este guia vai te mostrar como colocá-la no papel da forma certa."</p>
+      <footer><cite>— Prof. Manoel Marciel Assis</cite></footer>
+    </blockquote>
+
+    <!-- CONFIG DA IA -->
+    <div class="card api-setup-card" id="api-setup" aria-label="Configuração da correção por Inteligência Artificial">
+      <h2>🤖 Ativar Correção por IA (obrigatório)</h2>
+      <p>Para que a análise funcione, insira abaixo a sua chave da API Anthropic. Ela é armazenada <strong>apenas na memória desta sessão</strong> do navegador — nunca é salva em disco nem enviada a terceiros. Basta inserir uma vez e funciona em todos os capítulos.</p>
+      <div class="api-input-wrap">
+        <input type="password" id="api-key-input" class="api-key-input"
+               placeholder="Cole aqui: sk-ant-api03-..."
+               aria-label="Campo para inserir a chave de API Anthropic"
+               autocomplete="off">
+        <button class="q-btn q-btn--primary" onclick="saveApiKey()" aria-label="Salvar chave e ativar a correção por IA">Ativar IA ✓</button>
+      </div>
+      <p id="api-status" class="api-status" role="status" aria-live="polite">⚪ IA desativada — insira sua chave para ativar</p>
+      <aside class="hl-box hl-box--info" style="margin-top:14px;" aria-label="Como obter a chave de API">
+        <h3>🔑 Como obter sua chave (alguns minutos, gratuito para testar)</h3>
+        <p>1. Acesse <strong>console.anthropic.com</strong> e crie uma conta.<br>
+           2. Vá em <strong>API Keys → Create Key</strong>.<br>
+           3. Copie a chave (começa com <code>sk-ant-</code>) e cole no campo acima.<br>
+           4. Clique em <strong>Ativar IA</strong>. A partir daí, todos os botões de análise funcionam.</p>
+      </aside>
+    </div>
+
+    <h2 style="margin-top:30px;">As 5 Competências do ENEM</h2>
+    <div class="tbl-wrap">
+      <table aria-label="As cinco competências da redação ENEM e qual capítulo deste e-book as trabalha">
+        <thead><tr><th scope="col">Competência</th><th scope="col">O que o corretor avalia</th><th scope="col">Pontos</th><th scope="col">Capítulo foco</th></tr></thead>
+        <tbody>
+          <tr><td><strong>C1</strong></td><td>Domínio da norma culta: gramática, ortografia, pontuação, concordância, regência</td><td>0–200</td><td>Todos</td></tr>
+          <tr><td><strong>C2</strong></td><td>Compreensão da proposta + repertório sociocultural produtivo em apoio ao argumento</td><td>0–200</td><td>⭐ Cap. 1 e 2</td></tr>
+          <tr><td><strong>C3</strong></td><td>Seleção, organização e argumentação em defesa de um ponto de vista</td><td>0–200</td><td>⭐ Cap. 1 e 2</td></tr>
+          <tr><td><strong>C4</strong></td><td>Mecanismos linguísticos de coesão: conectivos, referenciação e articulação</td><td>0–200</td><td>⭐ Cap. 2</td></tr>
+          <tr><td><strong>C5</strong></td><td>Proposta de intervenção detalhada com agente, ação, modo e finalidade</td><td>0–200</td><td>⭐ Cap. 3</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <nav class="section-nav" aria-label="Navegação – Apresentação">
+    <button class="nb nb--secondary" onclick="go('capa')" aria-label="Anterior: Capa">← Capa</button>
+    <button class="nb nb--primary" onclick="go('cap1')" aria-label="Próximo: Capítulo 1 – Introdução">Cap. 1: Introdução →</button>
+  </nav>
+</section>
+
+<!-- ══════════════ CAPÍTULO 1 – INTRODUÇÃO ══════════════ -->
+<section id="cap1" class="ebook-section" aria-labelledby="h-cap1">
+  <header class="ch-header ch-header--blue">
+    <p class="ch-badge">Capítulo 1 · Competências C1 · C2 · C3</p>
+    <h1 id="h-cap1">Introdução</h1>
+    <p class="ch-intro">Como contextualizar o tema, formular uma tese sólida e abrir a redação com a autoridade que convence o corretor desde a primeira linha.</p>
+  </header>
+
+  <figure class="video-placeholder" role="img" aria-label="Vídeo do professor: Como escrever a introdução perfeita para o ENEM. Duração estimada: 6 min.">
+    <div class="vid-badge" aria-hidden="true">▶ Vídeo · 6 min</div>
+    <div class="vid-play" aria-hidden="true">▶</div>
+    <figcaption>
+      <p class="vid-title">Como Escrever a Introdução Perfeita para o ENEM</p>
+      <p class="vid-desc">O professor analisa exemplos reais de introduções nota 200 e nota 0 — veja a diferença lado a lado.</p>
+      <p class="vid-note"><em>Disponível na plataforma do curso</em></p>
+    </figcaption>
+  </figure>
+
+  <!-- TEORIA -->
+  <div class="card">
+    <h2>Por que a Introdução é Decisiva?</h2>
+    <p>A introdução é o primeiro parágrafo da redação e estabelece o tom para todas as competências. Uma introdução bem construída já demonstra ao corretor que você entende o tema (C2), sabe argumentar (C3) e escreve com clareza (C1). Ela não precisa ser longa — <strong>entre 5 e 8 linhas</strong> é o ideal — mas precisa cumprir duas funções sem falha.</p>
+    <aside class="hl-box hl-box--accent" aria-label="As duas funções obrigatórias da introdução">
+      <h3>🔑 Duas funções obrigatórias — sem exceção</h3>
+      <p><strong>1. Contextualização:</strong> situe o leitor no tema com uma perspectiva relevante (dado, conceito, evento histórico, referência filosófica ou literária). Esse é o seu "gancho".<br>
+         <strong>2. Tese:</strong> apresente seu ponto de vista de forma clara, específica e defensável. A tese orienta toda a redação — ela vai ser "retomada" na conclusão.</p>
+    </aside>
+
+    <h2>As 4 Técnicas de Contextualização</h2>
+    <p>Você não precisa dominar todas — mas precisa saber usar ao menos duas com segurança. Veja como cada uma funciona:</p>
+    <div class="tbl-wrap">
+      <table aria-label="Tabela com quatro técnicas de contextualização, descrição e exemplo de abertura">
+        <thead><tr><th scope="col">Técnica</th><th scope="col">Como funciona</th><th scope="col">Exemplo de abertura</th><th scope="col">Risco</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Histórica</strong></td>
+            <td>Situa o tema num contexto temporal relevante — passado que explica o presente</td>
+            <td>"Desde a Revolução Industrial, o trabalho humano vem sendo progressivamente substituído pela automação..."</td>
+            <td>Evite datas erradas — o corretor percebe</td>
+          </tr>
+          <tr>
+            <td><strong>Conceitual</strong></td>
+            <td>Define um conceito central ligado ao tema, preferencialmente com respaldo de fonte reconhecida</td>
+            <td>"Saúde mental, segundo a Organização Mundial da Saúde, é um estado de bem-estar que vai muito além da ausência de transtornos..."</td>
+            <td>Evite definições de dicionário — parecem rasas</td>
+          </tr>
+          <tr>
+            <td><strong>Dado/Estatística</strong></td>
+            <td>Abre com um número impactante e verificável que evidencia a dimensão do problema</td>
+            <td>"Com mais de 36 milhões de brasileiros sem acesso à internet, segundo o CETIC.br, a exclusão digital permanece..."</td>
+            <td>Use apenas dados que você tenha certeza — se errar o número, prejudica a C2</td>
+          </tr>
+          <tr>
+            <td><strong>Filosófica / Literária</strong></td>
+            <td>Cita um pensador, obra literária ou ideia que ilumina o tema de outra perspectiva</td>
+            <td>"Para o sociólogo Pierre Bourdieu, o capital cultural é tão determinante quanto o capital econômico na reprodução das desigualdades sociais..."</td>
+            <td>Conecte a citação diretamente ao tema — não use para impressionar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Como Formular a Tese</h2>
+    <p>A tese responde à pergunta: <em>"Qual é a minha posição sobre o problema proposto?"</em>. Não é um resumo do que você vai escrever — é uma tomada de posição clara, com causas ou agentes identificados, que você vai defender ao longo da redação.</p>
+
+    <figure class="example-box example-box--bad" aria-label="Exemplo de tese fraca, vaga e genérica — não usar">
+      <figcaption class="ex-label ex-label--bad">❌ Tese Fraca – vaga, óbvia, sem posição específica</figcaption>
+      <p class="ex-text">"A violência contra a mulher é um problema sério que afeta toda a sociedade e precisa ser combatido urgentemente, pois ninguém merece ser maltratado."</p>
+    </figure>
+
+    <figure class="example-box example-box--good" aria-label="Exemplo de tese forte, específica e com causas identificadas — usar como modelo">
+      <figcaption class="ex-label ex-label--good">✅ Tese Forte – específica, com causas e agentes identificados</figcaption>
+      <p class="ex-text">"A persistência da violência doméstica no Brasil está enraizada tanto na insuficiência dos mecanismos de fiscalização da Lei Maria da Penha quanto na reprodução cultural do machismo estrutural — fatores que exigem ação integrada do Estado, das escolas e da mídia para serem efetivamente combatidos."</p>
+    </figure>
+
+    <aside class="hl-box hl-box--ok" aria-label="Análise comparativa das duas teses">
+      <h3>🔍 O que mudou entre as duas teses?</h3>
+      <p><strong>Tese fraca:</strong> não identifica causas, não cita agentes, não propõe direção para o argumento — qualquer aluno escreveria isso sem preparação.<br>
+         <strong>Tese forte:</strong> aponta duas causas específicas (falha na fiscalização + reprodução cultural), três agentes de solução (Estado, escolas, mídia) e já orienta os dois parágrafos de desenvolvimento. Isso vale pontos em C2 e C3.</p>
+    </aside>
+
+    <h2>Introdução Modelo – Nota 200</h2>
+    <figure class="example-box example-box--good" aria-label="Exemplo completo de introdução modelo nota 200 sobre saúde mental no trabalho">
+      <figcaption class="ex-label ex-label--good">📝 Introdução Modelo – Tema: Saúde Mental no Trabalho</figcaption>
+      <p class="ex-text">"Em 2022, a Organização Mundial da Saúde classificou o burnout como doença ocupacional, reconhecendo o esgotamento profissional como um problema de saúde pública de dimensões globais. No Brasil, esse cenário é agravado por relações de trabalho cada vez mais precarizadas: a Reforma Trabalhista de 2017 flexibilizou jornadas e fragilizou vínculos empregatícios, expondo trabalhadores a condições que potencializam o adoecimento psíquico. Nesse contexto, garantir a saúde mental dos trabalhadores exige não apenas iniciativas individuais, mas políticas públicas estruturadas e uma revisão profunda das práticas corporativas brasileiras."</p>
+    </figure>
+
+    <div class="tbl-wrap">
+      <table aria-label="Análise anatômica da introdução modelo, trecho por trecho">
+        <thead><tr><th scope="col">Trecho da introdução</th><th scope="col">Função</th><th scope="col">Competência</th></tr></thead>
+        <tbody>
+          <tr><td>"Em 2022, a OMS classificou o burnout como doença ocupacional..."</td><td>Contextualização com dado recente e fonte verificável (repertório produtivo)</td><td>C2</td></tr>
+          <tr><td>"No Brasil, esse cenário é agravado pela Reforma Trabalhista..."</td><td>Contextualização nacional — aprofunda e conecta ao problema central</td><td>C3</td></tr>
+          <tr><td>"Nesse contexto, garantir a saúde mental exige políticas públicas..."</td><td>Tese — ponto de vista específico, afirmativo e defensável; orienta os desenvolvimentos</td><td>C3</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <aside class="hl-box hl-box--warn" aria-label="Erros mais comuns na introdução">
+      <h3>⚠️ Erros Mais Comuns na Introdução</h3>
+      <ul>
+        <li><strong>Ausência de tese:</strong> terminar a introdução com uma pergunta ("Por que isso acontece?") em vez de uma posição afirmativa</li>
+        <li><strong>Tese no meio do parágrafo:</strong> a tese deve ser a última frase da introdução, não uma afirmação solta no meio</li>
+        <li><strong>Contextualização genérica:</strong> "desde os primórdios da humanidade" ou "ao longo da história" sem especificar nada — vale 0 em C2</li>
+        <li><strong>Copiar o enunciado:</strong> reproduzir frases dos textos motivadores é considerado cópia e zera a C2</li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- QUIZ 1 -->
+  <section class="quiz-card" id="quiz-1" aria-labelledby="quiz1-title">
+    <p class="quiz-badge" aria-hidden="true">🧠 Quiz · Capítulo 1 – Introdução</p>
+    <h2 id="quiz1-title" class="quiz-title">Teste Seu Conhecimento</h2>
+    <p class="quiz-q" id="quiz1-q">Qual é a função principal da tese na introdução da redação do ENEM?</p>
+    <div class="quiz-opts" role="radiogroup" aria-labelledby="quiz1-q" id="q1-opts">
+      <button class="quiz-opt" data-quiz="q1" data-letter="A" onclick="selOpt('q1','A',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">A</span><span class="opt-text">Contar uma experiência pessoal que ilustra o tema de forma emocional e cativante</span></button>
+      <button class="quiz-opt" data-quiz="q1" data-letter="B" onclick="selOpt('q1','B',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">B</span><span class="opt-text">Apresentar o ponto de vista claro e defensável que orientará toda a argumentação da redação</span></button>
+      <button class="quiz-opt" data-quiz="q1" data-letter="C" onclick="selOpt('q1','C',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">C</span><span class="opt-text">Fazer uma pergunta retórica para despertar a curiosidade do corretor sobre o tema</span></button>
+      <button class="quiz-opt" data-quiz="q1" data-letter="D" onclick="selOpt('q1','D',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">D</span><span class="opt-text">Fazer um resumo dos dois parágrafos de desenvolvimento que virão a seguir</span></button>
+    </div>
+    <div class="quiz-actions">
+      <button class="q-btn q-btn--primary" onclick="checkQ('q1','B')" aria-label="Verificar minha resposta">Verificar ✓</button>
+      <button class="q-btn q-btn--secondary" onclick="resetQ('q1')" aria-label="Tentar novamente">Tentar Novamente ↺</button>
+    </div>
+    <div class="quiz-feedback" id="q1-feedback" role="alert" aria-live="assertive"></div>
+  </section>
+
+  <!-- PRÁTICA 1 – COM MICROFONE E VOZ -->
+  <div class="card">
+    <h2>✍️ Pratique: Escreva a Sua Introdução</h2>
+    <p>Escreva a introdução de uma redação. Use o microfone para ditar se preferir. Depois de escrever, ouça seu texto em voz alta para revisar antes de enviar à IA. A análise focará especificamente em: <strong>contextualização</strong>, <strong>força da tese</strong> e <strong>uso de repertório</strong> — com base nos critérios reais dos corretores do INEP.</p>
+
+    <aside class="hl-box hl-box--info" aria-label="Estrutura sugerida para a introdução">
+      <h3>📐 Estrutura sugerida (5 a 8 linhas)</h3>
+      <p><strong>[Contextualização]</strong> → dado, conceito, perspectiva histórica ou referência filosófica/literária.<br>
+         <strong>[Aprofundamento opcional]</strong> → conecta a contextualização ao problema central do tema.<br>
+         <strong>[Tese — última frase]</strong> → seu ponto de vista: específico, afirmativo e defensável.</p>
+    </aside>
+
+    <div class="write-area">
+      <label for="w1">Sua Introdução:</label>
+
+      <!-- CONTROLES DE VOZ DUA -->
+      <div class="voice-controls" role="group" aria-label="Ferramentas de voz para o campo de texto da introdução">
+        <p class="voice-controls-label" aria-hidden="true">🎙️ Ferramentas de Voz (DUA)</p>
+        <button class="q-btn q-btn--mic" id="mic-w1"
+                onclick="toggleMic('w1','mic-w1')"
+                aria-label="Ativar microfone — o texto falado será adicionado ao final do campo"
+                aria-pressed="false">
+          🎤 Iniciar Microfone
+        </button>
+        <button class="q-btn q-btn--speak" id="speak-w1"
+                onclick="speakText('w1','speak-w1')"
+                aria-label="Ouvir o texto do campo em voz alta para revisão"
+                aria-pressed="false">
+          🔊 Ouvir Texto
+        </button>
+      </div>
+
+      <textarea id="w1" class="write-ta" rows="8"
+        placeholder="Escreva ou dite sua introdução aqui. Comece com uma contextualização (dado, conceito, perspectiva histórica ou filosófica) e termine com sua tese — o ponto de vista que você vai defender em toda a redação. Clique em 'Ouvir Texto' para revisar antes de enviar à IA."
+        aria-label="Campo de escrita da introdução — compatível com microfone e leitura em voz alta"
+        oninput="updWc('w1','wc1')"
+        aria-describedby="wc1"></textarea>
+      <div class="write-bar">
+        <span class="wc" id="wc1" aria-live="polite" aria-label="Contagem de palavras">0 palavras</span>
+        <button class="q-btn q-btn--primary" onclick="checkW('w1','wf1','intro')" aria-label="Enviar introdução para análise pela IA com critérios INEP">🤖 Analisar Introdução com IA</button>
+      </div>
+      <div class="write-feedback" id="wf1" role="alert" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+  </div>
+
+  <nav class="section-nav" aria-label="Navegação – Capítulo 1">
+    <button class="nb nb--secondary" onclick="go('apres')" aria-label="Anterior: Recado do Professor">← Recado do Professor</button>
+    <button class="nb nb--primary" onclick="go('cap2')" aria-label="Próximo: Capítulo 2 – Repertório e Desenvolvimento">Cap. 2: Repertório e Desenvolvimento →</button>
+  </nav>
+</section>
+
+<!-- ══════════════ CAPÍTULO 2 – REPERTÓRIO E DESENVOLVIMENTO ══════════════ -->
+<section id="cap2" class="ebook-section" aria-labelledby="h-cap2">
+  <header class="ch-header ch-header--green">
+    <p class="ch-badge">Capítulo 2 · Competências C1 · C2 · C3 · C4</p>
+    <h1 id="h-cap2">Repertório e Desenvolvimento</h1>
+    <p class="ch-intro">Como construir argumentos sólidos com repertório produtivo, encadear causa e consequência, e usar os conectivos certos para pontuar em C2, C3 e C4.</p>
+  </header>
+
+  <figure class="video-placeholder" role="img" aria-label="Vídeo do professor: Como usar repertório no desenvolvimento do ENEM. Duração estimada: 8 min.">
+    <div class="vid-badge" aria-hidden="true">▶ Vídeo · 8 min</div>
+    <div class="vid-play" aria-hidden="true">▶</div>
+    <figcaption>
+      <p class="vid-title">Repertório Produtivo e Desenvolvimento no ENEM</p>
+      <p class="vid-desc">O professor analisa parágrafos reais de redações nota 200 e identifica por que o repertório funcionou em cada caso — e quando ele prejudica.</p>
+      <p class="vid-note"><em>Disponível na plataforma do curso</em></p>
+    </figcaption>
+  </figure>
+
+  <div class="card">
+    <h2>O que é Repertório Sociocultural?</h2>
+    <p>Repertório sociocultural é qualquer referência de domínio público — filosófica, literária, científica, artística, legislativa ou histórica — usada para <strong>fundamentar e enriquecer</strong> um argumento. O ENEM aceita quase tudo, desde que seja verificável e esteja conectado ao raciocínio.</p>
+    <p>O erro mais comum é "jogar" uma citação no parágrafo sem explicar como ela se relaciona com o argumento. O INEP chama isso de repertório <em>decorativo</em> — e não pontua em C2.</p>
+
+    <aside class="hl-box hl-box--accent" aria-label="Diferença entre repertório produtivo e decorativo">
+      <h3>⚠️ Produtivo vs. Decorativo — a distinção que decide a C2</h3>
+      <p><strong>Produtivo:</strong> a referência tem relação direta com o argumento e o sustenta. Ex: "Segundo a pesquisa do CETIC.br (2023), 35 milhões de brasileiros estão offline — dado que evidencia a exclusão estrutural do acesso à informação."<br>
+         <strong>Decorativo:</strong> a referência é citada só para "parecer culto", sem conexão. Ex: "Como dizia Platão, o conhecimento é importante para o ser humano" — em uma redação sobre exclusão digital. Esse uso não vale C2.</p>
+    </aside>
+
+    <h2>5 Tipos de Repertório com Exemplos Práticos</h2>
+    <div class="tbl-wrap">
+      <table aria-label="Cinco tipos de repertório aceitos no ENEM com exemplos e forma de uso">
+        <thead><tr><th scope="col">Tipo</th><th scope="col">Exemplos concretos</th><th scope="col">Como usar no argumento</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Filosófico</strong></td>
+            <td>Bourdieu (capital cultural e habitus); Foucault (biopolítica); Bauman (modernidade líquida); Hannah Arendt (banalidade do mal); Sartre (liberdade e responsabilidade)</td>
+            <td>"Segundo Pierre Bourdieu, a escola reproduz desigualdades ao valorizar o capital cultural das classes dominantes — o que explica como o acesso à educação de qualidade permanece um privilégio de poucos no Brasil."</td>
+          </tr>
+          <tr>
+            <td><strong>Literário</strong></td>
+            <td>Quarto de Despejo (Carolina de Jesus); Vidas Secas (Graciliano Ramos); 1984 (Orwell); Admirável Mundo Novo (Huxley); O Cortiço (Aluísio Azevedo)</td>
+            <td>"Assim como Carolina Maria de Jesus registra nos seus diários, o Brasil de hoje ainda impõe à população pobre uma rotina de exclusão e invisibilidade que o Estado insiste em não enxergar."</td>
+          </tr>
+          <tr>
+            <td><strong>Científico / Dados</strong></td>
+            <td>IBGE; OMS; CETIC.br; Fiocruz; INEP; IPEA; Oxfam; Banco Mundial; IPCC; OIT</td>
+            <td>"Segundo dados do IBGE (2023), o coeficiente de Gini do Brasil permanece entre os mais altos do mundo, o que demonstra que o crescimento econômico não gerou redução estrutural da desigualdade."</td>
+          </tr>
+          <tr>
+            <td><strong>Legislativo</strong></td>
+            <td>LGPD (Lei 13.709/18); LBI (Lei 13.146/15); Lei Maria da Penha; ECA; PNRS (Lei 12.305/10); Marco Civil da Internet</td>
+            <td>"A Lei Brasileira de Inclusão (Lei 13.146/2015) garante o direito pleno da pessoa com deficiência à educação e ao trabalho — mas a ausência de fiscalização transforma essa proteção legal em letra morta."</td>
+          </tr>
+          <tr>
+            <td><strong>Artístico / Cultural</strong></td>
+            <td>Filmes: Cidade de Deus, Antes do Dilúvio, The Social Dilemma; Séries: Black Mirror; Obras: Operários (Tarsila do Amaral)</td>
+            <td>"O documentário 'The Social Dilemma' (Netflix, 2020) expõe como algoritmos projetados para maximizar engajamento potencializam a disseminação de desinformação e fragilizam a saúde mental dos usuários."</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Desenvolvimento 1: Argumento com Causa</h2>
+    <p>O primeiro parágrafo de desenvolvimento apresenta o argumento principal. Ele precisa ter um começo claro (tópico frasal), um meio denso (repertório + análise) e um fechamento conclusivo. Use entre <strong>7 e 10 linhas</strong>.</p>
+    <aside class="hl-box hl-box--ok" aria-label="Fórmula passo a passo do Desenvolvimento 1">
+      <h3>📐 Fórmula do Desenvolvimento 1</h3>
+      <p><strong>Passo 1 – Tópico frasal:</strong> afirme o argumento principal em uma frase clara e direta.<br>
+         <strong>Passo 2 – Repertório produtivo:</strong> "Segundo [fonte]..." / "A Lei X estabelece..." / "O filósofo Y argumenta que..."<br>
+         <strong>Passo 3 – Análise causa-efeito:</strong> explique por que esse dado/referência sustenta o argumento e qual é o impacto disso.<br>
+         <strong>Passo 4 – Fechamento:</strong> "Assim, fica evidente que..." / "Portanto..." / "Desse modo, torna-se claro que..."</p>
+    </aside>
+
+    <figure class="example-box example-box--bad" aria-label="Exemplo de desenvolvimento fraco sem análise causa-efeito">
+      <figcaption class="ex-label ex-label--bad">❌ Desenvolvimento Fraco – repertório sem análise</figcaption>
+      <p class="ex-text">"A saúde mental é um problema sério no Brasil. Segundo a OMS, o burnout foi classificado como doença. A Reforma Trabalhista também mudou muita coisa no trabalho. Por isso, o governo precisa agir."</p>
+    </figure>
+    <figure class="example-box example-box--good" aria-label="Exemplo de desenvolvimento forte com repertório produtivo e análise">
+      <figcaption class="ex-label ex-label--good">✅ Desenvolvimento Forte – repertório produtivo + causa-efeito</figcaption>
+      <p class="ex-text">"A precarização das relações de trabalho é a principal causa do adoecimento mental dos trabalhadores brasileiros. Segundo a Organização Mundial da Saúde, a depressão e a ansiedade custam à economia global cerca de 1 trilhão de dólares ao ano em perda de produtividade. No contexto nacional, a Reforma Trabalhista de 2017 ampliou as formas de contratação precária e flexibilizou jornadas — mudanças que, conforme pesquisas da Fiocruz, intensificaram o sofrimento psíquico em grupos de trabalhadores mais vulneráveis. Assim, fica evidente que a saúde mental não pode ser tratada como responsabilidade exclusivamente individual: trata-se de um problema estrutural que exige ação coletiva do Estado e das empresas."</p>
+    </figure>
+
+    <h2>Desenvolvimento 2: Consequência e Aprofundamento</h2>
+    <p>O segundo parágrafo de desenvolvimento aprofunda a análise — mostrando as consequências do problema, ou analisando um grupo especialmente afetado, ou apresentando uma perspectiva comparativa. Esse é o espaço para demonstrar visão sistêmica.</p>
+    <div class="tbl-wrap">
+      <table aria-label="Três técnicas para o segundo parágrafo de desenvolvimento">
+        <thead><tr><th scope="col">Técnica</th><th scope="col">Quando usar</th><th scope="col">Exemplo de abertura</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Grupo Afetado</strong></td>
+            <td>Quando o problema atinge certos grupos com maior intensidade — isso demonstra leitura crítica</td>
+            <td>"Entre os grupos mais vulnerabilizados, destacam-se as mulheres negras de baixa renda, que enfrentam simultaneamente o racismo estrutural, o machismo e a exclusão econômica..."</td>
+          </tr>
+          <tr>
+            <td><strong>Dados Comparativos</strong></td>
+            <td>Quando você quer evidenciar o tamanho do problema com comparações regionais, históricas ou internacionais</td>
+            <td>"Enquanto países nórdicos como a Finlândia investem mais de 7% do PIB em educação pública, o Brasil destina cerca de 5,8%, segundo dados da OCDE — desproporção que reflete diretamente na qualidade do ensino ofertado..."</td>
+          </tr>
+          <tr>
+            <td><strong>Visão Sistêmica</strong></td>
+            <td>Quando você quer mostrar como o problema se conecta a outros, formando um ciclo de exclusão ou agravamento</td>
+            <td>"A exclusão digital não é um fenômeno isolado: ela retroalimenta desigualdades já existentes nas áreas de saúde, educação e emprego, ampliando o abismo entre os que têm acesso ao conhecimento e os que permanecem à margem da sociedade da informação..."</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Competência 4: Coesão e Conectivos</h2>
+    <p>A C4 avalia se as partes do texto estão <strong>articuladas entre si</strong>. Para ganhar pontos em C4, use conectivos adequados à função de cada trecho — não use "ademais" no começo de tudo só para parecer formal.</p>
+    <div class="tbl-wrap">
+      <table aria-label="Conectivos organizados por função comunicativa para a Competência 4">
+        <thead><tr><th scope="col">Função</th><th scope="col">Conectivos recomendados</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Causa</strong></td><td>porque, visto que, dado que, uma vez que, haja vista que, em virtude de</td></tr>
+          <tr><td><strong>Consequência</strong></td><td>portanto, assim, logo, por isso, consequentemente, dessa forma, daí</td></tr>
+          <tr><td><strong>Adição</strong></td><td>além disso, ademais, outrossim, ainda, também, acrescente-se que</td></tr>
+          <tr><td><strong>Oposição / Concessão</strong></td><td>contudo, entretanto, todavia, porém, no entanto, embora, apesar de</td></tr>
+          <tr><td><strong>Referência a fonte</strong></td><td>segundo, conforme, de acordo com, consoante, como aponta, como demonstra</td></tr>
+          <tr><td><strong>Exemplificação</strong></td><td>por exemplo, a título de ilustração, é o caso de, cite-se, como ocorre com</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- QUIZ 2 -->
+  <section class="quiz-card" id="quiz-2" aria-labelledby="quiz2-title">
+    <p class="quiz-badge" aria-hidden="true">🧠 Quiz · Capítulo 2 – Desenvolvimento</p>
+    <h2 id="quiz2-title" class="quiz-title">Teste Seu Conhecimento</h2>
+    <p class="quiz-q" id="quiz2-q">O que torna um repertório sociocultural "produtivo" para a Competência 2 do ENEM?</p>
+    <div class="quiz-opts" role="radiogroup" aria-labelledby="quiz2-q" id="q2-opts">
+      <button class="quiz-opt" data-quiz="q2" data-letter="A" onclick="selOpt('q2','A',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">A</span><span class="opt-text">Ser de autores muito famosos ou filósofos europeus clássicos como Platão ou Aristóteles</span></button>
+      <button class="quiz-opt" data-quiz="q2" data-letter="B" onclick="selOpt('q2','B',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">B</span><span class="opt-text">Aparecer em destaque no início do parágrafo com aspas e nome completo do autor</span></button>
+      <button class="quiz-opt" data-quiz="q2" data-letter="C" onclick="selOpt('q2','C',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">C</span><span class="opt-text">Ter relação direta com o argumento defendido e sustentar o ponto de vista da redação</span></button>
+      <button class="quiz-opt" data-quiz="q2" data-letter="D" onclick="selOpt('q2','D',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">D</span><span class="opt-text">Ser obrigatoriamente uma lei federal ou dado estatístico com percentual exato</span></button>
+    </div>
+    <div class="quiz-actions">
+      <button class="q-btn q-btn--primary" onclick="checkQ('q2','C')" aria-label="Verificar minha resposta">Verificar ✓</button>
+      <button class="q-btn q-btn--secondary" onclick="resetQ('q2')" aria-label="Tentar novamente">Tentar Novamente ↺</button>
+    </div>
+    <div class="quiz-feedback" id="q2-feedback" role="alert" aria-live="assertive"></div>
+  </section>
+
+  <!-- PRÁTICA 2 – COM MICROFONE E VOZ -->
+  <div class="card">
+    <h2>✍️ Pratique: Escreva Seu Desenvolvimento</h2>
+    <p>Escreva um ou dois parágrafos de desenvolvimento (100–160 palavras no total). Inclua tópico frasal, repertório produtivo, análise causa-efeito e fechamento com conectivo. Use o microfone para ditar se preferir, e ouça o texto antes de enviar à IA. A análise focará em: <strong>qualidade do argumento</strong>, <strong>produtividade do repertório</strong> e <strong>coesão</strong>.</p>
+
+    <div class="write-area">
+      <label for="w2">Seu Desenvolvimento (um ou dois parágrafos):</label>
+
+      <div class="voice-controls" role="group" aria-label="Ferramentas de voz para o campo de texto do desenvolvimento">
+        <p class="voice-controls-label" aria-hidden="true">🎙️ Ferramentas de Voz (DUA)</p>
+        <button class="q-btn q-btn--mic" id="mic-w2"
+                onclick="toggleMic('w2','mic-w2')"
+                aria-label="Ativar microfone — o texto falado será adicionado ao final do campo"
+                aria-pressed="false">
+          🎤 Iniciar Microfone
+        </button>
+        <button class="q-btn q-btn--speak" id="speak-w2"
+                onclick="speakText('w2','speak-w2')"
+                aria-label="Ouvir o texto do campo em voz alta para revisão"
+                aria-pressed="false">
+          🔊 Ouvir Texto
+        </button>
+      </div>
+
+      <textarea id="w2" class="write-ta" rows="10"
+        placeholder="[Tópico frasal] → afirme seu argumento principal com clareza.&#10;[Repertório] → 'Segundo [fonte]...' / 'A Lei X estabelece...' / 'O filósofo Y defende que...'&#10;[Causa-efeito] → explique por que o repertório sustenta o argumento.&#10;[Fechamento] → 'Assim, fica evidente que...' / 'Portanto...' / 'Desse modo...'"
+        aria-label="Campo de escrita do desenvolvimento — compatível com microfone e leitura em voz alta"
+        oninput="updWc('w2','wc2')"
+        aria-describedby="wc2"></textarea>
+      <div class="write-bar">
+        <span class="wc" id="wc2" aria-live="polite" aria-label="Contagem de palavras">0 palavras</span>
+        <button class="q-btn q-btn--primary" onclick="checkW('w2','wf2','dev')" aria-label="Enviar desenvolvimento para análise pela IA com critérios INEP">🤖 Analisar Desenvolvimento com IA</button>
+      </div>
+      <div class="write-feedback" id="wf2" role="alert" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+  </div>
+
+  <nav class="section-nav" aria-label="Navegação – Capítulo 2">
+    <button class="nb nb--secondary" onclick="go('cap1')" aria-label="Anterior: Capítulo 1 – Introdução">← Cap. 1: Introdução</button>
+    <button class="nb nb--primary" onclick="go('cap3')" aria-label="Próximo: Capítulo 3 – Conclusão">Cap. 3: Conclusão →</button>
+  </nav>
+</section>
+
+<!-- ══════════════ CAPÍTULO 3 – CONCLUSÃO E PROPOSTA ══════════════ -->
+<section id="cap3" class="ebook-section" aria-labelledby="h-cap3">
+  <header class="ch-header ch-header--orange">
+    <p class="ch-badge">Capítulo 3 · Competências C1 · C4 · C5</p>
+    <h1 id="h-cap3">Conclusão e Proposta de Intervenção</h1>
+    <p class="ch-intro">Como fechar a redação de forma coesa, retomar a tese sem repetição e elaborar uma proposta de intervenção completa com os quatro elementos exigidos pelo INEP para a nota 200 na C5.</p>
+  </header>
+
+  <figure class="video-placeholder" role="img" aria-label="Vídeo do professor: Como escrever a conclusão e a proposta de intervenção. Duração estimada: 7 min.">
+    <div class="vid-badge" aria-hidden="true">▶ Vídeo · 7 min</div>
+    <div class="vid-play" aria-hidden="true">▶</div>
+    <figcaption>
+      <p class="vid-title">Conclusão e Proposta de Intervenção — Nota 200 na C5</p>
+      <p class="vid-desc">O professor analisa propostas que tiraram nota 0 e nota 200 e mostra exatamente o que o INEP exige para cada pontuação.</p>
+      <p class="vid-note"><em>Disponível na plataforma do curso</em></p>
+    </figcaption>
+  </figure>
+
+  <div class="card">
+    <h2>O que é a Conclusão?</h2>
+    <p>A conclusão é o quarto e último parágrafo da redação. Ela tem duas funções distintas: <strong>retomar a tese</strong> apresentada na introdução (sem copiá-la!) e <strong>apresentar a proposta de intervenção</strong> — o único espaço da redação onde você diz concretamente o que pode ser feito para solucionar o problema.</p>
+    <p>Tamanho ideal: <strong>5 a 7 linhas</strong>. Deve ser direta, articulada com o que veio antes, e terminar com a finalidade da proposta.</p>
+
+    <aside class="hl-box hl-box--warn" aria-label="Erros críticos que zeram ou reduzem drasticamente a C5">
+      <h3>🚨 Erros que zeram ou destroem a C5</h3>
+      <ul>
+        <li><strong>Proposta vaga:</strong> "O governo deve agir para resolver o problema" → sem agente específico, sem ação concreta, sem modo e sem finalidade = 0 pts na C5</li>
+        <li><strong>Proposta genérica com verbo no infinitivo solto:</strong> "É necessário conscientizar a população..." → quem conscientiza? Como? Para quê? = pontuação mínima</li>
+        <li><strong>Copiar a tese literalmente:</strong> repetir palavra por palavra a última frase da introdução prejudica C4 (coesão) e C3 (progressão)</li>
+        <li><strong>Violação de direitos humanos:</strong> qualquer proposta que discrimine, puna coletivamente ou viole dignidade → nota 0 em C5 e pode zerar toda a redação</li>
+        <li><strong>Ausência de proposta:</strong> terminar sem proposta de intervenção → nota 0 em C5</li>
+      </ul>
+    </aside>
+
+    <h2>Os 4 Elementos Obrigatórios da Proposta (C5)</h2>
+    <p>O INEP é explícito: para receber a nota máxima na C5, a proposta deve conter os quatro elementos abaixo, de forma <strong>articulada entre si e com o tema da redação</strong>.</p>
+    <div class="tbl-wrap">
+      <table aria-label="Os quatro elementos obrigatórios da proposta de intervenção C5 com exemplos concretos">
+        <thead><tr><th scope="col">Elemento</th><th scope="col">Pergunta que responde</th><th scope="col">Exemplos concretos</th><th scope="col">Erro comum</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Agente</strong></td>
+            <td>Quem vai executar a ação?</td>
+            <td>O Ministério da Educação; o governo federal; as prefeituras; as empresas de tecnologia; as escolas públicas; as universidades; os conselhos profissionais</td>
+            <td>Usar "a sociedade" — é genérico demais</td>
+          </tr>
+          <tr>
+            <td><strong>Ação</strong></td>
+            <td>O que vai ser feito?</td>
+            <td>Implementar; criar; ampliar; regulamentar; fiscalizar; financiar; promover; garantir; capacitar; reformular</td>
+            <td>Usar só "combater" ou "resolver" sem especificar o quê</td>
+          </tr>
+          <tr>
+            <td><strong>Modo / Meio</strong></td>
+            <td>Como vai ser feito?</td>
+            <td>Por meio de legislação específica; mediante campanhas de conscientização; com financiamento do Fundo Nacional de Desenvolvimento; através de parcerias com ONGs; via programas de capacitação continuada</td>
+            <td>Não explicar o como — a proposta fica flutuando no ar</td>
+          </tr>
+          <tr>
+            <td><strong>Finalidade</strong></td>
+            <td>Para quê? Qual o objetivo?</td>
+            <td>A fim de garantir; com vistas a assegurar; para reduzir os índices de; de modo a promover; a fim de combater; com o objetivo de eliminar</td>
+            <td>Não incluir o conectivo de finalidade — o elemento fica implícito</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Proposta Vaga vs. Proposta Completa</h2>
+    <figure class="example-box example-box--bad" aria-label="Exemplo de proposta de intervenção vaga, que recebe nota zero na C5">
+      <figcaption class="ex-label ex-label--bad">❌ Proposta Vaga – nota 0 na C5</figcaption>
+      <p class="ex-text">"Portanto, é necessário que o governo tome providências urgentes para cuidar da saúde mental dos trabalhadores brasileiros, pois esse é um problema que afeta toda a sociedade e merece atenção das autoridades."</p>
+    </figure>
+    <figure class="example-box example-box--good" aria-label="Exemplo de proposta de intervenção completa com os quatro elementos, que recebe nota máxima na C5">
+      <figcaption class="ex-label ex-label--good">✅ Proposta Completa – nota 200 na C5</figcaption>
+      <p class="ex-text">"Diante do exposto, faz-se urgente que o Ministério do Trabalho e Emprego, em parceria com o Conselho Federal de Psicologia, implemente um programa nacional de saúde mental corporativa, por meio da obrigatoriedade legal de suporte psicológico em empresas com mais de 50 funcionários e da criação de espaços de escuta ativa nos ambientes de trabalho, a fim de reduzir os índices de afastamento por transtornos mentais e assegurar condições dignas de trabalho para todos os brasileiros."</p>
+    </figure>
+
+    <aside class="hl-box hl-box--ok" aria-label="Análise dos quatro elementos na proposta completa">
+      <h3>🔍 Identificando os 4 elementos na proposta modelo</h3>
+      <p><strong>Agente:</strong> Ministério do Trabalho e Emprego + Conselho Federal de Psicologia<br>
+         <strong>Ação:</strong> implementar um programa nacional de saúde mental corporativa<br>
+         <strong>Modo:</strong> por meio da obrigatoriedade legal + criação de espaços de escuta ativa<br>
+         <strong>Finalidade:</strong> a fim de reduzir os índices de afastamento e assegurar condições dignas</p>
+    </aside>
+
+    <h2>Estrutura Completa da Conclusão – Nota 200</h2>
+    <figure class="example-box example-box--good" aria-label="Exemplo de conclusão completa nota 200 com retomada da tese e proposta de intervenção completa">
+      <figcaption class="ex-label ex-label--good">📝 Conclusão Modelo – Nota 200 completa</figcaption>
+      <p class="ex-text">"Em síntese, garantir a saúde mental dos trabalhadores brasileiros requer o reconhecimento de que o sofrimento psíquico no ambiente de trabalho é um problema estrutural, não uma fragilidade individual. Para enfrentá-lo, faz-se necessário que o Ministério do Trabalho e Emprego, em articulação com o Conselho Federal de Psicologia, implemente um programa nacional de saúde mental corporativa, por meio da exigência legal de suporte psicológico em empresas com mais de 50 funcionários, a fim de reduzir os índices de afastamento por transtornos mentais e construir ambientes de trabalho mais humanos e produtivos para todos os brasileiros."</p>
+    </figure>
+
+    <div class="tbl-wrap">
+      <table aria-label="Análise anatômica da conclusão modelo, frase por frase">
+        <thead><tr><th scope="col">Trecho da conclusão</th><th scope="col">Função</th><th scope="col">Competência</th></tr></thead>
+        <tbody>
+          <tr><td>"Em síntese, garantir a saúde mental... problema estrutural, não individual."</td><td>Retomada da tese com conectivo conclusivo — sem repetir literalmente a introdução</td><td>C3, C4</td></tr>
+          <tr><td>"Para enfrentá-lo, faz-se necessário que o Ministério..."</td><td>Agente da proposta identificado com precisão</td><td>C5</td></tr>
+          <tr><td>"...por meio da exigência legal de suporte psicológico..."</td><td>Modo de execução — específico e viável</td><td>C5</td></tr>
+          <tr><td>"...a fim de reduzir os índices de afastamento..."</td><td>Finalidade articulada ao problema central da redação</td><td>C5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- QUIZ 3 -->
+  <section class="quiz-card" id="quiz-3" aria-labelledby="quiz3-title">
+    <p class="quiz-badge" aria-hidden="true">🧠 Quiz · Capítulo 3 – Conclusão</p>
+    <h2 id="quiz3-title" class="quiz-title">Teste Seu Conhecimento</h2>
+    <p class="quiz-q" id="quiz3-q">Uma proposta de intervenção recebeu nota 0 na C5. Qual é o motivo mais provável?</p>
+    <div class="quiz-opts" role="radiogroup" aria-labelledby="quiz3-q" id="q3-opts">
+      <button class="quiz-opt" data-quiz="q3" data-letter="A" onclick="selOpt('q3','A',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">A</span><span class="opt-text">O parágrafo de conclusão ter menos de 7 linhas no total da folha de resposta</span></button>
+      <button class="quiz-opt" data-quiz="q3" data-letter="B" onclick="selOpt('q3','B',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">B</span><span class="opt-text">A proposta ser genérica, sem agente definido, sem ação concreta, sem modo e sem finalidade clara</span></button>
+      <button class="quiz-opt" data-quiz="q3" data-letter="C" onclick="selOpt('q3','C',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">C</span><span class="opt-text">O texto ter retomado a tese usando palavras diferentes das da introdução</span></button>
+      <button class="quiz-opt" data-quiz="q3" data-letter="D" onclick="selOpt('q3','D',this)" role="radio" aria-checked="false"><span class="opt-l" aria-hidden="true">D</span><span class="opt-text">O estudante ter utilizado um conectivo conclusivo como "Em síntese" ou "Portanto"</span></button>
+    </div>
+    <div class="quiz-actions">
+      <button class="q-btn q-btn--primary" onclick="checkQ('q3','B')" aria-label="Verificar minha resposta">Verificar ✓</button>
+      <button class="q-btn q-btn--secondary" onclick="resetQ('q3')" aria-label="Tentar novamente">Tentar Novamente ↺</button>
+    </div>
+    <div class="quiz-feedback" id="q3-feedback" role="alert" aria-live="assertive"></div>
+  </section>
+
+  <!-- PRÁTICA 3 – COM MICROFONE E VOZ -->
+  <div class="card">
+    <h2>✍️ Pratique: Escreva Sua Conclusão com Proposta</h2>
+    <p>Escreva a conclusão de uma redação (5–7 linhas). Retome a tese e apresente a proposta com agente, ação, modo e finalidade. Use o microfone para ditar se preferir, e ouça o texto antes de enviar à IA. A análise focará especificamente nos <strong>4 elementos da C5</strong> e na articulação com o problema central.</p>
+
+    <div class="write-area">
+      <label for="w3">Sua Conclusão com Proposta de Intervenção:</label>
+
+      <div class="voice-controls" role="group" aria-label="Ferramentas de voz para o campo de texto da conclusão">
+        <p class="voice-controls-label" aria-hidden="true">🎙️ Ferramentas de Voz (DUA)</p>
+        <button class="q-btn q-btn--mic" id="mic-w3"
+                onclick="toggleMic('w3','mic-w3')"
+                aria-label="Ativar microfone — o texto falado será adicionado ao final do campo"
+                aria-pressed="false">
+          🎤 Iniciar Microfone
+        </button>
+        <button class="q-btn q-btn--speak" id="speak-w3"
+                onclick="speakText('w3','speak-w3')"
+                aria-label="Ouvir o texto do campo em voz alta para revisão"
+                aria-pressed="false">
+          🔊 Ouvir Texto
+        </button>
+      </div>
+
+      <textarea id="w3" class="write-ta" rows="7"
+        placeholder="[Retomada da tese com conectivo conclusivo] → 'Em síntese...' / 'Diante do exposto...' / 'Portanto...'&#10;[Proposta completa] → Quem age? (Agente) O que faz? (Ação) Como? (Modo/Meio) Para quê? (Finalidade)&#10;Termine com 'a fim de...' / 'com o objetivo de...' / 'de modo a...'"
+        aria-label="Campo de escrita da conclusão com proposta — compatível com microfone e leitura em voz alta"
+        oninput="updWc('w3','wc3')"
+        aria-describedby="wc3"></textarea>
+      <div class="write-bar">
+        <span class="wc" id="wc3" aria-live="polite" aria-label="Contagem de palavras">0 palavras</span>
+        <button class="q-btn q-btn--primary" onclick="checkW('w3','wf3','conc')" aria-label="Enviar conclusão para análise pela IA com critérios INEP">🤖 Analisar Conclusão com IA</button>
+      </div>
+      <div class="write-feedback" id="wf3" role="alert" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+  </div>
+
+  <nav class="section-nav" aria-label="Navegação – Capítulo 3">
+    <button class="nb nb--secondary" onclick="go('cap2')" aria-label="Anterior: Capítulo 2 – Repertório e Desenvolvimento">← Cap. 2: Desenvolvimento</button>
+    <button class="nb nb--primary" onclick="go('redacao')" aria-label="Próximo: Redação Completa ENEM 2025">Redação Completa →</button>
+  </nav>
+</section>
+
+<!-- ══════════════ REDAÇÃO COMPLETA ENEM 2025 ══════════════ -->
+<section id="redacao" class="ebook-section" aria-labelledby="h-redacao">
+  <header class="ch-header ch-header--teal">
+    <p class="ch-badge">✍️ Prática Final · Cartilha ENEM 2025</p>
+    <h1 id="h-redacao">Redação Completa</h1>
+    <p class="ch-intro">Escreva uma redação dissertativa-argumentativa completa. A IA analisará as 5 Competências com base nos critérios oficiais do INEP e dará uma nota estimada de 0 a 1000 pontos, usando a escala real do ENEM (0, 40, 80, 120, 160 ou 200 por competência).</p>
+  </header>
+
+  <div class="card">
+    <h2>📋 Regras da Cartilha do Participante ENEM 2025</h2>
+    <div class="enem-rules-box" aria-label="Regras oficiais do ENEM para redação">
+      <h3>⚠️ Leia antes de começar a escrever</h3>
+      <ul>
+        <li><strong>Gênero obrigatório:</strong> dissertação argumentativa em língua portuguesa formal (3ª pessoa)</li>
+        <li><strong>Extensão mínima:</strong> 7 linhas — textos com 7 linhas ou menos recebem nota 0 em todas as competências</li>
+        <li><strong>Sem identificação:</strong> não escreva seu nome, RG, escola ou qualquer dado pessoal</li>
+        <li><strong>Sem título:</strong> a redação começa diretamente pela introdução</li>
+        <li><strong>Proibido usar 1ª pessoa:</strong> evite "eu", "meu", "minha", "nós" — use construções impessoais</li>
+        <li><strong>Estrutura recomendada:</strong> Introdução → Desenvolvimento 1 → Desenvolvimento 2 → Conclusão</li>
+        <li><strong>Proposta de intervenção</strong> obrigatória na conclusão, com agente, ação, modo e finalidade</li>
+        <li><strong>Respeito aos Direitos Humanos:</strong> proposta que discrimine, exclua ou viole dignidade zera C5 e pode zerar toda a redação</li>
+        <li><strong>Fuga ao tema:</strong> texto que não aborda o tema proposto recebe nota 0 em C2 e C3</li>
+      </ul>
+    </div>
+
+    <h2>Tema da Redação</h2>
+    <p>Digite o tema proposto (obrigatório para que a IA contextualize a análise). Você pode criar o seu próprio ou usar um dos temas anteriores do ENEM abaixo:</p>
+    <input type="text" id="essay-theme" class="theme-input"
+           placeholder="Ex: Desafios para a garantia da saúde mental na sociedade brasileira atual"
+           aria-label="Tema da redação — obrigatório para análise contextualizada pela IA">
+    <aside class="hl-box hl-box--info" aria-label="Temas de edições anteriores do ENEM para praticar">
+      <h3>💡 Temas anteriores do ENEM para praticar</h3>
+      <p>
+        <strong>ENEM 2023:</strong> Desafios para o enfrentamento da invisibilidade do trabalho de cuidado realizado pela mulher no Brasil<br>
+        <strong>ENEM 2022:</strong> Desafios para a valorização de comunidades e povos tradicionais no Brasil<br>
+        <strong>ENEM 2021:</strong> Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil<br>
+        <strong>ENEM 2020:</strong> O estigma associado às doenças mentais na sociedade brasileira<br>
+        <strong>ENEM 2019:</strong> Democratização do acesso ao cinema no Brasil<br>
+        <strong>ENEM 2018:</strong> Manipulação do comportamento do usuário pelo controle de dados na internet
+      </p>
+    </aside>
+
+    <h2>Sua Redação Completa</h2>
+    <p>Escreva os quatro parágrafos completos: introdução, desenvolvimento 1, desenvolvimento 2 e conclusão. Use o microfone para ditar e ouça o texto antes de enviar. A IA usará a escala oficial do ENEM (múltiplos de 40) e verificará os critérios de zeragem.</p>
+
+    <div class="write-area">
+      <label for="wfull">Redação completa — 4 parágrafos — ENEM 2025:</label>
+
+      <div class="voice-controls" role="group" aria-label="Ferramentas de voz para o campo de texto da redação completa">
+        <p class="voice-controls-label" aria-hidden="true">🎙️ Ferramentas de Voz (DUA)</p>
+        <button class="q-btn q-btn--mic" id="mic-wfull"
+                onclick="toggleMic('wfull','mic-wfull')"
+                aria-label="Ativar microfone — o texto falado será adicionado ao final do campo"
+                aria-pressed="false">
+          🎤 Iniciar Microfone
+        </button>
+        <button class="q-btn q-btn--speak" id="speak-wfull"
+                onclick="speakText('wfull','speak-wfull')"
+                aria-label="Ouvir toda a redação em voz alta para revisão final"
+                aria-pressed="false">
+          🔊 Ouvir Redação Completa
+        </button>
+      </div>
+
+      <textarea id="wfull" class="write-ta large" rows="18"
+        placeholder="[INTRODUÇÃO — 5 a 8 linhas]&#10;Contextualização do tema + tese clara e específica.&#10;&#10;[DESENVOLVIMENTO 1 — 7 a 10 linhas]&#10;Tópico frasal + repertório produtivo + análise causa-efeito + fechamento com conectivo.&#10;&#10;[DESENVOLVIMENTO 2 — 7 a 10 linhas]&#10;Aprofundamento: grupo afetado, visão sistêmica ou dados comparativos.&#10;&#10;[CONCLUSÃO — 5 a 7 linhas]&#10;Retomada da tese + proposta de intervenção com agente, ação, modo e finalidade."
+        aria-label="Campo de escrita da redação completa — compatível com microfone e leitura em voz alta"
+        oninput="updWcFull('wfull','wc-full')"
+        aria-describedby="wc-full"></textarea>
+      <div class="write-bar">
+        <span class="wc" id="wc-full" aria-live="polite" aria-label="Contagem de palavras e linhas estimadas">0 palavras</span>
+        <button class="q-btn q-btn--primary" onclick="checkW('wfull','wffull','full')" aria-label="Enviar redação completa para análise integral pela IA com escala oficial ENEM">🤖 Analisar Redação Completa com IA</button>
+      </div>
+      <div class="write-feedback" id="wffull" role="alert" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+  </div>
+
+  <nav class="section-nav" aria-label="Navegação – Redação Completa">
+    <button class="nb nb--secondary" onclick="go('cap3')" aria-label="Anterior: Capítulo 3 – Conclusão">← Cap. 3: Conclusão</button>
+    <button class="nb nb--primary" onclick="go('rep')" aria-label="Próximo: Eixos de Repertório">Eixos de Repertório →</button>
+  </nav>
+</section>
+
+<!-- ══════════════ EIXOS DE REPERTÓRIO ══════════════ -->
+<section id="rep" class="ebook-section" aria-labelledby="h-rep">
+  <header class="ch-header ch-header--purple">
+    <p class="ch-badge">📚 Repertório Sociocultural</p>
+    <h1 id="h-rep">Eixos de Repertório</h1>
+    <p class="ch-intro">Obras literárias, filmes, filósofos, dados e leis organizados por eixo temático para enriquecer seus argumentos em qualquer tema do ENEM. Use ao menos 2 repertórios de tipos diferentes em cada redação.</p>
+  </header>
+  <div class="card">
+    <aside class="hl-box hl-box--info">
+      <h3>💡 Como usar esta seção</h3>
+      <p>Para cada tema, escolha <strong>ao menos 2 repertórios de tipos diferentes</strong>: um dado ou lei + um filósofo ou obra literária. Quantidade não é qualidade — use o repertório que melhor sustenta o argumento. Não é necessário memorizar tudo: memorize de 2 a 3 referências por eixo e aprenda a usá-las com profundidade.</p>
+    </aside>
+
+    <h2>🎓 Eixo 1 – Educacional e Social</h2>
+    <div class="tbl-wrap">
+      <table aria-label="Repertório do eixo educacional e social com tipo, referência e forma de uso">
+        <thead><tr><th scope="col">Tipo</th><th scope="col">Referência</th><th scope="col">Como usar nos argumentos</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Literatura</strong></td><td>Quarto de Despejo (Carolina de Jesus); Capitães da Areia (Amado); Vidas Secas (Ramos); O Cortiço (Azevedo)</td><td>Retratos da desigualdade, pobreza, marginalização social e ausência do Estado</td></tr>
+          <tr><td><strong>Filmes</strong></td><td>Escritores da Liberdade (2007); Cidade de Deus (2002); Central do Brasil (1998); Olga (2004)</td><td>Exclusão social, violência estrutural, papel transformador da educação e resistência</td></tr>
+          <tr><td><strong>Filósofos</strong></td><td>Pierre Bourdieu (capital cultural e habitus); Paulo Freire (educação libertadora e conscientização); Hannah Arendt (banalidade do mal e cidadania)</td><td>Mecanismos de reprodução da desigualdade e educação como transformação social</td></tr>
+          <tr><td><strong>Dados e Leis</strong></td><td>PNAD Educação (IBGE); Índice de Gini; ECA (Lei 8.069/90); LDB; IDEB; Estatuto da Igualdade Racial (Lei 12.288/10)</td><td>Evidências quantitativas para argumentos sobre desigualdade educacional e racial</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>🌿 Eixo 2 – Meio Ambiente e Sustentabilidade</h2>
+    <div class="tbl-wrap">
+      <table aria-label="Repertório do eixo meio ambiente com tipo, referência e forma de uso">
+        <thead><tr><th scope="col">Tipo</th><th scope="col">Referência</th><th scope="col">Como usar nos argumentos</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Literatura</strong></td><td>Morte e Vida Severina (Cabral de Melo Neto); O Pequeno Príncipe (Saint-Exupéry); Grande Sertão: Veredas (Guimarães Rosa)</td><td>Relação do ser humano com a natureza, seca, impacto ambiental e responsabilidade coletiva</td></tr>
+          <tr><td><strong>Filmes / Docs</strong></td><td>Antes do Dilúvio (DiCaprio, 2016); Wall-E (Pixar, 2008); Kiss the Ground (2020); Cúpula do Clima (doc)</td><td>Mudanças climáticas, consumismo, desmatamento e alternativas sustentáveis</td></tr>
+          <tr><td><strong>Filósofos</strong></td><td>Hans Jonas (princípio responsabilidade intergeracional); Félix Guattari (três ecologias); Henry David Thoreau (natureza e desobediência civil)</td><td>Responsabilidade ambiental, ética intergeracional e direito à natureza</td></tr>
+          <tr><td><strong>Dados e Leis</strong></td><td>IPCC (relatório do clima 2023); INPE (dados de desmatamento); PNRS (Lei 12.305/10); Código Florestal; Acordo de Paris; Marco do Saneamento (Lei 14.026/20)</td><td>Evidências científicas e legislação para argumentos sobre crise ambiental</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>📡 Eixo 3 – Tecnologia e Comunicação</h2>
+    <div class="tbl-wrap">
+      <table aria-label="Repertório do eixo tecnologia e comunicação com tipo, referência e forma de uso">
+        <thead><tr><th scope="col">Tipo</th><th scope="col">Referência</th><th scope="col">Como usar nos argumentos</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Literatura</strong></td><td>Admirável Mundo Novo (Huxley); Fahrenheit 451 (Bradbury); 1984 (Orwell)</td><td>Distopias que antecipam controle, vigilância, censura e manipulação tecnológica</td></tr>
+          <tr><td><strong>Séries / Docs</strong></td><td>Black Mirror (Netflix); The Social Dilemma (doc. Netflix, 2020); Ex Machina (2015); Her (Jonze, 2013)</td><td>Impactos da IA, dependência tecnológica, privacidade, identidade digital e vício em redes</td></tr>
+          <tr><td><strong>Filósofos / Pensadores</strong></td><td>Byung-Chul Han (Sociedade do Cansaço / Sociedade da Transparência); Shoshana Zuboff (capitalismo de vigilância); McLuhan (o meio é a mensagem)</td><td>Análise crítica do impacto social, psicológico e político das tecnologias digitais</td></tr>
+          <tr><td><strong>Dados e Leis</strong></td><td>LGPD (Lei 13.709/18); Marco Civil da Internet (Lei 12.965/14); CETIC.br (acesso digital no Brasil); Relatório Digital We Are Social</td><td>Legislação e evidências sobre direitos digitais, privacidade, exclusão e acesso à internet</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>💰 Eixo 4 – Economia e Desigualdade</h2>
+    <div class="tbl-wrap">
+      <table aria-label="Repertório do eixo economia e desigualdade com tipo, referência e forma de uso">
+        <thead><tr><th scope="col">Tipo</th><th scope="col">Referência</th><th scope="col">Como usar nos argumentos</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ensaios / Obras</strong></td><td>O Capital no Século XXI (Piketty); Sapiens (Harari); O Fim do Emprego (Rifkin); Desenvolvimento como Liberdade (Amartya Sen)</td><td>Análise do capitalismo, concentração de riqueza, automação e liberdade econômica</td></tr>
+          <tr><td><strong>Filmes / Docs</strong></td><td>A Grande Aposta (2015); Capitalismo: Uma História de Amor (Moore, 2009); Parasite (Bong Joon-ho, 2019)</td><td>Crises econômicas, especulação financeira, desigualdade estrutural e luta de classes</td></tr>
+          <tr><td><strong>Teóricos</strong></td><td>Karl Marx (mais-valia e alienação); Adam Smith (mão invisível do mercado); Keynes (papel do Estado na economia); Amartya Sen (capacidades e liberdades)</td><td>Bases teóricas para argumentar sobre modelos econômicos e distribuição de riqueza</td></tr>
+          <tr><td><strong>Dados</strong></td><td>IDH (PNUD); Relatório Oxfam (desigualdade); Coeficiente de Gini; Dados do Banco Mundial; IPEA; Caged/PNAD (emprego no Brasil)</td><td>Evidências comparativas sobre desigualdade, pobreza e desenvolvimento humano</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <nav class="section-nav" aria-label="Navegação – Eixos de Repertório">
+    <button class="nb nb--secondary" onclick="go('redacao')" aria-label="Anterior: Redação Completa">← Redação Completa</button>
+    <button class="nb nb--primary" onclick="go('bonus')" aria-label="Próximo: Bônus – Guia de Estudos">Bônus ⭐ →</button>
+  </nav>
+</section>
+
+<!-- ══════════════ BÔNUS – GUIA DE ESTUDOS ══════════════ -->
+<section id="bonus" class="ebook-section" aria-labelledby="h-bonus">
+  <header class="ch-header ch-header--red">
+    <p class="ch-badge">⭐ Material Bônus</p>
+    <h1 id="h-bonus">Estratégias para a Semana Final</h1>
+    <p class="ch-intro">Planejamento semanal, seis dicas do professor e checklist completo de revisão para chegar ao dia da prova com segurança.</p>
+  </header>
+  <div class="card">
+    <h2>📅 Planejamento Semanal de Redação</h2>
+    <div class="tbl-wrap">
+      <table aria-label="Sugestão de planejamento semanal">
+        <thead><tr><th scope="col">Dia</th><th scope="col">Atividade</th><th scope="col">Tempo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Segunda</strong></td><td>Ler um artigo e anotar 1 argumento + 1 repertório novo</td><td>20 min</td></tr>
+          <tr><td><strong>Terça</strong></td><td>Escrever e analisar com IA apenas a introdução</td><td>30 min</td></tr>
+          <tr><td><strong>Quarta</strong></td><td>Escrever e analisar com IA o Desenvolvimento 1</td><td>35 min</td></tr>
+          <tr><td><strong>Quinta</strong></td><td>Escrever e analisar com IA a Conclusão com proposta</td><td>30 min</td></tr>
+          <tr><td><strong>Sexta</strong></td><td>Redação completa cronometrada (1h30min)</td><td>2h</td></tr>
+          <tr><td><strong>Sábado</strong></td><td>Revisar banco de repertório e corrigir erros recorrentes</td><td>25 min</td></tr>
+          <tr><td><strong>Domingo</strong></td><td>Descanso — um estudante descansado aprende mais</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>⚡ Seis Dicas do Professor</h2>
+    <ul class="tip-grid" aria-label="Seis dicas do professor Manoel Marciel">
+      <li class="tip-card"><span class="tip-emoji" aria-hidden="true">📓</span><h3 class="tip-title">Monte seu Banco de Repertório</h3><p class="tip-text">Um item novo por semana, organizado por eixo. Em dois meses você terá 48 referências prontas para qualquer tema do ENEM.</p></li>
+      <li class="tip-card"><span class="tip-emoji" aria-hidden="true">🔄</span><h3 class="tip-title">Reutilize com Inteligência</h3><p class="tip-text">Bourdieu serve para educação, desigualdade e cultura. A LGPD serve para tecnologia e privacidade. Aprenda em profundidade e adapte ao tema.</p></li>
+      <li class="tip-card"><span class="tip-emoji" aria-hidden="true">🎙️</span><h3 class="tip-title">Fale Antes de Escrever</h3><p class="tip-text">Use o microfone do e-book ou explique em voz alta. Se você não consegue falar com clareza, ainda não está pronto para escrever.</p></li>
+      <li class="tip-card"><span class="tip-emoji" aria-hidden="true">⏱️</span><h3 class="tip-title">Simule a Prova Real</h3><p class="tip-text">Uma vez por mês: escreva em papel, sem consultas, em 1h30min. O ENEM não tem autocomplete — o papel não perdoa.</p></li>
+      <li class="tip-card"><span class="tip-emoji" aria-hidden="true">📰</span><h3 class="tip-title">Leia Fontes de Qualidade</h3><p class="tip-text">Nexo Jornal, Agência Brasil, BBC Brasil e Piauí viram repertório direto. Quinze minutos por dia fazem diferença acumulada.</p></li>
+      <li class="tip-card"><span class="tip-emoji" aria-hidden="true">🤖</span><h3 class="tip-title">Use a IA como Espelho</h3><p class="tip-text">Identifique padrões nos feedbacks. Se "coesão insuficiente" aparece em três redações seguidas, pratique especificamente os conectivos.</p></li>
+    </ul>
+    <h2>✅ Checklist Final — Antes de Entregar</h2>
+    <ul class="checklist-list" aria-label="Lista de verificação da redação">
+      <li class="checklist-item"><input type="checkbox" id="ck1" class="chk"><label for="ck1">Introdução com contextualização relevante + tese clara, específica e defensável</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck2" class="chk"><label for="ck2">Dev. 1 com tópico frasal, repertório produtivo e fechamento com conectivo</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck3" class="chk"><label for="ck3">Dev. 2 com aprofundamento: grupo afetado, dados comparativos ou visão sistêmica</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck4" class="chk"><label for="ck4">Conclusão com retomada da tese + proposta completa (agente + ação + modo + finalidade)</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck5" class="chk"><label for="ck5">Pelo menos 2 repertórios produtivos de tipos diferentes em toda a redação</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck6" class="chk"><label for="ck6">Sem desvios graves de norma culta: concordância, regência, pontuação</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck7" class="chk"><label for="ck7">Texto com mais de 7 linhas (entre 25 e 30 é ideal)</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck8" class="chk"><label for="ck8">Proposta não viola os Direitos Humanos em nenhuma parte</label></li>
+      <li class="checklist-item"><input type="checkbox" id="ck9" class="chk"><label for="ck9">Nenhuma parte foi copiada dos textos motivadores do enunciado</label></li>
+    </ul>
+  </div>
+  <div class="final-card" role="complementary" aria-label="Mensagem final do professor">
+    <h2>A Nota 1000 é Construída. Não Sorteada.</h2>
+    <p>Cada redação escrita, cada feedback aplicado, cada repertório estudado te aproxima do objetivo. O método está aqui. O próximo passo é seu.</p>
+    <p class="final-highlight">✍️ Escreva. Ouça. Corrija. Evolua. Repita.</p>
+    <button class="nb" onclick="go('capa')" aria-label="Voltar ao início">↑ Voltar ao Início</button>
+  </div>
+  <nav class="section-nav" aria-label="Navegação – Bônus">
+    <button class="nb nb--secondary" onclick="go('rep')">← Eixos de Repertório</button>
+    <button class="nb nb--primary" onclick="go('capa')">↑ Início</button>
+  </nav>
+</section>
+
+</main>
+</div>
+
+<!-- VLibras – Tradução para Libras (DUA Auditivo) -->
+<div vw class="enabled" aria-label="Widget de tradução para Língua Brasileira de Sinais">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script>
+/* VLibras – carregamento dinâmico, silencioso e com auto-ocultação se falhar */
+(function(){
+  var vwDiv=document.querySelector('[vw]');
+  /* Oculta o widget após 4s se o VLibras não inicializou (CSP, sandbox, offline) */
+  var hideTimer=setTimeout(function(){
+    if(vwDiv&&!vwDiv.getAttribute('data-vw-ready')){
+      vwDiv.style.display='none';
+    }
+  },4000);
+
+  var s=document.createElement('script');
+  s.src='https://vlibras.gov.br/app/vlibras-plugin.js';
+  s.onload=function(){
+    try{
+      if(window.VLibras&&typeof window.VLibras.Widget==='function'){
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        if(vwDiv)vwDiv.setAttribute('data-vw-ready','1');
+        clearTimeout(hideTimer);
+      }else{if(vwDiv)vwDiv.style.display='none';}
+    }catch(e){if(vwDiv)vwDiv.style.display='none';}
+  };
+  s.onerror=function(){if(vwDiv)vwDiv.style.display='none';clearTimeout(hideTimer);};
+  document.head.appendChild(s);
+})();
+</script>
+
+<div id="sidebar-overlay" aria-hidden="true"></div>
+
+<script>
+/* =============================================================
+   E-BOOK REDAÇÃO ENEM – Curso Manoel Marciel Assis
+   DUA: VLibras · Microfone · Leitura em Voz Alta · IA INEP
+   ============================================================= */
+var SECTIONS=['capa','apres','cap1','cap2','cap3','redacao','rep','bonus'];
+var quizState={q1:null,q2:null,q3:null};
+var sizeLevel=0;
+var apiKey='';
+var currentRecognition=null;
+var currentMicBtn=null;
+var FZ=[
+  {h1:'32px',h2:'28px',h3:'26px',h4:'24px',body:'24px',sm:'20px',cap:'18px'},
+  {h1:'36px',h2:'32px',h3:'30px',h4:'28px',body:'28px',sm:'24px',cap:'22px'},
+  {h1:'40px',h2:'36px',h3:'34px',h4:'32px',body:'32px',sm:'28px',cap:'26px'}
+];
+
+/* ── API KEY ── */
+function saveApiKey(){
+  var inp=document.getElementById('api-key-input'),st=document.getElementById('api-status');
+  if(!inp||!st)return;
+  var k=inp.value.trim();
+  if(!k){st.textContent='❌ Campo vazio. Cole sua chave antes de salvar.';st.className='api-status err';return;}
+  if(!k.startsWith('sk-ant-')){st.textContent='❌ Chave inválida — deve começar com "sk-ant-".';st.className='api-status err';return;}
+  apiKey=k;inp.value='';
+  st.textContent='✅ IA ativada! Todos os botões de análise estão funcionando.';st.className='api-status ok';
+}
+
+/* ── NAVEGAÇÃO ── */
+function go(id){
+  document.querySelectorAll('.ebook-section').forEach(function(s){s.classList.remove('ebook-section--active');});
+  var t=document.getElementById(id);if(t)t.classList.add('ebook-section--active');
+  document.querySelectorAll('.nav-btn').forEach(function(b){
+    var on=b.dataset.sec===id;
+    b.classList.toggle('nav-btn--active',on);
+    if(on){b.setAttribute('aria-current','page');}else{b.removeAttribute('aria-current');}
+  });
+  var idx=SECTIONS.indexOf(id),pct=Math.round(((idx+1)/SECTIONS.length)*100);
+  var fill=document.getElementById('progress-fill'),txt=document.getElementById('progress-text');
+  if(fill){fill.style.width=pct+'%';fill.setAttribute('aria-valuenow',pct);}
+  if(txt)txt.textContent='Seção '+(idx+1)+' de '+SECTIONS.length;
+  window.scrollTo({top:0,behavior:'smooth'});
+  closeSidebar();
+  if(t){var h=t.querySelector('h1');if(h){h.setAttribute('tabindex','-1');setTimeout(function(){h.focus({preventScroll:true});},50);}}
+}
+
+/* ── SIDEBAR ── */
+function toggleSide(){var s=document.getElementById('sidebar');s.classList.contains('sidebar--open')?closeSidebar():openSidebar();}
+function openSidebar(){
+  var s=document.getElementById('sidebar'),tg=document.getElementById('sidebar-toggle'),ov=document.getElementById('sidebar-overlay');
+  s.classList.add('sidebar--open');if(ov)ov.classList.add('active');tg.setAttribute('aria-expanded','true');
+  var fb=s.querySelector('.nav-btn');if(fb)fb.focus();
+}
+function closeSidebar(){
+  var s=document.getElementById('sidebar'),tg=document.getElementById('sidebar-toggle'),ov=document.getElementById('sidebar-overlay');
+  s.classList.remove('sidebar--open');if(ov)ov.classList.remove('active');tg.setAttribute('aria-expanded','false');
+}
+
+/* ── CONTRASTE ── */
+function setContrast(mode){
+  document.body.classList.remove('theme-dark','theme-hc');
+  if(mode==='d')document.body.classList.add('theme-dark');
+  if(mode==='h')document.body.classList.add('theme-hc');
+  ['n','d','h'].forEach(function(m){var b=document.getElementById('btn-'+m);if(!b)return;var a=m===mode;b.classList.toggle('tb-btn--active',a);b.setAttribute('aria-pressed',String(a));});
+  try{localStorage.setItem('ebook-contrast',mode);}catch(e){}
+}
+
+/* ── FONTE ── */
+function changeFz(dir){
+  if(dir==='+')sizeLevel=Math.min(2,sizeLevel+1);
+  if(dir==='-')sizeLevel=Math.max(0,sizeLevel-1);
+  applyFz();
+  var ind=document.getElementById('fz-indicator');
+  if(ind){ind.textContent=sizeLevel+1;ind.setAttribute('aria-label','Nível '+(sizeLevel+1)+' de 3');}
+  try{localStorage.setItem('ebook-fz',sizeLevel);}catch(e){}
+}
+function applyFz(){var s=FZ[sizeLevel],r=document.documentElement;Object.keys(s).forEach(function(k){r.style.setProperty('--fz-'+k,s[k]);});}
+
+/* ── QUIZ ── */
+function selOpt(qid,letter,btn){
+  quizState[qid]=letter;
+  var c=document.getElementById(qid+'-opts');if(!c)return;
+  c.querySelectorAll('.quiz-opt').forEach(function(o){o.classList.remove('sel','ok','err');o.setAttribute('aria-checked','false');});
+  btn.classList.add('sel');btn.setAttribute('aria-checked','true');
+}
+function checkQ(qid,correct){
+  var sel=quizState[qid],fb=document.getElementById(qid+'-feedback');if(!fb)return;
+  if(!sel){fb.className='quiz-feedback fb-err';fb.innerHTML='⚠️ <strong>Selecione uma alternativa antes de verificar!</strong>';return;}
+  var c=document.getElementById(qid+'-opts');
+  if(c){c.querySelectorAll('.quiz-opt').forEach(function(o){var l=o.dataset.letter;if(l===correct)o.classList.add('ok');else if(l===sel&&sel!==correct)o.classList.add('err');});}
+  var MSG={
+    q1:{
+      ok:'✅ <strong>Correto!</strong> A tese é a espinha dorsal da introdução: apresenta o ponto de vista que será defendido em toda a redação. Uma tese forte é específica, afirmativa e defensável — nunca uma pergunta ou resumo.',
+      err:'❌ A resposta correta é <strong>B</strong>. A tese não é resumo nem pergunta retórica — é uma posição que orienta a argumentação. Perguntas e histórias pessoais comprometem a C3.'
+    },
+    q2:{
+      ok:'✅ <strong>Correto!</strong> O repertório é produtivo quando tem relação direta com o argumento e o sustenta. Não importa se o autor é famoso — o que vale é a conexão com o ponto de vista da redação.',
+      err:'❌ A resposta correta é <strong>C</strong>. O INEP avalia se o repertório sustenta o argumento. Repertório decorativo (sem conexão com o argumento) não agrega pontos na C2, independente de quem o disse.'
+    },
+    q3:{
+      ok:'✅ <strong>Correto!</strong> Proposta sem os 4 elementos (agente, ação, modo, finalidade) é genérica e pode receber nota 0 na C5, independentemente do tamanho do parágrafo.',
+      err:'❌ A resposta correta é <strong>B</strong>. A C5 exige explicitamente os 4 elementos articulados. "O governo deve agir" não tem agente específico, modo nem finalidade — nota 0 na C5.'
+    }
+  };
+  var m=MSG[qid];if(!m)return;
+  fb.className=(sel===correct)?'quiz-feedback fb-ok':'quiz-feedback fb-err';
+  fb.innerHTML=(sel===correct)?m.ok:m.err;
+  setTimeout(function(){fb.scrollIntoView({behavior:'smooth',block:'nearest'});},100);
+}
+function resetQ(qid){
+  quizState[qid]=null;
+  var fb=document.getElementById(qid+'-feedback');if(fb){fb.className='quiz-feedback';fb.innerHTML='';}
+  var c=document.getElementById(qid+'-opts');if(c){c.querySelectorAll('.quiz-opt').forEach(function(o){o.classList.remove('sel','ok','err');o.setAttribute('aria-checked','false');});}
+}
+
+/* ── CONTADORES ── */
+function updWc(taId,cntId){
+  var ta=document.getElementById(taId),cnt=document.getElementById(cntId);if(!ta||!cnt)return;
+  var txt=ta.value.trim(),w=(txt==='')?0:txt.split(/\s+/).filter(Boolean).length;
+  cnt.textContent=w+(w===1?' palavra':' palavras');
+  cnt.classList.remove('wc--ok','wc--over');
+  if(w>=50&&w<=200)cnt.classList.add('wc--ok');
+  else if(w>200)cnt.classList.add('wc--over');
+}
+function updWcFull(taId,cntId){
+  var ta=document.getElementById(taId),cnt=document.getElementById(cntId);if(!ta||!cnt)return;
+  var txt=ta.value.trim(),w=(txt==='')?0:txt.split(/\s+/).filter(Boolean).length;
+  var lines=txt===''?0:txt.split('\n').reduce(function(a,l){return a+Math.max(1,Math.ceil(l.length/72));},0);
+  cnt.textContent=w+' palavras · ~'+lines+' linhas';
+  cnt.classList.remove('wc--ok','wc--over');
+  if(w>=200)cnt.classList.add('wc--ok');
+  else if(w>400)cnt.classList.add('wc--over');
+}
+
+/* ─────────────────────────────────────────────────────────────
+   HELPER – exibe mensagem de erro próxima ao botão do microfone
+   ───────────────────────────────────────────────────────────── */
+function showMicMsg(btn,btnId,label,html,resetDelay){
+  if(!btn)return;
+  stopMicUI(btn);
+  btn.textContent=label;
+  btn.style.borderColor='var(--clr-danger)';
+  btn.style.color='var(--clr-danger)';
+
+  var helpId='mic-help-'+btnId;
+  var el=document.getElementById(helpId);
+  if(!el){
+    el=document.createElement('div');
+    el.id=helpId;
+    el.setAttribute('role','alert');
+    el.setAttribute('aria-live','assertive');
+    el.style.cssText=[
+      'margin-top:10px;padding:14px 16px;border-radius:10px;',
+      'background:var(--bg-fb-err);border-left:5px solid var(--clr-danger);',
+      'font-size:var(--fz-cap);line-height:1.75;color:var(--txt);'
+    ].join('');
+    if(btn.parentElement)btn.parentElement.appendChild(el);
+  }
+  el.innerHTML=html;
+
+  if(resetDelay){
+    setTimeout(function(){
+      if(btn){btn.style.borderColor='';btn.style.color='';stopMicUI(btn);}
+    },resetDelay);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   DUA – MICROFONE (Web Speech API / window.SpeechRecognition)
+   • Texto falado SEMPRE adicionado ao FINAL do textarea
+   • Espaço automático antes da nova transcrição se já há conteúdo
+   • Botão alterna: "🎤 Iniciar Microfone" ↔ "⏹ Ouvindo..."
+   • Detecção proativa de contexto (file://, HTTP, iframe) ANTES
+     de tentar abrir o microfone — evita erro silencioso
+   ───────────────────────────────────────────────────────────── */
+function toggleMic(taId,btnId){
+  var btn=document.getElementById(btnId),ta=document.getElementById(taId);
+  if(!btn||!ta)return;
+
+  /* Parar se já está ouvindo com ESTE botão */
+  if(currentRecognition&&currentMicBtn===btnId){
+    currentRecognition.stop();
+    return;
+  }
+  if(currentRecognition){currentRecognition.stop();}
+
+  /* 1. Verificar suporte do navegador */
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SR){
+    showMicMsg(btn,btnId,'⚠️ Não suportado',[
+      '<strong>⚠️ Reconhecimento de voz não disponível neste navegador.</strong><br>',
+      'Use o <strong>Google Chrome</strong> (versão 33+) para ter acesso ao microfone.'
+    ].join(''));
+    return;
+  }
+
+  /* 2. Detectar protocolo file:// — Chrome bloqueia mic mesmo com permissão concedida */
+  if(location.protocol==='file:'){
+    showMicMsg(btn,btnId,'📁 Arquivo local',[
+      '<strong>📁 O microfone não funciona com arquivos abertos diretamente do disco</strong>',
+      ' (protocolo <code>file://</code>).<br>',
+      'O Chrome bloqueia acesso ao microfone nesse modo por segurança — ',
+      'mesmo que a permissão apareça como "Permitido" no navegador.<br><br>',
+      '<strong>✅ Solução: sirva o arquivo via servidor local</strong><br>',
+      '<strong>Opção A — Python</strong> (mais fácil): abra o terminal na pasta do arquivo e execute:<br>',
+      '<code>python -m http.server 8000</code><br>',
+      'Depois acesse <strong>http://localhost:8000</strong> no Chrome.<br><br>',
+      '<strong>Opção B — VS Code</strong>: instale a extensão <strong>Live Server</strong> ',
+      '→ clique com botão direito no arquivo → <em>Open with Live Server</em>.<br><br>',
+      '<strong>Opção C — Node.js</strong>: execute <code>npx serve .</code> na pasta do arquivo.'
+    ].join(''));
+    return;
+  }
+
+  /* 3. Detectar contexto inseguro (http:// sem ser localhost) */
+  if(!window.isSecureContext){
+    showMicMsg(btn,btnId,'🔒 HTTPS necessário',[
+      '<strong>🔒 O microfone requer conexão segura (HTTPS).</strong><br>',
+      'Acesse o arquivo por <strong>https://</strong> ou via <strong>localhost</strong>.'
+    ].join(''));
+    return;
+  }
+
+  /* 4. Verificar estado da permissão antes de iniciar (Chrome 43+) */
+  if(navigator.permissions&&navigator.permissions.query){
+    navigator.permissions.query({name:'microphone'}).then(function(result){
+      if(result.state==='denied'){
+        showMicMsg(btn,btnId,'🚫 Mic bloqueado',[
+          '<strong>🚫 O microfone está bloqueado nas configurações do Chrome.</strong><br>',
+          'Para desbloquear:<br>',
+          '1. Digite <code>chrome://settings/content/microphone</code> na barra de endereço<br>',
+          '2. Remova este site da lista "Não permitido" ou adicione-o a "Permitido"<br>',
+          '3. Recarregue a página (<kbd>F5</kbd>) e tente novamente.'
+        ].join(''));
+      }else{
+        startRecognition(btn,btnId,ta,SR);
+      }
+    }).catch(function(){
+      startRecognition(btn,btnId,ta,SR);
+    });
+  }else{
+    startRecognition(btn,btnId,ta,SR);
+  }
+}
+
+/* Inicia o reconhecimento de voz de fato */
+function startRecognition(btn,btnId,ta,SR){
+  var recognition=new SR();
+  recognition.lang='pt-BR';
+  recognition.continuous=true;
+  recognition.interimResults=false;
+  recognition.maxAlternatives=1;
+
+  currentRecognition=recognition;
+  currentMicBtn=btnId;
+
+  /* Visual: OUVINDO */
+  btn.classList.add('listening');
+  btn.innerHTML='⏹ Ouvindo...';
+  btn.setAttribute('aria-pressed','true');
+  btn.setAttribute('aria-label','Clique para parar a gravação — microfone ativo');
+
+  recognition.onresult=function(event){
+    var final='';
+    for(var i=event.resultIndex;i<event.results.length;i++){
+      if(event.results[i].isFinal){final+=event.results[i][0].transcript;}
+    }
+    if(final.trim()){
+      var existing=ta.value;
+      /* COMPORTAMENTO CRÍTICO: adicionar ao FINAL, com espaço se já há conteúdo */
+      ta.value=existing.trim()?(existing.trimEnd()+' '+final.trim()):final.trim();
+      ta.dispatchEvent(new Event('input'));
+      ta.scrollTop=ta.scrollHeight;
+    }
+  };
+
+  recognition.onerror=function(e){
+    stopMicUI(btn);
+    currentRecognition=null;currentMicBtn=null;
+
+    if(e.error==='not-allowed'||e.error==='permission-denied'){
+      /* Chegou aqui mesmo com isSecureContext=true e permission!='denied'
+         → causa mais provável: privacidade do sistema operacional */
+      showMicMsg(btn,btnId,'🚫 Bloqueado pelo SO',[
+        '<strong>🚫 Microfone bloqueado — a permissão do navegador está OK, ',
+        'mas o sistema operacional está impedindo o acesso.</strong><br><br>',
+        '<strong>Windows 10/11:</strong> Configurações → Privacidade e segurança → Microfone<br>',
+        '→ Ative "Permitir que apps acessem seu microfone"<br>',
+        '→ Role para baixo e ative o <strong>Google Chrome</strong> na lista.<br><br>',
+        '<strong>macOS:</strong> Preferências do Sistema → Segurança e Privacidade → Microfone<br>',
+        '→ Marque o <strong>Google Chrome</strong> na lista.<br><br>',
+        'Após ajustar, feche e reabra o Chrome e tente novamente.'
+      ].join(''),10000);
+
+    }else if(e.error==='service-not-allowed'){
+      showMicMsg(btn,btnId,'⚠️ Contexto inseguro',[
+        '<strong>⚠️ Microfone bloqueado pelo navegador.</strong><br>',
+        'Abra o arquivo via <strong>https://</strong> ou <strong>localhost</strong>.'
+      ].join(''),5000);
+
+    }else if(e.error!=='no-speech'&&e.error!=='aborted'){
+      /* erro inesperado — silencioso em produção */
+    }
+  };
+
+  recognition.onend=function(){
+    stopMicUI(btn);
+    currentRecognition=null;currentMicBtn=null;
+  };
+
+  recognition.start();
+}
+
+function stopMicUI(btn){
+  if(!btn)return;
+  btn.classList.remove('listening');
+  btn.innerHTML='🎤 Iniciar Microfone';
+  btn.setAttribute('aria-pressed','false');
+  btn.setAttribute('aria-label','Ativar entrada por voz — o texto falado será adicionado ao final do campo');
+}
+
+/* ─────────────────────────────────────────────────────────────
+   DUA – LEITURA EM VOZ ALTA (window.speechSynthesis – pt-BR)
+   • Lê exatamente o que está escrito no textarea
+   • Permite que o aluno valide o conteúdo antes de enviar à IA
+   • Botão alterna: "🔊 Ouvir Texto" ↔ "⏹ Parar Leitura"
+   ───────────────────────────────────────────────────────────── */
+function speakText(taId,btnId){
+  var ta=document.getElementById(taId),btn=document.getElementById(btnId);
+  if(!ta)return;
+  var txt=ta.value.trim();
+
+  /* Se está falando → cancelar */
+  if(window.speechSynthesis&&window.speechSynthesis.speaking){
+    window.speechSynthesis.cancel();
+    if(btn){
+      btn.classList.remove('speaking');
+      btn.innerHTML='🔊 Ouvir Texto';
+      btn.setAttribute('aria-pressed','false');
+      btn.setAttribute('aria-label','Ouvir o texto do campo em voz alta para revisão');
+    }
+    return;
+  }
+
+  if(!txt){
+    if(btn){
+      var prev=btn.innerHTML;
+      btn.textContent='⚠️ Campo vazio';
+      btn.style.borderColor='var(--clr-gold)';btn.style.color='var(--clr-gold)';
+      setTimeout(function(){btn.innerHTML=prev;btn.style.borderColor='';btn.style.color='';},2500);
+    }
+    return;
+  }
+  if(!('speechSynthesis' in window)){
+    if(btn){
+      btn.textContent='⚠️ Não suportado';
+      btn.disabled=true;
+      btn.setAttribute('aria-label','Síntese de voz não disponível. Use Google Chrome.');
+    }
+    return;
+  }
+
+  var utt=new SpeechSynthesisUtterance(txt);
+  utt.lang='pt-BR';
+  utt.rate=0.92;
+  utt.pitch=1;
+  utt.volume=1;
+
+  if(btn){
+    btn.classList.add('speaking');
+    btn.innerHTML='⏹ Parar Leitura';
+    btn.setAttribute('aria-pressed','true');
+    btn.setAttribute('aria-label','Clique para parar a leitura em voz alta');
+  }
+
+  utt.onend=function(){
+    if(btn){
+      btn.classList.remove('speaking');
+      btn.innerHTML='🔊 Ouvir Texto';
+      btn.setAttribute('aria-pressed','false');
+      btn.setAttribute('aria-label','Ouvir o texto do campo em voz alta para revisão');
+    }
+  };
+  utt.onerror=function(){
+    if(btn){btn.classList.remove('speaking');btn.innerHTML='🔊 Ouvir Texto';btn.setAttribute('aria-pressed','false');}
+  };
+
+  window.speechSynthesis.speak(utt);
+}
+</script>
+
+<script>
+/* ─────────────────────────────────────────────────────────────
+   PROMPT BUILDER — contexto específico por parte da redação
+   ctx: 'intro' | 'dev' | 'conc' | 'full'
+   ───────────────────────────────────────────────────────────── */
+function buildPrompt(text,words,ctx){
+  /* Schema JSON de resposta esperada */
+  var schema=[
+    '{',
+    '"resumo":"avaliacao honesta e motivadora em 1-2 frases",',
+    '"nivel":"Excelente|Bom|Regular|Insuficiente",',
+    '"competencias":[',
+      '{"codigo":"C1","nome":"Norma Culta","pontos":160,"max":200,"feedback":"comentario especifico"},',
+      '{"codigo":"C2","nome":"Repertorio e Tese","pontos":160,"max":200,"feedback":"comentario especifico"},',
+      '{"codigo":"C3","nome":"Argumentacao","pontos":160,"max":200,"feedback":"comentario especifico"},',
+      '{"codigo":"C4","nome":"Coesao","pontos":120,"max":200,"feedback":"comentario especifico"},',
+      '{"codigo":"C5","nome":"Proposta","pontos":0,"max":200,"feedback":"avalie se presente e complete ou oriente como construir"}',
+    '],',
+    '"pontos_fortes":["ponto positivo especifico 1","ponto positivo 2"],',
+    '"melhorias":["melhoria urgente com exemplo do texto 1","melhoria 2","melhoria 3"],',
+    '"total_estimado":800',
+    '}'
+  ].join('');
+
+  /* Instruções por contexto */
+  var ctxMap={
+    intro:[
+      'TRECHO ANALISADO: apenas a INTRODUCAO de uma redacao dissertativa-argumentativa.\n\n',
+      'Foque especificamente em:\n',
+      '- Qualidade e originalidade da contextualizacao (evitou generalizacoes? usou repertorio?) (C2, C3)\n',
+      '- Clareza, especificidade e forca da tese (ela e defensavel e orienta a redacao?) (C3)\n',
+      '- Uso de repertorio sociocultural: e produtivo (conectado ao argumento) ou decorativo? (C2)\n',
+      '- Norma culta: gramatica, ortografia, pontuacao, regencia, concordancia (C1)\n',
+      '- Coesao e articulacao interna da introducao (C4)\n',
+      '- Na C5: informe que a proposta deve vir na conclusao e nao pontue este trecho em C5\n\n'
+    ].join(''),
+    dev:[
+      'TRECHO ANALISADO: paragrafo(s) de DESENVOLVIMENTO de uma redacao dissertativa-argumentativa.\n\n',
+      'Foque especificamente em:\n',
+      '- Topico frasal: o argumento principal e claro e especifico? (C3)\n',
+      '- Repertorio sociocultural: e verificavel, relevante e diretamente conectado ao argumento?\n',
+      '  E produtivo (sustenta o raciocinio) ou decorativo (citado so para impressionar)? (C2)\n',
+      '- Relacao causa-efeito: o paragrafo explica o "por que" do argumento com profundidade? (C3)\n',
+      '- Coesao: conectivos adequados a funcao (causa, consequencia, adicao, oposicao)? (C4)\n',
+      '- Norma culta (C1)\n',
+      '- Na C5: mencione se ha elementos de proposta ou nao, mas nao pontue aqui\n\n'
+    ].join(''),
+    conc:[
+      'TRECHO ANALISADO: a CONCLUSAO de uma redacao dissertativa-argumentativa.\n\n',
+      'Foque especificamente em (C5 e o foco PRINCIPAL):\n',
+      '- Retomada da tese: sem copiar literalmente a introducao? com conectivo conclusivo? (C3, C4)\n',
+      '- PROPOSTA DE INTERVENCAO: ha os 4 elementos obrigatorios?\n',
+      '  1. AGENTE especifico (nao "a sociedade" — quem exatamente?)\n',
+      '  2. ACAO concreta (nao so "combater" — o que especificamente?)\n',
+      '  3. MODO de execucao (como sera feito? via legislacao? programa? campanha?)\n',
+      '  4. FINALIDADE com conectivo ("a fim de", "com o objetivo de", "de modo a") (C5)\n',
+      '- Especificidade e viabilidade da proposta (e concreta ou generica?) (C5)\n',
+      '- Respeito aos Direitos Humanos: a proposta discrimina ou viola algum grupo? (C5)\n',
+      '- Articulacao da conclusao com o tema central da redacao (C4)\n',
+      '- Norma culta (C1)\n\n'
+    ].join(''),
+    full:[
+      'REDACAO COMPLETA para analise integral conforme Cartilha ENEM 2025 e criterios oficiais INEP.\n\n',
+      'Use OBRIGATORIAMENTE a escala oficial (multiplos de 40): 0, 40, 80, 120, 160 ou 200 por competencia.\n\n',
+      'DESCRITORES OFICIAIS:\n',
+      'C1: Modalidade escrita formal — gramatica, ortografia, acentuacao, pontuacao, regencia, concordancia\n',
+      'C2: Compreensao da proposta + repertorio sociocultural produtivo em apoio ao ponto de vista\n',
+      'C3: Selecao, relacao, organizacao e interpretacao de informacoes em defesa do ponto de vista\n',
+      'C4: Mecanismos linguisticos de argumentacao: coesao sequencial, referencial e articulacao entre paragrafos\n',
+      'C5: Proposta de intervencao com agente, acao, modo e finalidade, respeitando Direitos Humanos\n\n',
+      'VERIFICACOES OBRIGATORIAS de zeragem:\n',
+      '- Fuga total ao tema → C2=0, C3=0\n',
+      '- Texto com 7 linhas ou menos → nota 0 em todas as competencias\n',
+      '- Nao atendimento ao tipo dissertativo-argumentativo → C2=0\n',
+      '- Proposta que viola Direitos Humanos → C5=0 (pode zerar toda a redacao)\n',
+      '- Ausencia de proposta de intervencao → C5=0\n\n'
+    ].join('')
+  };
+
+  /* Capturar tema se estiver preenchido (para secao de redacao completa) */
+  var themeEl=document.getElementById('essay-theme');
+  var themeStr=(themeEl&&themeEl.value.trim())
+    ?'TEMA DA REDACAO: '+JSON.stringify(themeEl.value.trim())+'\n\n'
+    :'';
+
+  var instruct=ctxMap[ctx]||ctxMap.full;
+
+  return [
+    'Voce e um corretor especialista em redacao do ENEM com total dominio da Cartilha do Participante 2025',
+    ' e dos criterios oficiais do INEP. Seja didatico e especifico: cite trechos reais do texto do estudante',
+    ' no feedback para tornar a avaliacao concreta e acionavel. Use sempre linguagem motivadora.\n\n',
+    instruct,
+    themeStr,
+    'TEXTO DO ESTUDANTE ('+words+' palavras):\n',
+    text,
+    '\n\nResponda SOMENTE com JSON valido e puro, sem markdown, sem texto antes ou depois:\n',
+    schema
+  ].join('');
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ANÁLISE POR IA — fetch para API Anthropic
+   Prompt específico por parte (intro / dev / conc / full)
+   ───────────────────────────────────────────────────────────── */
+async function checkW(taId,fbId,ctx){
+  var ta=document.getElementById(taId),fb=document.getElementById(fbId);if(!ta||!fb)return;
+  var text=ta.value.trim();
+  var words=(text==='')?0:text.split(/\s+/).filter(Boolean).length;
+
+  if(words<25){
+    fb.className='write-feedback fb-warn';
+    fb.innerHTML='⚠️ <strong>Texto muito curto!</strong> Você escreveu apenas '+words+' palavras. '+
+      'Escreva ao menos 50 palavras para uma análise significativa. Use o microfone se preferir ditar.';
+    return;
+  }
+  if(!apiKey){
+    fb.className='write-feedback fb-warn';
+    fb.innerHTML='🔑 <strong>IA não configurada.</strong> Acesse "<strong>Recado do Professor</strong>" '+
+      'e insira sua chave da API Anthropic para ativar a correção.<br><br>'+
+      '<button class="q-btn q-btn--secondary" onclick="go(\'apres\')" style="margin-top:6px;">'+
+      'Ir para Configuração →</button>';
+    return;
+  }
+
+  /* Estado: carregando */
+  fb.className='write-feedback fb-load';
+  fb.innerHTML='<div class="fb-loading-inner">'+
+    '<div class="fb-spinner"></div>'+
+    '<p>🤖 Analisando com base nos critérios oficiais do INEP/ENEM 2025...</p>'+
+    '</div>';
+
+  try{
+    var res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'x-api-key':apiKey,
+        'anthropic-version':'2023-06-01',
+        'anthropic-dangerous-direct-browser-access':'true'
+      },
+      body:JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:1200,
+        messages:[{role:'user',content:buildPrompt(text,words,ctx)}]
+      })
+    });
+
+    if(!res.ok){
+      var errData=await res.json().catch(function(){return{};});
+      throw new Error((errData.error&&errData.error.message)||'HTTP '+res.status);
+    }
+
+    var data=await res.json();
+    var raw=data.content.map(function(c){return c.text||'';}).join('');
+    var clean=raw.replace(/```json|```/g,'').trim();
+    renderAI(fb,JSON.parse(clean),ctx);
+
+  }catch(err){
+    var msg=(err&&err.message)||'Erro desconhecido';
+    fb.className='write-feedback fb-warn';
+
+    /* 1. Bloqueio de rede / CSP / sandbox (TypeError = Failed to fetch)
+          Ocorre no preview do Claude, em file://, ou iframe sem permissão de rede externa.
+          NÃO é erro de chave — é erro de ambiente. */
+    var isNetworkBlock=(err instanceof TypeError)||
+                       msg.includes('Failed to fetch')||
+                       msg.includes('Load failed')||
+                       msg.includes('NetworkError')||
+                       msg.includes('fetch')||
+                       msg.includes('CORS')||
+                       msg.includes('blocked');
+
+    /* 2. Erro real de autenticação — resposta 401 com mensagem da API */
+    var isAuth=!isNetworkBlock&&(
+      msg.includes('401')||
+      msg.includes('api_key')||
+      (msg.toLowerCase().includes('invalid')&&msg.toLowerCase().includes('key'))
+    );
+
+    var isInIframe=(window.self!==window.top);
+
+    if(isNetworkBlock){
+      fb.innerHTML=[
+        '🌐 <strong>Requisição bloqueada pelo ambiente de execução.</strong><br>',
+        isInIframe
+          ? 'Este e-book está sendo visualizado em um <strong>iframe de preview</strong> que restringe chamadas a APIs externas. '
+          : 'O ambiente atual (file:// ou HTTP) bloqueia chamadas à API da Anthropic. ',
+        '<br><br>',
+        '✅ <strong>A IA funciona normalmente quando hospedada.</strong> ',
+        'Faça o download do e-book e abra via:<br>',
+        '• <strong>Localhost:</strong> <code>python -m http.server 8000</code><br>',
+        '• <strong>Netlify Drop:</strong> arraste o arquivo em ',
+        '<a href="https://app.netlify.com/drop" target="_blank" ',
+        'style="color:var(--clr-primary);">app.netlify.com/drop</a> (link HTTPS instantâneo)<br>',
+        '• <strong>GitHub Pages:</strong> suba o arquivo no repositório e ative Pages.'
+      ].join('');
+    }else if(isAuth){
+      fb.innerHTML='🔑 <strong>Chave da API inválida ou expirada.</strong> '+
+        'Vá até "Recado do Professor", apague a chave atual e insira uma nova.<br><br>'+
+        '<button class="q-btn q-btn--secondary" onclick="go(\'apres\')" style="margin-top:6px;">'+
+        'Ir para Configuração →</button>';
+    }else{
+      fb.innerHTML='⚠️ <strong>Erro inesperado na análise.</strong> Verifique sua conexão e tente novamente.<br>'+
+        '<small style="color:var(--txt-muted)">Detalhe: '+msg+'</small>';
+    }
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RENDERIZAR FEEDBACK DA IA
+   • 5 barras de competência animadas
+   • Score total (destaque para redação completa)
+   • 2 colunas: Pontos Fortes / Melhorias Prioritárias
+   ───────────────────────────────────────────────────────────── */
+function renderAI(fb,d,ctx){
+  var isFull=(ctx==='full');
+  var cores={Excelente:'#0E9E6E',Bom:'#2B5DA8',Regular:'#E6A817',Insuficiente:'#E53E3E'};
+  var cor=cores[d.nivel]||'#2B5DA8';
+  var total=d.total_estimado||0;
+
+  var comps=(d.competencias||[]).map(function(c){
+    var pct=Math.round((c.pontos/c.max)*100);
+    var barColor=(c.pontos===0)?'#E53E3E':(c.pontos>=160)?'#0E9E6E':(c.pontos>=120)?'#2B5DA8':'#E6A817';
+    return '<div class="comp-item">'+
+      '<div class="comp-header">'+
+        '<span class="comp-code">'+c.codigo+'</span>'+
+        '<span class="comp-name">'+c.nome+'</span>'+
+        '<span class="comp-score">'+c.pontos+'/'+c.max+'</span>'+
+      '</div>'+
+      '<div class="comp-bar-bg">'+
+        '<div class="comp-bar-fill" style="width:'+pct+'%;background:'+barColor+';"></div>'+
+      '</div>'+
+      '<p class="comp-feedback">'+c.feedback+'</p>'+
+    '</div>';
+  }).join('');
+
+  var fortes=(d.pontos_fortes||[]).map(function(p){return '<li>'+p+'</li>';}).join('');
+  var melh=(d.melhorias||[]).map(function(m){return '<li>'+m+'</li>';}).join('');
+
+  var scoreHtml='';
+  if(isFull){
+    var nivel_cor=(total>=800)?'#0E9E6E':(total>=600)?'#2B5DA8':(total>=400)?'#E6A817':'#E53E3E';
+    scoreHtml='<div class="score-total">'+
+      '<span class="score-badge" style="color:'+nivel_cor+';">'+total+'</span>'+
+      '<span class="score-label">pontos estimados<br><small>de 1000 possíveis — escala oficial ENEM</small></span>'+
+    '</div>';
+  }
+
+  fb.className='write-feedback fb-ok';
+  fb.innerHTML=
+    '<div class="ai-fb">'+
+      '<div class="ai-fb-header">'+
+        '<span class="ai-icon">🤖</span>'+
+        '<div>'+
+          '<strong>Análise IA — Critérios Oficiais INEP/ENEM 2025</strong>'+
+          '<span class="ai-nivel-badge" style="background:'+cor+';">'+d.nivel+'</span>'+
+        '</div>'+
+        (isFull?'':'<span class="ai-total">'+total+' pts</span>')+
+      '</div>'+
+      scoreHtml+
+      '<p class="ai-resumo">'+d.resumo+'</p>'+
+      '<div class="comp-list">'+comps+'</div>'+
+      '<div class="ai-cols">'+
+        '<div class="ai-col ai-col--ok"><h4>✅ Pontos Fortes</h4><ul>'+fortes+'</ul></div>'+
+        '<div class="ai-col ai-col--warn"><h4>💡 Melhorias Prioritárias</h4><ul>'+melh+'</ul></div>'+
+      '</div>'+
+    '</div>';
+
+  setTimeout(function(){fb.scrollIntoView({behavior:'smooth',block:'nearest'});},120);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   TECLADO
+   ← / → / PageUp / PageDown → navegam entre seções
+   Esc → fecha sidebar mobile
+   Enter / Espaço em .quiz-opt → dispara click
+   ───────────────────────────────────────────────────────────── */
+document.addEventListener('keydown',function(e){
+  var tag=(document.activeElement||{}).tagName||'';
+  if(tag.toLowerCase()==='textarea'||tag.toLowerCase()==='input')return;
+  var a=document.querySelector('.ebook-section--active');if(!a)return;
+  var idx=SECTIONS.indexOf(a.id);
+  if((e.key==='ArrowRight'||e.key==='PageDown')&&idx<SECTIONS.length-1){
+    e.preventDefault();go(SECTIONS[idx+1]);
+  }
+  if((e.key==='ArrowLeft'||e.key==='PageUp')&&idx>0){
+    e.preventDefault();go(SECTIONS[idx-1]);
+  }
+  if(e.key==='Escape'){
+    var s=document.getElementById('sidebar');
+    if(s&&s.classList.contains('sidebar--open')){
+      closeSidebar();
+      var tg=document.getElementById('sidebar-toggle');if(tg)tg.focus();
+    }
+  }
+});
+document.addEventListener('keydown',function(e){
+  if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('quiz-opt')){
+    e.preventDefault();e.target.click();
+  }
+});
+
+/* ─── BANNER DE CONTEXTO DO MICROFONE (aparece só quando necessário) ─── */
+(function(){
+  /* Só mostra se o contexto bloqueia o microfone */
+  var needsBanner=(location.protocol==='file:'||!window.isSecureContext);
+  if(!needsBanner)return;
+
+  var isFile=(location.protocol==='file:');
+  var banner=document.createElement('div');
+  banner.id='mic-context-banner';
+  banner.setAttribute('role','note');
+  banner.style.cssText=[
+    'position:fixed;bottom:0;left:0;right:0;z-index:7000;',
+    'background:#1A3A6B;color:#fff;',
+    'padding:12px 20px;font-size:18px;line-height:1.6;',
+    'display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;',
+    'box-shadow:0 -2px 12px rgba(0,0,0,.3);'
+  ].join('');
+
+  banner.innerHTML=[
+    '<span style="font-size:22px;flex-shrink:0;margin-top:2px;">🎤</span>',
+    '<span style="flex:1;">',
+      isFile
+        ? '<strong>Microfone desabilitado</strong> — arquivo aberto localmente (<code style="background:rgba(255,255,255,.15);padding:1px 6px;border-radius:4px;">file://</code>). '
+          +'Para usar o microfone, sirva via <strong>python -m http.server 8000</strong> e abra <strong>http://localhost:8000</strong> no Chrome. '
+          +'A IA, a leitura em voz alta e os quizzes funcionam normalmente aqui.'
+        : '<strong>Microfone indisponível</strong> — contexto sem HTTPS. Use <strong>localhost</strong> ou hospede o arquivo.',
+    '</span>',
+    '<button onclick="document.getElementById(\'mic-context-banner\').remove()" ',
+      'style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);',
+      'color:#fff;border-radius:6px;padding:4px 12px;cursor:pointer;font-size:18px;',
+      'flex-shrink:0;font-family:inherit;" aria-label="Dispensar aviso">✕</button>'
+  ].join('');
+
+  document.body.appendChild(banner);
+})();
+
+/* ─── OVERLAY CLICK ─── */
+(function(){
+  var ov=document.getElementById('sidebar-overlay');
+  if(ov)ov.addEventListener('click',closeSidebar);
+})();
+
+/* ─────────────────────────────────────────────────────────────
+   INIT — lê preferências salvas e inicia na capa
+   ───────────────────────────────────────────────────────────── */
+(function init(){
+  /* Contraste */
+  try{
+    var sc=localStorage.getItem('ebook-contrast');
+    if(sc&&sc!=='n')setContrast(sc);
+  }catch(e){}
+  /* Tamanho da fonte */
+  try{
+    var sf=localStorage.getItem('ebook-fz');
+    if(sf!==null){
+      sizeLevel=Math.min(2,Math.max(0,parseInt(sf,10)||0));
+      applyFz();
+      var ind=document.getElementById('fz-indicator');
+      if(ind){ind.textContent=sizeLevel+1;ind.setAttribute('aria-label','Nível '+(sizeLevel+1)+' de 3');}
+    }
+  }catch(e){}
+  /* Ir para capa */
+  go('capa');
+
+  /* Aviso de preview (iframe) na seção de configuração da IA */
+  if(window.self!==window.top){
+    var st=document.getElementById('api-status');
+    if(st){
+      st.textContent='⚠️ Preview do Claude detectado — a IA só funciona quando o e-book for hospedado.';
+      st.className='api-status err';
+    }
+  }
+})();
+</script>
+</body>
+</html>
