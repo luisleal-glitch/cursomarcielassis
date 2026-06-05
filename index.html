@@ -3643,30 +3643,29 @@ function showMicMsg(btn,btnId,label,html,resetDelay){
    "nova linha" / "parágrafo", "abre parênteses", "fecha parênteses"
    ───────────────────────────────────────────────────────────── */
 function addPunctuation(text){
-  var t=text
-    /* comandos compostos primeiro (antes dos simples para evitar conflito) */
-    .replace(/ponto e vírgula/gi,';')
-    .replace(/ponto e virgula/gi,';')
-    .replace(/ponto de exclamação/gi,'!')
-    .replace(/ponto de exclamacao/gi,'!')
-    .replace(/ponto de interrogação/gi,'?')
-    .replace(/ponto de interrogacao/gi,'?')
-    .replace(/abre parênteses/gi,'(')
-    .replace(/abre parenteses/gi,'(')
-    .replace(/fecha parênteses/gi,')')
-    .replace(/fecha parenteses/gi,')')
-    .replace(/abre aspas/gi,'“')
-    .replace(/fecha aspas/gi,'”')
-    .replace(/dois pontos/gi,':')
-    .replace(/nova linha/gi,'\n')
-    .replace(/parágrafo/gi,'\n')
-    .replace(/paragrafo/gi,'\n')
-    /* simples por último */
-    .replace(/vírgula/gi,',')
-    .replace(/virgula/gi,',')
-    .replace(/ponto/gi,'.');
+  /* Usa new RegExp() em tempo de execução para evitar corrupção de \b em Python */
+  var commands=[
+    ['ponto e v\u00edrgula',';'],['ponto e virgula',';'],
+    ['ponto de exclama\u00e7\u00e3o','!'],['ponto de exclamacao','!'],
+    ['ponto de interroga\u00e7\u00e3o','?'],['ponto de interrogacao','?'],
+    ['abre par\u00eanteses','('],['abre parenteses','('],
+    ['fecha par\u00eanteses',')'],['fecha parenteses',')'],
+    ['dois pontos',':'],
+    ['nova linha','\n'],['par\u00e1grafo','\n'],['paragrafo','\n'],
+    ['v\u00edrgula',','],['virgula',','],
+    ['ponto final','.'],['ponto','.']
+  ];
+  var t=text;
+  commands.forEach(function(cmd){
+    var escaped=cmd[0].replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&');
+    t=t.replace(new RegExp(escaped,'gi'),cmd[1]);
+  });
+  /* Limpar espaços antes de pontuação */
+  t=t.replace(/\s+([,;:!?])/g,'$1').replace(/\s{2,}/g,' ').trim();
+  /* Capitalizar primeiro caractere */
+  if(t.length>0)t=t.charAt(0).toUpperCase()+t.slice(1);
   /* Capitalizar após pontuação de final de frase */
-  t=t.replace(/([.!?]\s+)([a-záàãâéêíóôõúç])/gi,function(m,p1,p2){
+  t=t.replace(/([.!?]\s+)([a-z\u00e1\u00e0\u00e3\u00e2\u00e9\u00ea\u00ed\u00f3\u00f4\u00f5\u00fa\u00e7])/gi,function(m,p1,p2){
     return p1+p2.toUpperCase();
   });
   return t;
@@ -4586,7 +4585,7 @@ function renderCalcAI(fb,d){
 function checkQMath(qid,correct,okMsg,errMsg){
   var sel=quizState[qid]||(quizState[qid]=null,quizState[qid]);
   // Use generic quizState with math-specific keys
-  var stored=window['_mqs_'+qid];
+  var stored=quizState[qid];
   if(!stored){
     var fb=document.getElementById(qid+'-feedback');
     if(fb){fb.className='quiz-feedback fb-err';fb.innerHTML='⚠️ <strong>Selecione uma alternativa antes de verificar!</strong>';}
@@ -4606,22 +4605,12 @@ function checkQMath(qid,correct,okMsg,errMsg){
   }
 }
 function resetQMath(qid){
-  window['_mqs_'+qid]=null;
+  quizState[qid]=null;
   var fb=document.getElementById(qid+'-feedback');if(fb){fb.className='quiz-feedback';fb.innerHTML='';}
   var c=document.getElementById(qid+'-opts');if(c){c.querySelectorAll('.quiz-opt').forEach(function(o){o.classList.remove('sel','ok','err');o.setAttribute('aria-checked','false');});}
 }
 /* Override selOpt to also store math quiz state */
-var _origSelOpt=selOpt;
-function selOpt(qid,letter,btn){
-  if(qid.startsWith('qmat')){
-    window['_mqs_'+qid]=letter;
-    var c=document.getElementById(qid+'-opts');if(!c)return;
-    c.querySelectorAll('.quiz-opt').forEach(function(o){o.classList.remove('sel','ok','err');o.setAttribute('aria-checked','false');});
-    btn.classList.add('sel');btn.setAttribute('aria-checked','true');
-  }else{
-    _origSelOpt(qid,letter,btn);
-  }
-}
+
 
 /* ═══════════════════════════════════════════════════════════════
    MÓDULO 2 – MATEMÁTICA APLICADA ÀS ENERGIAS RENOVÁVEIS
